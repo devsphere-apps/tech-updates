@@ -113,6 +113,16 @@
       "siteUrl": "https://news.ycombinator.com/",
       "articles": [
         {
+          "id": "https://news.ycombinator.com/item?id=47972511",
+          "author": "sleepingNomad",
+          "description": "USB-C cables can be a mess. One cable charges at 5W, another does 100W and Thunderbolt 4, and they look identical in the drawer.\nWhatCable sits in your menu bar and reads the cable data your Mac already has access to. Plug in a cable and it tells you in plain English what it can actually do: charging wattage, data speed, display support, Thunderbolt, etc.\nBuilt in Swift/SwiftUI. Open source, free, no tracking.\nGitHub: https://github.com/darrylmorley/whatcable\nComments URL: https://news.ycombinator.com/item?id=47972511\nPoints: 4\n# Comments: 0",
+          "link": "https://github.com/darrylmorley/whatcable",
+          "publishedOn": "2026-05-01T08:43:45.000Z",
+          "wordCount": 3018,
+          "title": "Show HN: WhatCable, a tiny menu bar app for inspecting USB-C cables",
+          "imageUrl": "https://repository-images.githubusercontent.com/1226286910/faabb9c8-772f-43d0-8643-57d90b45f5b2"
+        },
+        {
           "id": "https://news.ycombinator.com/item?id=47972447",
           "author": "simianwords",
           "description": "Article URL: https://docs.x.ai/developers/models/grok-4.3\nComments URL: https://news.ycombinator.com/item?id=47972447\nPoints: 17\n# Comments: 5",
@@ -969,7 +979,7 @@
           "description": "submitted by    /u/OGMYT  \n [link]   [comments]",
           "link": "https://www.reddit.com/r/netsec/comments/1t0ogbc/billions_of_meals_at_risk_due_to_iran_war_says/",
           "publishedOn": "2026-05-01T09:27:45.000Z",
-          "wordCount": 28,
+          "wordCount": null,
           "title": "Billions of meals at risk due to Iran war, says fertiliser boss",
           "imageUrl": null
         },
@@ -1226,7 +1236,7 @@
           "description": "Ran into a possible malware distribution attempt on a subforum. User links a github with an AI-coded project with outlandish performance claims. The developer's profile has a host of hacking-related repos. Either I'm completely wrong, at least about the vibe-coded software he linked, or they're not smart enough to hide their hacking tools, which is in part what allowed me to detect (assuming I'm right) the threat in the first place.\n I'm a beginner at this point, and at the moment only have a Ubuntu laptop to perform tests. Free online tools find no threats in the zip of the repo I downloaded. Learning everything from scratch means letting the (possible) hacker run free in the meantime. Are there reasonable options I have to test the repo?\n I do hope I'm not in violation of the second posting rule, but can't seem to find any guidance anywhere else.\n    submitted by    /u/anvoice  \n [link]   [comments]",
           "link": "https://www.reddit.com/r/cybersecurity/comments/1t0oiq4/confirming_potential_malware_distribution_attempt/",
           "publishedOn": "2026-05-01T09:31:42.000Z",
-          "wordCount": 28,
+          "wordCount": null,
           "title": "Confirming (potential) malware distribution attempt",
           "imageUrl": null
         },

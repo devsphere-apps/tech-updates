@@ -354,22 +354,61 @@
   border-bottom: 0.5px solid var(--color-border-subtle);
 }
 
-.feed-header {
+.feed-header-wrap {
   position: sticky;
   top: var(--nav-height);
   z-index: 20;
+  background: var(--color-bg-base);
+  border-bottom: 0.5px solid var(--color-border-subtle);
+}
+
+/* Fade shows there are more tabs (overlay scrollbars / touch); ::after must not be inside the scroller */
+.feed-header-wrap:has(.feed-header--overflow:not(.feed-header--at-end))::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: clamp(32px, 12vw, 52px);
+  pointer-events: none;
+  background: linear-gradient(to left, var(--color-bg-base), transparent);
+  z-index: 2;
+}
+
+.feed-header {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
   gap: var(--space-1);
   padding: var(--space-2) var(--space-4);
-  background: var(--color-bg-base);
-  border-bottom: 0.5px solid var(--color-border-subtle);
+  padding-bottom: var(--space-3);
   overflow-x: auto;
-  scrollbar-width: none;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-text-muted) var(--color-bg-subtle);
 }
 
+/* Horizontal scrollbar visible (was hidden — tabs off-screen were undiscoverable) */
 .feed-header::-webkit-scrollbar {
-  display: none;
+  display: block;
+  height: 8px;
+}
+
+.feed-header::-webkit-scrollbar-track {
+  background: var(--color-bg-subtle);
+  border-radius: var(--radius-full);
+}
+
+.feed-header::-webkit-scrollbar-thumb {
+  background: var(--color-border-strong);
+  border-radius: var(--radius-full);
+}
+
+.feed-header::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-muted);
 }
 
 .filter-tab {
@@ -384,6 +423,7 @@
     border-color var(--transition-fast), box-shadow var(--transition-fast);
   cursor: pointer;
   white-space: nowrap;
+  flex-shrink: 0;
   background: none;
   font-family: var(--font-body);
 }

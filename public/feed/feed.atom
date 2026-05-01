@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://devsphere-apps.github.io/tech-updates/feed/index.html</id>
     <title>osmos::feed</title>
-    <updated>2026-05-01T09:37:53.530Z</updated>
+    <updated>2026-05-01T09:46:47.606Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://devsphere-apps.github.io/tech-updates/feed/index.html"/>
     <link rel="self" href="https://devsphere-apps.github.io/tech-updates/feed/feed.atom"/>
@@ -64,6 +64,22 @@ Image Generation Nodes: Wire any text-output agent directly into an Image Node t
  [link]   [comments]]]></summary>
         <author>
             <name>Artificial Intelligence (AI)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Show HN: WhatCable, a tiny menu bar app for inspecting USB-C cables]]></title>
+        <id>https://news.ycombinator.com/item?id=47972511</id>
+        <link href="https://github.com/darrylmorley/whatcable"/>
+        <updated>2026-05-01T08:43:45.000Z</updated>
+        <summary type="html"><![CDATA[USB-C cables can be a mess. One cable charges at 5W, another does 100W and Thunderbolt 4, and they look identical in the drawer.
+WhatCable sits in your menu bar and reads the cable data your Mac already has access to. Plug in a cable and it tells you in plain English what it can actually do: charging wattage, data speed, display support, Thunderbolt, etc.
+Built in Swift/SwiftUI. Open source, free, no tracking.
+GitHub: https://github.com/darrylmorley/whatcable
+Comments URL: https://news.ycombinator.com/item?id=47972511
+Points: 4
+# Comments: 0]]></summary>
+        <author>
+            <name>sleepingNomad</name>
         </author>
     </entry>
     <entry>

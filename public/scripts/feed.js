@@ -163,6 +163,25 @@
     );
   }
 
+  function initFeedHeaderScrollHint() {
+    var header = document.getElementById("feed-header");
+    if (!header) return;
+    function update() {
+      var overflow = header.scrollWidth > header.clientWidth + 1;
+      var atEnd =
+        header.scrollLeft + header.clientWidth >= header.scrollWidth - 2;
+      header.classList.toggle("feed-header--overflow", overflow);
+      header.classList.toggle("feed-header--at-end", !overflow || atEnd);
+    }
+    header.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update, { passive: true });
+    if (typeof ResizeObserver !== "undefined") {
+      var ro = new ResizeObserver(update);
+      ro.observe(header);
+    }
+    update();
+  }
+
   function hideSkeleton() {
     var skeleton = document.getElementById("skeleton-loader");
     if (skeleton) skeleton.style.display = "none";
@@ -173,6 +192,7 @@
     applyCategoryTags();
     markFeaturedCards();
     initFilter();
+    initFeedHeaderScrollHint();
     initNavScroll();
   }
 
