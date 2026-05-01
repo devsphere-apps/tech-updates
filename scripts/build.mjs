@@ -20,7 +20,8 @@ const landingSrc = path.join(root, "landing", "index.html");
 const landingStash = path.join(root, ".build-landing-index.html");
 const cacheStash = path.join(root, ".build-osmosfeed-cache.json");
 const seoStashDir = path.join(root, ".build-public-seo-stash");
-const assetsStashDir = path.join(root, ".build-public-assets-stash");
+const stylesStashDir = path.join(root, ".build-public-styles-stash");
+const scriptsStashDir = path.join(root, ".build-public-scripts-stash");
 
 function runOsmosfeed() {
   const result = spawnSync("npx", ["osmosfeed", "build"], {
@@ -76,10 +77,16 @@ async function main() {
     }
   }
 
-  const publicAssets = path.join(publicDir, "assets");
-  await fs.remove(assetsStashDir).catch(() => {});
-  if (await fs.pathExists(publicAssets)) {
-    await fs.copy(publicAssets, assetsStashDir, { overwrite: true });
+  await fs.remove(stylesStashDir).catch(() => {});
+  const publicStyles = path.join(publicDir, "styles");
+  if (await fs.pathExists(publicStyles)) {
+    await fs.copy(publicStyles, stylesStashDir, { overwrite: true });
+  }
+
+  await fs.remove(scriptsStashDir).catch(() => {});
+  const publicScripts = path.join(publicDir, "scripts");
+  if (await fs.pathExists(publicScripts)) {
+    await fs.copy(publicScripts, scriptsStashDir, { overwrite: true });
   }
 
   let buildFailed = false;
@@ -120,8 +127,13 @@ async function main() {
         );
       }
     }
-    if (await fs.pathExists(assetsStashDir)) {
-      await fs.copy(assetsStashDir, path.join(publicDir, "assets"), {
+    if (await fs.pathExists(stylesStashDir)) {
+      await fs.copy(stylesStashDir, path.join(publicDir, "styles"), {
+        overwrite: true,
+      });
+    }
+    if (await fs.pathExists(scriptsStashDir)) {
+      await fs.copy(scriptsStashDir, path.join(publicDir, "scripts"), {
         overwrite: true,
       });
     }

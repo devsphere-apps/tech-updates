@@ -2,10 +2,92 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://devsphere-apps.github.io/tech-updates/feed/index.html</id>
     <title>osmos::feed</title>
-    <updated>2026-05-01T08:23:38.894Z</updated>
+    <updated>2026-05-01T09:19:19.048Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://devsphere-apps.github.io/tech-updates/feed/index.html"/>
     <link rel="self" href="https://devsphere-apps.github.io/tech-updates/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Weird ICML decision [D]]]></title>
+        <id>https://www.reddit.com/r/MachineLearning/comments/1t0o2pi/weird_icml_decision_d/</id>
+        <link href="https://www.reddit.com/r/MachineLearning/comments/1t0o2pi/weird_icml_decision_d/"/>
+        <updated>2026-05-01T09:05:22.000Z</updated>
+        <summary type="html"><![CDATA[Hello,
+ A friend of mine had a paper with borderline scores accepted at ICML. However, the comment made by the meta reviewers feels like the intent was for rejection. He is not sure if it really was a mistake. 
+ What could be the consequences of not alerting the conference of this possible mistake? Can it cause problems in the future?
+    submitted by    /u/Massive_Horror9038  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Machine Learning</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Text-to-image is easy. Chaining LLMs to generate, critique, and iterate on images autonomously is a routing nightmare. AgentSwarms now supports Image generation playground and creative media workflows!]]></title>
+        <id>https://www.reddit.com/r/artificial/comments/1t0ns35/texttoimage_is_easy_chaining_llms_to_generate/</id>
+        <link href="https://www.reddit.com/r/artificial/comments/1t0ns35/texttoimage_is_easy_chaining_llms_to_generate/"/>
+        <updated>2026-05-01T08:48:29.000Z</updated>
+        <summary type="html"><![CDATA[Hey everyone,
+ If you’ve been building with AI agents, you know that orchestrating text is one thing, but stepping into multimodal workflows (Text + Image + Vision) is incredibly messy.
+ If you want an agent to act as a "Prompt Engineer," pass that prompt to an "Image Generator," and then have a "Vision Agent" critique the output to force a re-roll—you are looking at hundreds of lines of Python boilerplate, messy API handshakes, and a terrible debugging experience when the loop breaks.
+ I recently launched AgentSwarms, an in-browser sandbox for learning Agentic AI. Today, I am pushing a massive update: The Image Playground.
+ What the feature actually does: Instead of fighting with code to test multimodal architectures, you can now drag, drop, and wire up text and image agents on a visual canvas to build creative workflows.
+  
+Image Generation Nodes: Wire any text-output agent directly into an Image Node to autonomously generate visual assets.
+ Vision AI Integration: Route generated images back into a Vision Node. You can instruct an agent to physically "look" at the generated image, evaluate it against your initial prompt, and trigger a loop to fix it if it hallucinated.
+ Real-Time Data Flow: You can actually watch the payloads (the text prompts and the image outputs) flow across the node graph in real-time.
+  
+   submitted by    /u/Outside-Risk-8912  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Artificial Intelligence (AI)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Handled, Not Hosted: Administrative Activity Inside a Bulletproof Hoster]]></title>
+        <id>https://www.reddit.com/r/cybersecurity/comments/1t0njaw/handled_not_hosted_administrative_activity_inside/</id>
+        <link href="https://www.reddit.com/r/cybersecurity/comments/1t0njaw/handled_not_hosted_administrative_activity_inside/"/>
+        <updated>2026-05-01T08:34:11.000Z</updated>
+        <summary type="html"><![CDATA[submitted by    /u/0x5h4un  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>cybersecurity</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Handled, Not Hosted: Administrative Activity Inside a Bulletproof Hoster]]></title>
+        <id>https://www.reddit.com/r/netsec/comments/1t0nif0/handled_not_hosted_administrative_activity_inside/</id>
+        <link href="https://www.reddit.com/r/netsec/comments/1t0nif0/handled_not_hosted_administrative_activity_inside/"/>
+        <updated>2026-05-01T08:32:46.000Z</updated>
+        <summary type="html"><![CDATA[submitted by    /u/0x5h4un  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Technical Information Security Content &amp; Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Grok 4.3]]></title>
+        <id>https://news.ycombinator.com/item?id=47972447</id>
+        <link href="https://docs.x.ai/developers/models/grok-4.3"/>
+        <updated>2026-05-01T08:29:31.000Z</updated>
+        <summary type="html"><![CDATA[Article URL: https://docs.x.ai/developers/models/grok-4.3
+Comments URL: https://news.ycombinator.com/item?id=47972447
+Points: 17
+# Comments: 5]]></summary>
+        <author>
+            <name>simianwords</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Anyone have suggestions for how to set up a vpn (in the USA) that I can use when I’m in Iran?]]></title>
+        <id>https://www.reddit.com/r/cybersecurity/comments/1t0nd16/anyone_have_suggestions_for_how_to_set_up_a_vpn/</id>
+        <link href="https://www.reddit.com/r/cybersecurity/comments/1t0nd16/anyone_have_suggestions_for_how_to_set_up_a_vpn/"/>
+        <updated>2026-05-01T08:24:18.000Z</updated>
+        <summary type="html"><![CDATA[Going back to Iran but they’re selling vpns for $300/20 gb. I’m trying to set up my own to use while I still have internet access. I don’t mind paying at all but I prefer to pay directly instead of the middle man so it’s more sustainable long term. 
+    submitted by    /u/Turbulent-Future-107  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>cybersecurity</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Zoom + Claude Connector]]></title>
         <id>https://www.reddit.com/r/artificial/comments/1t0n4bc/zoom_claude_connector/</id>
@@ -18,6 +100,19 @@
  [link]   [comments]]]></summary>
         <author>
             <name>Artificial Intelligence (AI)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Canonical/Ubuntu have been under DDoS for more than 15h]]></title>
+        <id>https://news.ycombinator.com/item?id=47972213</id>
+        <link href="https://status.canonical.com/#/incident/KNms6QK9ewuzz-7xUsPsNylV20jEt5kyKsd8A-3ptQEHpOd8VQ40ZQs-KD81fboQXeGZB94okNHdHBGlCv58Sw=="/>
+        <updated>2026-05-01T07:44:17.000Z</updated>
+        <summary type="html"><![CDATA[Article URL: https://status.canonical.com/#/incident/KNms6QK9ewuzz-7xUsPsNylV20jEt5kyKsd8A-3ptQEHpOd8VQ40ZQs-KD81fboQXeGZB94okNHdHBGlCv58Sw==
+Comments URL: https://news.ycombinator.com/item?id=47972213
+Points: 29
+# Comments: 4]]></summary>
+        <author>
+            <name>jtlebigot</name>
         </author>
     </entry>
     <entry>

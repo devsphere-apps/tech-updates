@@ -113,6 +113,26 @@
       "siteUrl": "https://news.ycombinator.com/",
       "articles": [
         {
+          "id": "https://news.ycombinator.com/item?id=47972447",
+          "author": "simianwords",
+          "description": "Article URL: https://docs.x.ai/developers/models/grok-4.3\nComments URL: https://news.ycombinator.com/item?id=47972447\nPoints: 17\n# Comments: 5",
+          "link": "https://docs.x.ai/developers/models/grok-4.3",
+          "publishedOn": "2026-05-01T08:29:31.000Z",
+          "wordCount": 294,
+          "title": "Grok 4.3",
+          "imageUrl": "https://docs.x.ai/api/og?t=eyJ0aXRsZSI6Ikdyb2sgNC4zIiwidiI6IjMiLCJzY29wZSI6ImRldmVsb3BlcnMiLCJzZWN0aW9uIjoiTW9kZWxzIGFuZCBQcmljaW5nIn0.SMidkHaGudRzuawDgM_H4n4Y3WQgd7xcEmaQjlFarcw"
+        },
+        {
+          "id": "https://news.ycombinator.com/item?id=47972213",
+          "author": "jtlebigot",
+          "description": "Article URL: https://status.canonical.com/#/incident/KNms6QK9ewuzz-7xUsPsNylV20jEt5kyKsd8A-3ptQEHpOd8VQ40ZQs-KD81fboQXeGZB94okNHdHBGlCv58Sw==\nComments URL: https://news.ycombinator.com/item?id=47972213\nPoints: 29\n# Comments: 4",
+          "link": "https://status.canonical.com/#/incident/KNms6QK9ewuzz-7xUsPsNylV20jEt5kyKsd8A-3ptQEHpOd8VQ40ZQs-KD81fboQXeGZB94okNHdHBGlCv58Sw==",
+          "publishedOn": "2026-05-01T07:44:17.000Z",
+          "wordCount": 3581,
+          "title": "Canonical/Ubuntu have been under DDoS for more than 15h",
+          "imageUrl": null
+        },
+        {
           "id": "https://news.ycombinator.com/item?id=47971830",
           "author": "dryadin",
           "description": "Article URL: https://yadin.com/notes/toasted/\nComments URL: https://news.ycombinator.com/item?id=47971830\nPoints: 23\n# Comments: 10",
@@ -359,6 +379,16 @@
       "feedUrl": "https://www.reddit.com/r/MachineLearning/.rss",
       "siteUrl": "https://www.reddit.com/r/MachineLearning/",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/MachineLearning/comments/1t0o2pi/weird_icml_decision_d/",
+          "author": null,
+          "description": "Hello,\n A friend of mine had a paper with borderline scores accepted at ICML. However, the comment made by the meta reviewers feels like the intent was for rejection. He is not sure if it really was a mistake. \n What could be the consequences of not alerting the conference of this possible mistake? Can it cause problems in the future?\n    submitted by    /u/Massive_Horror9038  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/MachineLearning/comments/1t0o2pi/weird_icml_decision_d/",
+          "publishedOn": "2026-05-01T09:05:22.000Z",
+          "wordCount": 28,
+          "title": "Weird ICML decision [D]",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/MachineLearning/comments/1t0mct7/is_it_just_me_or_is_the_conference_lottery/",
           "author": null,
@@ -626,6 +656,16 @@
       "feedUrl": "https://www.reddit.com/r/artificial/.rss",
       "siteUrl": "https://www.reddit.com/r/artificial/",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/artificial/comments/1t0ns35/texttoimage_is_easy_chaining_llms_to_generate/",
+          "author": null,
+          "description": "Hey everyone,\n If you’ve been building with AI agents, you know that orchestrating text is one thing, but stepping into multimodal workflows (Text + Image + Vision) is incredibly messy.\n If you want an agent to act as a \"Prompt Engineer,\" pass that prompt to an \"Image Generator,\" and then have a \"Vision Agent\" critique the output to force a re-roll—you are looking at hundreds of lines of Python boilerplate, messy API handshakes, and a terrible debugging experience when the loop breaks.\n I recently launched AgentSwarms, an in-browser sandbox for learning Agentic AI. Today, I am pushing a massive update: The Image Playground.\n What the feature actually does: Instead of fighting with code to test multimodal architectures, you can now drag, drop, and wire up text and image agents on a visual canvas to build creative workflows.\n  \nImage Generation Nodes: Wire any text-output agent directly into an Image Node to autonomously generate visual assets.\n Vision AI Integration: Route generated images back into a Vision Node. You can instruct an agent to physically \"look\" at the generated image, evaluate it against your initial prompt, and trigger a loop to fix it if it hallucinated.\n Real-Time Data Flow: You can actually watch the payloads (the text prompts and the image outputs) flow across the node graph in real-time.\n  \n   submitted by    /u/Outside-Risk-8912  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/artificial/comments/1t0ns35/texttoimage_is_easy_chaining_llms_to_generate/",
+          "publishedOn": "2026-05-01T08:48:29.000Z",
+          "wordCount": 28,
+          "title": "Text-to-image is easy. Chaining LLMs to generate, critique, and iterate on images autonomously is a routing nightmare. AgentSwarms now supports Image generation playground and creative media workflows!",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/artificial/comments/1t0n4bc/zoom_claude_connector/",
           "author": null,
@@ -914,6 +954,16 @@
       "siteUrl": "https://www.reddit.com/r/netsec/",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/netsec/comments/1t0nif0/handled_not_hosted_administrative_activity_inside/",
+          "author": null,
+          "description": "submitted by    /u/0x5h4un  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/netsec/comments/1t0nif0/handled_not_hosted_administrative_activity_inside/",
+          "publishedOn": "2026-05-01T08:32:46.000Z",
+          "wordCount": 28,
+          "title": "Handled, Not Hosted: Administrative Activity Inside a Bulletproof Hoster",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/netsec/comments/1sztfun/seventeen_vulnerabilities_in_omi_fourteen_days_of/",
           "author": null,
           "description": "submitted by    /u/kasparovabi  \n [link]   [comments]",
@@ -1150,6 +1200,26 @@
       "feedUrl": "https://www.reddit.com/r/cybersecurity/.rss",
       "siteUrl": "https://www.reddit.com/r/cybersecurity/",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/cybersecurity/comments/1t0njaw/handled_not_hosted_administrative_activity_inside/",
+          "author": null,
+          "description": "submitted by    /u/0x5h4un  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/cybersecurity/comments/1t0njaw/handled_not_hosted_administrative_activity_inside/",
+          "publishedOn": "2026-05-01T08:34:11.000Z",
+          "wordCount": 28,
+          "title": "Handled, Not Hosted: Administrative Activity Inside a Bulletproof Hoster",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/cybersecurity/comments/1t0nd16/anyone_have_suggestions_for_how_to_set_up_a_vpn/",
+          "author": null,
+          "description": "Going back to Iran but they’re selling vpns for $300/20 gb. I’m trying to set up my own to use while I still have internet access. I don’t mind paying at all but I prefer to pay directly instead of the middle man so it’s more sustainable long term. \n    submitted by    /u/Turbulent-Future-107  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/cybersecurity/comments/1t0nd16/anyone_have_suggestions_for_how_to_set_up_a_vpn/",
+          "publishedOn": "2026-05-01T08:24:18.000Z",
+          "wordCount": null,
+          "title": "Anyone have suggestions for how to set up a vpn (in the USA) that I can use when I’m in Iran?",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/cybersecurity/comments/1t0mkwj/why_is_losing_encrypted_data_considered_risky_if/",
           "author": null,

@@ -6,85 +6,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="index, follow" />
     <title>Tech-updates — Feed</title>
+    <meta name="theme-color" content="#F7F4EF" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <link rel="alternate" type="application/rss+xml" title="{{siteTitle}}" href="{{feedHref}}" />
-    <script>
-(function(){try{var t=localStorage.getItem("tech-updates-theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);else if(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)document.documentElement.setAttribute("data-theme","dark");}catch(e){}})();
-    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&display=swap"
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=optional"
+      as="style"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=optional"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../assets/design-system.css" />
+    <link rel="stylesheet" href="../styles/tokens.css" />
+    <link rel="stylesheet" href="../styles/base.css" />
+    <link rel="stylesheet" href="../styles/components.css" />
+    <script src="../scripts/theme.js"></script>
   </head>
-  <body class="ds-body">
-    <a class="ds-skip" href="#main-feed">Skip to feed</a>
+  <body class="feed-page">
+    <a class="skip-link" href="#feed-header">Skip to feed</a>
 
-    <header class="ds-header">
-      <div class="ds-header__inner">
-        <a href="../" class="ds-link ds-brand">Tech-updates</a>
-        <div class="ds-header__actions">
+    <header class="nav" id="main-nav">
+      <div class="nav-inner nav-inner--feed">
+        <a href="../" class="nav-logo">Tech-updates</a>
+        <div class="nav-actions">
           <button
             type="button"
-            class="ds-btn ds-btn--ghost"
-            data-theme-toggle
+            class="theme-toggle"
+            id="theme-toggle"
             aria-label="Toggle light or dark theme"
-            title="Theme"
           >
-            ◐
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+            <svg class="icon-sun" style="display: none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+            </svg>
           </button>
-          <a href="../" class="ds-btn ds-btn--primary">Back to Home</a>
+          <a href="../" class="btn btn-ghost btn-sm">← Back to Home</a>
         </div>
       </div>
     </header>
 
-    <main id="main-feed" class="ds-container ds-feed-main">
-      <div class="ds-feed-hero">
-        <h1 class="ds-h2">Your feed</h1>
-        <p class="ds-text" style="margin-top: 0.5rem; max-width: 36rem">
-          Curated stories — open any card in a new tab.
+    <main id="main-feed" class="feed-container">
+      <header style="padding: var(--space-6) var(--space-5) var(--space-4)">
+        <h1 style="font-family: var(--font-display); font-size: var(--text-xl); font-weight: var(--weight-regular); letter-spacing: var(--tracking-tight); margin: 0">
+          Your feed
+        </h1>
+        <p style="font-size: var(--text-xs); color: var(--color-text-muted); margin-top: var(--space-1)">
+          Curated tech signal — open any story in a new tab.
         </p>
+      </header>
+
+      <div class="feed-header" id="feed-header" role="tablist" aria-label="Filter by category">
+        <button type="button" class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button type="button" class="filter-tab" data-filter="ai" role="tab" aria-selected="false">AI</button>
+        <button type="button" class="filter-tab" data-filter="cybersecurity" role="tab" aria-selected="false">Cybersecurity</button>
+        <button type="button" class="filter-tab" data-filter="ml" role="tab" aria-selected="false">Machine Learning</button>
+        <button type="button" class="filter-tab" data-filter="hn" role="tab" aria-selected="false">Hacker News</button>
+        <button type="button" class="filter-tab" data-filter="netsec" role="tab" aria-selected="false">Security Research</button>
+        <button type="button" class="filter-tab" data-filter="gh" role="tab" aria-selected="false">GitHub</button>
       </div>
 
-      {{#each dates}}
-      <section class="ds-feed-day">
-        <h2 class="ds-day-label">
+      <div id="feed-content">
+        <div id="skeleton-loader" class="skeleton-feed" aria-hidden="true">
+          <div class="skeleton-card">
+            <div class="skeleton skeleton-tag"></div>
+            <div class="skeleton skeleton-title"></div>
+            <div class="skeleton skeleton-title-2"></div>
+          </div>
+          <div class="skeleton-card">
+            <div class="skeleton skeleton-tag"></div>
+            <div class="skeleton skeleton-title"></div>
+          </div>
+          <div class="skeleton-card">
+            <div class="skeleton skeleton-tag"></div>
+            <div class="skeleton skeleton-title"></div>
+            <div class="skeleton skeleton-title-2"></div>
+          </div>
+        </div>
+
+        {{#each dates}}
+        <h2 class="date-divider" id="day-{{@index}}">
           <time class="js-relative-time" datetime="{{isoUtcPublishTime}}">{{isoOffsetPublishDate}}</time>
         </h2>
         {{#each sources}}
           {{#each articles}}
           <a
-            class="ds-link ds-card ds-card--interactive ds-feed-card"
+            class="feed-card"
             href="{{link}}"
             target="_blank"
             rel="noopener noreferrer"
+            data-source-title="{{../title}}"
           >
-            <div class="ds-feed-card__inner">
-              {{#if imageUrl}}
-              <div class="ds-feed-card__thumb">
-                <img src="{{imageUrl}}" alt="" loading="lazy" decoding="async" />
-              </div>
-              {{/if}}
-              <div class="ds-feed-card__body">
-                <h3 class="ds-feed-card__title">{{title}}</h3>
-                <div class="ds-feed-card__meta">
-                  <span>{{../title}}</span>
-                  <span class="ds-feed-card__dot" aria-hidden="true"></span>
-                  <time class="js-relative-time" datetime="{{../../isoUtcPublishTime}}"></time>
-                </div>
-                <p class="ds-feed-card__excerpt">{{description}}</p>
-              </div>
+            {{#if imageUrl}}
+            <div class="feed-card__thumb">
+              <img src="{{imageUrl}}" alt="" loading="lazy" decoding="async" />
             </div>
+            {{/if}}
+            <div class="card-meta">
+              <span class="tag js-source-tag"></span>
+              <span class="card-dot" aria-hidden="true"></span>
+              <span class="card-source">{{../title}}</span>
+              <time class="card-time js-relative-time" datetime="{{publishedOn}}"></time>
+            </div>
+            <div class="card-title">{{title}}</div>
+            <div class="card-preview">{{description}}</div>
           </a>
           {{/each}}
         {{/each}}
-      </section>
-      {{/each}}
+        {{/each}}
+      </div>
     </main>
 
-    <footer class="ds-footer ds-site-footer--feed">
+    <footer class="feed-footer">
       {{#if githubRunUrl}}
       <a href="{{githubRunUrl}}"><time datetime="{{siteBuildTimestamp}}">{{siteBuildTimestamp}}</time></a>
       {{else}}
@@ -94,6 +132,7 @@
       <a href="{{projectUrl}}" target="_blank" rel="noopener">osmosfeed {{cliVersion}}</a>
     </footer>
 
-    <script src="../assets/site.js" defer></script>
+    <script src="../scripts/relative-time.js" defer></script>
+    <script src="../scripts/feed.js" defer></script>
   </body>
 </html>

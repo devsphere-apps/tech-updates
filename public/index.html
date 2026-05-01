@@ -3,172 +3,222 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tech-updates — AI & Cybersecurity News</title>
+    <title>Tech-updates — AI &amp; Cybersecurity News, Simplified</title>
     <meta
       name="description"
-      content="Curated AI and cybersecurity news without the noise. Scan sources, filter signal, get the updates that matter."
+      content="Curated AI and cybersecurity signal for builders and security teams. No noise, no vendor fluff."
     />
-    <script>
-(function(){try{var t=localStorage.getItem("tech-updates-theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);else if(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)document.documentElement.setAttribute("data-theme","dark");}catch(e){}})();
-    </script>
+    <meta name="theme-color" content="#F7F4EF" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&display=swap"
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=optional"
+      as="style"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=optional"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/design-system.css" />
+    <link rel="stylesheet" href="styles/tokens.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/components.css" />
+    <link rel="stylesheet" href="styles/landing.css" />
+    <script src="scripts/theme.js"></script>
   </head>
-  <body class="ds-body">
-    <a class="ds-skip" href="#main">Skip to content</a>
+  <body class="landing-page">
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <header class="ds-header">
-      <div class="ds-header__inner">
-        <a href="./" class="ds-link ds-brand">Tech-updates</a>
-        <div class="ds-header__actions">
+    <header class="nav" id="main-nav">
+      <div class="nav-inner">
+        <a href="./" class="nav-logo">Tech-updates</a>
+        <div class="nav-actions">
           <button
             type="button"
-            class="ds-btn ds-btn--ghost"
-            data-theme-toggle
+            class="theme-toggle"
+            id="theme-toggle"
             aria-label="Toggle light or dark theme"
-            title="Theme"
           >
-            ◐
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+            <svg class="icon-sun" style="display: none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+            </svg>
           </button>
-          <a href="feed/" class="ds-btn ds-btn--primary">View Feed</a>
+          <a href="feed/" class="btn btn-primary btn-sm">View Feed</a>
         </div>
       </div>
     </header>
 
     <main id="main">
-      <section class="ds-container ds-hero">
-        <p class="ds-kicker">Curated for builders & security teams</p>
-        <h1 class="ds-h1 ds-max-w-lead" style="margin-left: auto; margin-right: auto">
-          AI & Cybersecurity News, Simplified.
-        </h1>
-        <p class="ds-lead ds-max-w-lead" style="margin-top: 1.5rem; margin-left: auto; margin-right: auto">
-          We scan trusted sources so you don’t have to. Get a focused stream of what’s
-          changing in AI, security, and startups—without doomscrolling or vendor fluff.
+      <section class="hero">
+        <div class="hero-inner">
+          <p class="hero-eyebrow">Curated for builders &amp; security teams</p>
+          <h1 class="hero-headline">
+            AI &amp; Cybersecurity News,<br />
+            <em>Simplified.</em>
+          </h1>
+          <p class="hero-body">
+            We scan trusted sources so you don’t have to. Get a focused stream of what’s
+            changing in AI, security, and startups — without doomscrolling or vendor fluff.
+          </p>
+          <div class="hero-ctas">
+            <a href="feed/" class="btn btn-primary">Explore News</a>
+            <a href="#how-it-works" class="btn btn-ghost">How it works</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="ticker-section" aria-label="Latest headlines">
+        <div class="ticker-wrap">
+          <div class="ticker-track" id="ticker-track">
+            <a href="feed/" class="ticker-item"
+              ><span class="tag tag-ai">AI</span>Zoom launches Claude Connector for workspace data</a
+            >
+            <a href="feed/" class="ticker-item"
+              ><span class="tag tag-cyber">Cybersecurity</span>AI finds 38 flaws in health record platform</a
+            >
+            <a href="feed/" class="ticker-item"
+              ><span class="tag tag-hn">HN</span>cPanel &amp; WHM Auth Bypass — CVE-2026-41940</a
+            >
+            <a href="feed/" class="ticker-item"
+              ><span class="tag tag-ml">ML</span>Hackable ML compiler in 5,000 lines of Python</a
+            >
+            <a href="feed/" class="ticker-item"
+              ><span class="tag tag-cyber">Cybersecurity</span>CISA orders feds to patch Windows zero-day</a
+            >
+            <a href="feed/" class="ticker-item"
+              ><span class="tag tag-ai">AI</span>Mark Zuckerberg: AI costs contributed to 8,000 layoffs</a
+            >
+            <a href="feed/" class="ticker-item"
+              ><span class="tag tag-ai">AI</span>Zoom launches Claude Connector for workspace data</a
+            >
+            <a href="feed/" class="ticker-item"
+              ><span class="tag tag-cyber">Cybersecurity</span>AI finds 38 flaws in health record platform</a
+            >
+            <a href="feed/" class="ticker-item"
+              ><span class="tag tag-hn">HN</span>cPanel &amp; WHM Auth Bypass — CVE-2026-41940</a
+            >
+            <a href="feed/" class="ticker-item"
+              ><span class="tag tag-ml">ML</span>Hackable ML compiler in 5,000 lines of Python</a
+            >
+            <a href="feed/" class="ticker-item"
+              ><span class="tag tag-cyber">Cybersecurity</span>CISA orders feds to patch Windows zero-day</a
+            >
+            <a href="feed/" class="ticker-item"
+              ><span class="tag tag-ai">AI</span>Mark Zuckerberg: AI costs contributed to 8,000 layoffs</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="how-it-works" id="how-it-works">
+        <h2 class="section-heading">How it works</h2>
+        <p class="section-subheading">
+          Three steps from raw headlines to a feed you can actually use.
         </p>
-        <div class="ds-stack-lg">
-          <a href="feed/" class="ds-btn ds-btn--primary ds-btn--wide ds-btn--wide-sm">Explore News</a>
-          <a href="#how-it-works" class="ds-btn ds-btn--outline ds-btn--wide ds-btn--wide-sm">How it works</a>
+        <ol class="steps-grid">
+          <li class="step-card">
+            <span class="step-number">1</span>
+            <h3 class="step-title">Scan sources</h3>
+            <p class="step-body">
+              We monitor reliable outlets, research, and industry moves so coverage stays
+              broad but grounded.
+            </p>
+          </li>
+          <li class="step-card">
+            <span class="step-number">2</span>
+            <h3 class="step-title">Filter signal</h3>
+            <p class="step-body">
+              Noise and repeats get cut. What’s left is the story, the risk, or the product
+              shift worth knowing.
+            </p>
+          </li>
+          <li class="step-card">
+            <span class="step-number">3</span>
+            <h3 class="step-title">Show updates</h3>
+            <p class="step-body">
+              Your feed stays scannable: headlines, context, and categories you care about
+              in one place.
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="categories-section">
+        <h2 class="section-heading">Categories</h2>
+        <p class="section-subheading">Pick your lane—we keep each stream tight and relevant.</p>
+        <div class="categories-grid">
+          <article class="category-card category-card--ai">
+            <div class="category-icon" aria-hidden="true">✦</div>
+            <h3 class="category-name">AI</h3>
+            <p class="category-desc">
+              Models, regulation, tooling, and research that change how teams ship.
+            </p>
+          </article>
+          <article class="category-card category-card--cyber">
+            <div class="category-icon" aria-hidden="true">◆</div>
+            <h3 class="category-name">Cybersecurity</h3>
+            <p class="category-desc">
+              Incidents, patches, and defensive practices—summarized, not sensationalized.
+            </p>
+          </article>
+          <article class="category-card category-card--startups">
+            <div class="category-icon" aria-hidden="true">↗</div>
+            <h3 class="category-name">Startups</h3>
+            <p class="category-desc">
+              Funding, product launches, and market moves from the builder ecosystem.
+            </p>
+          </article>
         </div>
       </section>
 
-      <section id="how-it-works" class="ds-section ds-section--band">
-        <div class="ds-container">
-          <div class="ds-center">
-            <h2 class="ds-h2">How it works</h2>
-            <p class="ds-text ds-max-w-narrow" style="margin-top: 0.75rem">
-              Three steps from raw headlines to a feed you can actually use.
-            </p>
+      <section class="spotlight-section" aria-labelledby="spotlight-title">
+        <div class="spotlight-inner">
+          <h2 class="spotlight-title" id="spotlight-title">Latest signal</h2>
+          <p class="spotlight-subtitle">Updated continuously from trusted sources</p>
+          <div class="spotlight-grid" id="spotlight-grid">
+            <a href="feed/" class="spotlight-card">
+              <div class="spotlight-card-title">
+                Open the feed for the newest AI stories — this card updates when cache loads.
+              </div>
+              <div class="spotlight-card-source">Artificial Intelligence (AI)</div>
+            </a>
+            <a href="feed/" class="spotlight-card">
+              <div class="spotlight-card-title">
+                Security research and incident roundups from netsec and cybersecurity feeds.
+              </div>
+              <div class="spotlight-card-source">cybersecurity</div>
+            </a>
+            <a href="feed/" class="spotlight-card">
+              <div class="spotlight-card-title">
+                Papers, tools, and ML discussion from r/MachineLearning and friends.
+              </div>
+              <div class="spotlight-card-source">Machine Learning</div>
+            </a>
           </div>
-          <ol class="ds-grid-3" style="list-style: none; padding: 0; margin-bottom: 0">
-            <li class="ds-card ds-card--step">
-              <span class="ds-step-num">1</span>
-              <h3 class="ds-h3">Scan sources</h3>
-              <p class="ds-text" style="margin-top: 0.5rem">
-                We monitor reliable outlets, research, and industry moves so coverage stays
-                broad but grounded.
-              </p>
-            </li>
-            <li class="ds-card ds-card--step">
-              <span class="ds-step-num">2</span>
-              <h3 class="ds-h3">Filter signal</h3>
-              <p class="ds-text" style="margin-top: 0.5rem">
-                Noise and repeats get cut. What’s left is the story, the risk, or the product
-                shift worth knowing.
-              </p>
-            </li>
-            <li class="ds-card ds-card--step">
-              <span class="ds-step-num">3</span>
-              <h3 class="ds-h3">Show updates</h3>
-              <p class="ds-text" style="margin-top: 0.5rem">
-                Your feed stays scannable: headlines, context, and categories you care about
-                in one place.
-              </p>
-            </li>
-          </ol>
+          <a href="feed/" class="btn btn-ghost" style="margin-top: var(--space-8)">See full feed →</a>
         </div>
       </section>
 
-      <section class="ds-section">
-        <div class="ds-container">
-          <div class="ds-center">
-            <h2 class="ds-h2">Categories</h2>
-            <p class="ds-text ds-max-w-narrow" style="margin-top: 0.75rem">
-              Pick your lane—we keep each stream tight and relevant.
-            </p>
-          </div>
-          <div class="ds-grid-3" style="margin-top: 3rem">
-            <article class="ds-card ds-card--pad-lg">
-              <div class="ds-card-icon" aria-hidden="true">✦</div>
-              <h3 class="ds-h3" style="font-size: 1.25rem">AI</h3>
-              <p class="ds-text" style="margin-top: 0.5rem">
-                Models, regulation, tooling, and research that change how teams ship.
-              </p>
-            </article>
-            <article class="ds-card ds-card--pad-lg">
-              <div class="ds-card-icon" aria-hidden="true">◆</div>
-              <h3 class="ds-h3" style="font-size: 1.25rem">Cybersecurity</h3>
-              <p class="ds-text" style="margin-top: 0.5rem">
-                Incidents, patches, and defensive practices—summarized, not sensationalized.
-              </p>
-            </article>
-            <article class="ds-card ds-card--pad-lg">
-              <div class="ds-card-icon" aria-hidden="true">↗</div>
-              <h3 class="ds-h3" style="font-size: 1.25rem">Startups</h3>
-              <p class="ds-text" style="margin-top: 0.5rem">
-                Funding, product launches, and market moves from the builder ecosystem.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="ds-section ds-section--band" aria-labelledby="preview-title">
-        <div class="ds-container">
-          <div class="ds-center">
-            <h2 class="ds-h2" id="preview-title">Latest from the feed</h2>
-            <p class="ds-text ds-max-w-narrow" style="margin-top: 0.75rem">
-              Five fresh stories — same layout as the full reader.
-            </p>
-          </div>
-          <div id="preview-grid" class="ds-grid-preview"></div>
-          <div class="ds-center" style="margin-top: 2.25rem">
-            <a href="feed/" class="ds-btn ds-btn--primary" style="padding: 0.75rem 2rem; font-weight: 600"
-              >View full feed</a
-            >
-          </div>
-        </div>
-      </section>
-
-      <section class="ds-section ds-section--band">
-        <div class="ds-container">
-          <div class="ds-cta-panel">
-            <h2 class="ds-h2" style="font-size: clamp(1.5rem, 3vw, 1.75rem)">Stay ahead without the overload</h2>
-            <p class="ds-text" style="margin-top: 1rem; max-width: 28rem; margin-left: auto; margin-right: auto">
-              Open the feed and scan today’s signal in minutes—not hours.
-            </p>
-            <a
-              href="feed/"
-              class="ds-btn ds-btn--primary"
-              style="margin-top: 1.75rem; padding: 0.75rem 2rem; font-weight: 600"
-              >Go to feed</a
-            >
-          </div>
+      <section class="cta-section">
+        <div class="cta-inner">
+          <h2 class="cta-title">Stay ahead without the overload</h2>
+          <p class="cta-body">Open the feed and scan today’s signal in minutes — not hours.</p>
+          <a href="feed/" class="btn btn-primary">Go to feed</a>
         </div>
       </section>
     </main>
 
-    <footer class="ds-footer">
-      <p>
-        <strong>Tech-updates</strong>
-        · Curated tech news
-      </p>
+    <footer class="landing-footer">
+      <div class="landing-footer-inner">
+        <a href="./" class="nav-logo">Tech-updates</a>
+        <span style="font-size: var(--text-xs); color: var(--color-text-muted)">Curated tech news</span>
+      </div>
     </footer>
 
-    <script src="assets/site.js" defer></script>
+    <script src="scripts/landing.js" defer></script>
   </body>
 </html>
