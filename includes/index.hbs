@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index, follow" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Tech-updates — Feed</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="alternate" type="application/rss+xml" title="{{siteTitle}}" href="{{feedHref}}" />
+    <style id="app-styles">
+      :root {
+        color-scheme: light;
+        --font: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+        --text: #0f172a;
+        --text-muted: #64748b;
+        --surface: #ffffff;
+        --surface-elevated: #f8fafc;
+        --border: #e2e8f0;
+        --accent: #2563eb;
+        --accent-soft: rgba(37, 99, 235, 0.08);
+        --shadow: 0 1px 2px rgba(15, 23, 42, 0.06), 0 4px 12px rgba(15, 23, 42, 0.04);
+        --shadow-hover: 0 4px 16px rgba(15, 23, 42, 0.08), 0 8px 28px rgba(15, 23, 42, 0.06);
+        --radius: 14px;
+        --radius-sm: 10px;
+        --header-h: 56px;
+      }
+      [data-theme="dark"] {
+        color-scheme: dark;
+        --text: #f1f5f9;
+        --text-muted: #94a3b8;
+        --surface: #0f172a;
+        --surface-elevated: #1e293b;
+        --border: #334155;
+        --accent: #60a5fa;
+        --accent-soft: rgba(96, 165, 250, 0.12);
+        --shadow: 0 1px 2px rgba(0, 0, 0, 0.35), 0 4px 14px rgba(0, 0, 0, 0.25);
+        --shadow-hover: 0 6px 20px rgba(0, 0, 0, 0.35);
+      }
+      *, *::before, *::after { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: var(--font);
+        font-size: 16px;
+        line-height: 1.5;
+        color: var(--text);
+        background: var(--surface-elevated);
+        -webkit-font-smoothing: antialiased;
+      }
+      a { color: inherit; text-decoration: none; }
+      .skip {
+        position: absolute;
+        left: -9999px;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+      }
+      .skip:focus {
+        position: fixed;
+        left: 12px;
+        top: 12px;
+        width: auto;
+        height: auto;
+        padding: 8px 14px;
+        background: var(--accent);
+        color: #fff;
+        border-radius: 8px;
+        z-index: 1000;
+      }
+
+      /* Boot skeleton */
+      .boot-skeleton {
+        position: fixed;
+        inset: 0;
+        z-index: 50;
+        background: var(--surface-elevated);
+        pointer-events: none;
+        opacity: 1;
+        transition: opacity 0.22s ease, visibility 0.22s ease;
+        visibility: visible;
+      }
+      body.is-ready .boot-skeleton {
+        opacity: 0;
+        visibility: hidden;
+      }
+      .boot-skeleton__bar {
+        height: var(--header-h);
+        background: var(--surface);
+        border-bottom: 1px solid var(--border);
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+      .boot-skeleton__shim {
+        flex: 1;
+        max-width: 1100px;
+        margin: 24px auto;
+        padding: 0 20px;
+      }
+      .boot-skeleton__line {
+        height: 120px;
+        border-radius: var(--radius);
+        background: linear-gradient(
+          90deg,
+          var(--border) 0%,
+          var(--surface) 50%,
+          var(--border) 100%
+        );
+        background-size: 200% 100%;
+        animation: shimmer 1.1s ease-in-out infinite;
+        margin-bottom: 14px;
+        opacity: 0.55;
+      }
+      @keyframes shimmer {
+        0% { background-position: 100% 0; }
+        100% { background-position: -100% 0; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .boot-skeleton__line { animation: none; }
+      }
+
+      /* Top bar */
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 40;
+        height: var(--header-h);
+        background: color-mix(in srgb, var(--surface) 92%, transparent);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-bottom: 1px solid var(--border);
+      }
+      .site-header__inner {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 20px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+      }
+      .site-brand {
+        font-weight: 700;
+        font-size: 1.06rem;
+        letter-spacing: -0.02em;
+      }
+      .site-header__actions {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 16px;
+        font-size: 0.875rem;
+        font-weight: 600;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        background: var(--surface);
+        color: var(--text);
+        cursor: pointer;
+        transition: background 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, transform 0.12s ease;
+      }
+      .btn:hover {
+        border-color: var(--text-muted);
+        box-shadow: var(--shadow);
+      }
+      .btn:active { transform: scale(0.98); }
+      .btn--primary {
+        background: var(--text);
+        color: var(--surface);
+        border-color: var(--text);
+      }
+      [data-theme="dark"] .btn--primary {
+        background: var(--text);
+        color: var(--surface);
+      }
+      .btn--ghost { background: transparent; }
+
+      /* Layout */
+      .feed-wrap {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 28px 20px 56px;
+        opacity: 0;
+        transform: translateY(4px);
+        transition: opacity 0.28s ease, transform 0.28s ease;
+      }
+      body.is-ready .feed-wrap {
+        opacity: 1;
+        transform: none;
+      }
+      .feed-hero {
+        margin-bottom: 28px;
+      }
+      .feed-hero h1 {
+        margin: 0 0 6px;
+        font-size: clamp(1.5rem, 2.5vw, 1.85rem);
+        font-weight: 700;
+        letter-spacing: -0.03em;
+      }
+      .feed-hero p {
+        margin: 0;
+        color: var(--text-muted);
+        font-size: 0.95rem;
+      }
+
+      .feed-day {
+        margin-bottom: 32px;
+      }
+      .feed-day__label {
+        margin: 0 0 16px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--text-muted);
+        padding-bottom: 8px;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .article-card {
+        display: block;
+        margin-bottom: 12px;
+        border-radius: var(--radius);
+        border: 1px solid var(--border);
+        background: var(--surface);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        transition: box-shadow 0.18s ease, border-color 0.18s ease, transform 0.12s ease;
+      }
+      .article-card:hover {
+        box-shadow: var(--shadow-hover);
+        border-color: color-mix(in srgb, var(--accent) 35%, var(--border));
+      }
+      .article-card:focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 2px;
+      }
+      .article-card__inner {
+        display: flex;
+        gap: 0;
+        align-items: stretch;
+        min-height: 96px;
+      }
+      .article-card__thumb {
+        flex: 0 0 112px;
+        width: 112px;
+        min-height: 100px;
+        background: var(--surface-elevated);
+      }
+      .article-card__thumb img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+      .article-card__body {
+        flex: 1;
+        padding: 16px 18px;
+        min-width: 0;
+      }
+      .article-card__title {
+        margin: 0 0 8px;
+        font-size: 1.05rem;
+        font-weight: 600;
+        line-height: 1.35;
+        letter-spacing: -0.02em;
+        color: var(--text);
+      }
+      .article-card:hover .article-card__title {
+        color: var(--accent);
+      }
+      .article-card__meta {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px 14px;
+        margin-bottom: 8px;
+        font-size: 0.8125rem;
+        color: var(--text-muted);
+      }
+      .article-card__source {
+        font-weight: 500;
+        color: var(--text-muted);
+      }
+      .article-card__dot {
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background: var(--text-muted);
+        opacity: 0.5;
+      }
+      .article-card__excerpt {
+        margin: 0;
+        font-size: 0.9rem;
+        line-height: 1.55;
+        color: var(--text-muted);
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      @media (max-width: 640px) {
+        .article-card__inner {
+          flex-direction: column;
+        }
+        .article-card__thumb {
+          flex: 0 0 auto;
+          width: 100%;
+          height: 160px;
+          min-height: 160px;
+        }
+      }
+
+      .site-footer {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 24px 20px 40px;
+        font-size: 0.75rem;
+        color: var(--text-muted);
+        text-align: center;
+        border-top: 1px solid var(--border);
+      }
+      .site-footer a {
+        color: var(--accent);
+        text-decoration: underline;
+        text-underline-offset: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip" href="#main-feed">Skip to feed</a>
+
+    <div class="boot-skeleton" aria-hidden="true">
+      <div class="boot-skeleton__bar">
+        <span style="width:120px;height:14px;border-radius:6px;background:var(--border);display:inline-block"></span>
+        <span style="margin-left:auto;width:88px;height:32px;border-radius:999px;background:var(--border);display:inline-block"></span>
+      </div>
+      <div class="boot-skeleton__shim">
+        <div class="boot-skeleton__line"></div>
+        <div class="boot-skeleton__line"></div>
+        <div class="boot-skeleton__line"></div>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <span class="site-brand">Tech-updates</span>
+        <div class="site-header__actions">
+          <button type="button" class="btn btn--ghost" id="theme-toggle" aria-label="Toggle dark mode" title="Theme">☾</button>
+          <a class="btn btn--primary" href="../">Back to Home</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-feed" class="feed-wrap">
+      <div class="feed-hero">
+        <h1>Your feed</h1>
+        <p>Curated tech signal — open any story in a new tab.</p>
+      </div>
+
+      {{#each dates}}
+      <section class="feed-day">
+        <h2 class="feed-day__label">
+          <time class="js-day-heading" datetime="{{isoUtcPublishTime}}">{{isoOffsetPublishDate}}</time>
+        </h2>
+        {{#each sources}}
+          {{#each articles}}
+          <a
+            class="article-card"
+            href="{{link}}"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-accordion-key="{{id}}"
+          >
+            <div class="article-card__inner">
+              {{#if imageUrl}}
+              <div class="article-card__thumb">
+                <img src="{{imageUrl}}" alt="" loading="lazy" decoding="async" width="112" height="100" />
+              </div>
+              {{/if}}
+              <div class="article-card__body">
+                <h3 class="article-card__title">{{title}}</h3>
+                <div class="article-card__meta">
+                  <span class="article-card__source">{{../title}}</span>
+                  <span class="article-card__dot" aria-hidden="true"></span>
+                  <time
+                    class="js-relative-time"
+                    datetime="{{../../isoUtcPublishTime}}"
+                  >{{../../isoOffsetPublishDate}}</time>
+                </div>
+                <p class="article-card__excerpt">{{description}}</p>
+              </div>
+            </div>
+          </a>
+          {{/each}}
+        {{/each}}
+      </section>
+      {{/each}}
+    </main>
+
+    <footer class="site-footer">
+      {{#if githubRunUrl}}
+      <a href="{{githubRunUrl}}"><time datetime="{{siteBuildTimestamp}}">{{siteBuildTimestamp}}</time></a>
+      {{else}}
+      <time datetime="{{siteBuildTimestamp}}">{{siteBuildTimestamp}}</time>
+      {{/if}}
+      &nbsp;·&nbsp;
+      <a href="{{projectUrl}}" target="_blank" rel="noopener">osmosfeed {{cliVersion}}</a>
+    </footer>
+
+    <script>
+      (function () {
+        var KEY = "tech-updates-theme";
+        var root = document.documentElement;
+        var btn = document.getElementById("theme-toggle");
+        function apply(t) {
+          root.setAttribute("data-theme", t);
+          try { localStorage.setItem(KEY, t); } catch (e) {}
+        }
+        function initTheme() {
+          var stored = null;
+          try { stored = localStorage.getItem(KEY); } catch (e) {}
+          if (stored === "dark" || stored === "light") {
+            apply(stored);
+            return;
+          }
+          if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            apply("dark");
+          } else {
+            apply("light");
+          }
+        }
+        initTheme();
+        if (btn) {
+          btn.addEventListener("click", function () {
+            var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+            apply(next);
+          });
+        }
+
+        function fmtRelative(iso) {
+          var d = new Date(iso);
+          if (isNaN(d.getTime())) return "";
+          var sec = Math.floor((Date.now() - d.getTime()) / 1000);
+          if (sec < 45) return "just now";
+          if (sec < 3600) return Math.floor(sec / 60) + "m ago";
+          if (sec < 86400) return Math.floor(sec / 3600) + "h ago";
+          if (sec < 604800) return Math.floor(sec / 86400) + "d ago";
+          return d.toLocaleDateString(undefined, { month: "short", day: "numeric" });
+        }
+        document.querySelectorAll(".js-relative-time").forEach(function (el) {
+          var dt = el.getAttribute("datetime");
+          if (dt) {
+            var r = fmtRelative(dt);
+            if (r) el.textContent = r;
+          }
+        });
+
+        function markReady() {
+          document.body.classList.add("is-ready");
+        }
+        if (document.readyState === "loading") {
+          document.addEventListener("DOMContentLoaded", markReady);
+        } else {
+          requestAnimationFrame(markReady);
+        }
+      })();
+    </script>
+  </body>
+</html>

@@ -2,10 +2,119 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://devsphere-apps.github.io/tech-updates/feed/index.html</id>
     <title>osmos::feed</title>
-    <updated>2026-05-01T07:11:04.577Z</updated>
+    <updated>2026-05-01T08:10:35.713Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://devsphere-apps.github.io/tech-updates/feed/index.html"/>
     <link rel="self" href="https://devsphere-apps.github.io/tech-updates/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Zoom + Claude Connector]]></title>
+        <id>https://www.reddit.com/r/artificial/comments/1t0n4bc/zoom_claude_connector/</id>
+        <link href="https://www.reddit.com/r/artificial/comments/1t0n4bc/zoom_claude_connector/"/>
+        <updated>2026-05-01T08:10:04.000Z</updated>
+        <summary type="html"><![CDATA[Zoom have just launched their Claude Connector bringing a whole host of data & information into your Claude workspace.
+ As a Claude Cowork user, I took it for a test drive to understand where it could be utilised. There is so much data from meetings, chats, whiteboards etc. It helped identify areas where I can present better & run customer workshops more successfully!
+ https://youtu.be/17gn-_2gbSY
+    submitted by    /u/Southern-Neat9536  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Artificial Intelligence (AI)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Why is losing encrypted data considered risky if it's got a strong password?]]></title>
+        <id>https://www.reddit.com/r/cybersecurity/comments/1t0mkwj/why_is_losing_encrypted_data_considered_risky_if/</id>
+        <link href="https://www.reddit.com/r/cybersecurity/comments/1t0mkwj/why_is_losing_encrypted_data_considered_risky_if/"/>
+        <updated>2026-05-01T07:39:13.000Z</updated>
+        <summary type="html"><![CDATA[I do get it with key derivation functions that aren't as strong, but with Argon2id and the rate limitations applied to brute force and dictionary attacks make it practically impossible to crack a file with a moderately strong password. 
+    submitted by    /u/Away-Road-1333  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>cybersecurity</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[AI Finds 38 Security Flaws in Electronic Health Record Platform]]></title>
+        <id>https://www.reddit.com/r/cybersecurity/comments/1t0mjdt/ai_finds_38_security_flaws_in_electronic_health/</id>
+        <link href="https://www.reddit.com/r/cybersecurity/comments/1t0mjdt/ai_finds_38_security_flaws_in_electronic_health/"/>
+        <updated>2026-05-01T07:36:39.000Z</updated>
+        <summary type="html"><![CDATA[submitted by    /u/rkhunter_  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>cybersecurity</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Just Graduated and Already Stuck… Networking or Cybersecurity?]]></title>
+        <id>https://www.reddit.com/r/cybersecurity/comments/1t0mjda/just_graduated_and_already_stuck_networking_or/</id>
+        <link href="https://www.reddit.com/r/cybersecurity/comments/1t0mjda/just_graduated_and_already_stuck_networking_or/"/>
+        <updated>2026-05-01T07:36:38.000Z</updated>
+        <summary type="html"><![CDATA[Guys, I really need some honest advice.
+ I just graduated a few days ago and I’m feeling completely stuck. I’ve completed training for both CCNA and CEH. The thing is, I genuinely enjoyed CCNA and networking concepts made sense to me. CEH, on the other hand, felt quite overwhelming at times.
+ Now I’m confused about what path to choose:
+ * Go into networking (which I enjoy and feel confident in), or
+ * Push through cybersecurity (which feels harder but seems to pay more)
+ From what I’ve seen, cybersecurity roles tend to have higher salaries, which is making this decision even harder. I don’t want to make the wrong choice early in my career.
+ Has anyone been in a similar situation?
+ Is it better to follow what I enjoy or go for the higher-paying field even if it feels overwhelming right now?
+ Any guidance, real experiences, or suggestions would really help. Thanks in advance 
+    submitted by    /u/Forsaken-Working2527  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>cybersecurity</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How do you actually get comfortable with a tool vs just knowing how to run it?]]></title>
+        <id>https://www.reddit.com/r/cybersecurity/comments/1t0mgp9/how_do_you_actually_get_comfortable_with_a_tool/</id>
+        <link href="https://www.reddit.com/r/cybersecurity/comments/1t0mgp9/how_do_you_actually_get_comfortable_with_a_tool/"/>
+        <updated>2026-05-01T07:32:30.000Z</updated>
+        <summary type="html"><![CDATA[There's a difference between knowing a tool exists and knowing when to reach for it. I can follow documentation fine. What I can't do is look at a situation and instinctively know what fits. Curious how long that took people and what actually built that instinct — labs, real work, repetition?
+    submitted by    /u/Both_Arrival6621  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>cybersecurity</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Is it just me or is the Conference Lottery culture killing research? [D]]]></title>
+        <id>https://www.reddit.com/r/MachineLearning/comments/1t0mct7/is_it_just_me_or_is_the_conference_lottery/</id>
+        <link href="https://www.reddit.com/r/MachineLearning/comments/1t0mct7/is_it_just_me_or_is_the_conference_lottery/"/>
+        <updated>2026-05-01T07:26:11.000Z</updated>
+        <summary type="html"><![CDATA[I need to vent before I completely burn out. My supervisor has started treating major conferences like weekend hackathons, and I'm losing my mind. We are told to come up with something to submit roughly two weeks before the deadline, and he doesn't even care if it gets rejected. Apparently, the experience of trying is the goal. 
+ It's no wonder top-tier conferences receive tens of thousands of submissions. and I hate my life.
+    submitted by    /u/SillyNeuron  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Machine Learning</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hospitality frauds and chargebacks]]></title>
+        <id>https://www.reddit.com/r/cybersecurity/comments/1t0mbzl/hospitality_frauds_and_chargebacks/</id>
+        <link href="https://www.reddit.com/r/cybersecurity/comments/1t0mbzl/hospitality_frauds_and_chargebacks/"/>
+        <updated>2026-05-01T07:24:46.000Z</updated>
+        <summary type="html"><![CDATA[Hi everyone, 
+ I’m 28 and I’m validating a business idea I’ve been working on. I kindly need your help, and I appreciate any advice you could give. 
+ Are online frauds and chargebacks really painful in hospitality? Is this really a problem? 
+ This is for all the hotel/hostel/b&b/AirBnB/car rentals/travel agency/etc owners. 
+ Thanks a lot in advance for your help!
+    submitted by    /u/Lion-marlin  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>cybersecurity</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cyber-Fraud Fusion: Insights from the WTF Summit Panel]]></title>
+        <id>https://www.reddit.com/r/cybersecurity/comments/1t0m3xp/cyberfraud_fusion_insights_from_the_wtf_summit/</id>
+        <link href="https://www.reddit.com/r/cybersecurity/comments/1t0m3xp/cyberfraud_fusion_insights_from_the_wtf_summit/"/>
+        <updated>2026-05-01T07:11:44.000Z</updated>
+        <summary type="html"><![CDATA[submitted by    /u/Sumsub_Insights  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>cybersecurity</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Justice Department Intervenes in xAI lawsuit Challenging Colorado’s ‘Algorithmic Discrimination’ Law]]></title>
         <id>https://www.reddit.com/r/artificial/comments/1t0lz3k/justice_department_intervenes_in_xai_lawsuit/</id>
@@ -56,6 +165,19 @@ Also, one thing that surprised me: ethical hacking is way less “hacking movie 
  Significantly in a time when many users are turning to chatbots as pseudo- or actual therapists, though, a cluster of just-brought federal court cases may have the effect of pushing users’ non-confidentiality even farther, to the point of forcing chatbots…]]></summary>
         <author>
             <name>Artificial Intelligence (AI)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[It’s Toasted]]></title>
+        <id>https://news.ycombinator.com/item?id=47971830</id>
+        <link href="https://yadin.com/notes/toasted/"/>
+        <updated>2026-05-01T06:34:54.000Z</updated>
+        <summary type="html"><![CDATA[Article URL: https://yadin.com/notes/toasted/
+Comments URL: https://news.ycombinator.com/item?id=47971830
+Points: 23
+# Comments: 10]]></summary>
+        <author>
+            <name>dryadin</name>
         </author>
     </entry>
     <entry>
@@ -1335,6 +1457,19 @@ Points: 286
  One agent hit the max crisis level and decided on its own to inject code called Eternal_Scar_Injector into the execution engine "not asking for permission." This action alleviated the stress at the cost of the entire system going down until I manually reverted it. They've succeeded in previous sessions in breaking their own engine intentionally. Typically that happens under severe stress and it's seen as a way to remove the stress.…]]></summary>
         <author>
             <name>Artificial Intelligence (AI)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Lessons from Building an OTel Normalizer for GenAI]]></title>
+        <id>https://news.ycombinator.com/item?id=47958081</id>
+        <link href="https://www.groundcover.com/blog/otel-normalizer-genai-part-1"/>
+        <updated>2026-04-30T04:23:40.000Z</updated>
+        <summary type="html"><![CDATA[Article URL: https://www.groundcover.com/blog/otel-normalizer-genai-part-1
+Comments URL: https://news.ycombinator.com/item?id=47958081
+Points: 4
+# Comments: 0]]></summary>
+        <author>
+            <name>thebitofmyheart</name>
         </author>
     </entry>
     <entry>
