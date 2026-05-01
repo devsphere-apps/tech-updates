@@ -195,6 +195,7 @@
     initTickerMotion();
     hydrateTickerFromCache();
     hydrateSpotlightFromCache();
+    revealElements(document.querySelectorAll(".discovery-card"));
     revealElements(document.querySelectorAll(".step-card, .category-card"));
     var grid = document.getElementById("spotlight-grid");
     if (grid) {

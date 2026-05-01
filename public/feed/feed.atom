@@ -2,10 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://devsphere-apps.github.io/tech-updates/feed/index.html</id>
     <title>osmos::feed</title>
-    <updated>2026-05-01T09:19:19.048Z</updated>
+    <updated>2026-05-01T09:37:53.530Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://devsphere-apps.github.io/tech-updates/feed/index.html"/>
     <link rel="self" href="https://devsphere-apps.github.io/tech-updates/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Confirming (potential) malware distribution attempt]]></title>
+        <id>https://www.reddit.com/r/cybersecurity/comments/1t0oiq4/confirming_potential_malware_distribution_attempt/</id>
+        <link href="https://www.reddit.com/r/cybersecurity/comments/1t0oiq4/confirming_potential_malware_distribution_attempt/"/>
+        <updated>2026-05-01T09:31:42.000Z</updated>
+        <summary type="html"><![CDATA[Ran into a possible malware distribution attempt on a subforum. User links a github with an AI-coded project with outlandish performance claims. The developer's profile has a host of hacking-related repos. Either I'm completely wrong, at least about the vibe-coded software he linked, or they're not smart enough to hide their hacking tools, which is in part what allowed me to detect (assuming I'm right) the threat in the first place.
+ I'm a beginner at this point, and at the moment only have a Ubuntu laptop to perform tests. Free online tools find no threats in the zip of the repo I downloaded. Learning everything from scratch means letting the (possible) hacker run free in the meantime. Are there reasonable options I have to test the repo?
+ I do hope I'm not in violation of the second posting rule, but can't seem to find any guidance anywhere else.
+    submitted by    /u/anvoice  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>cybersecurity</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Billions of meals at risk due to Iran war, says fertiliser boss]]></title>
+        <id>https://www.reddit.com/r/netsec/comments/1t0ogbc/billions_of_meals_at_risk_due_to_iran_war_says/</id>
+        <link href="https://www.reddit.com/r/netsec/comments/1t0ogbc/billions_of_meals_at_risk_due_to_iran_war_says/"/>
+        <updated>2026-05-01T09:27:45.000Z</updated>
+        <summary type="html"><![CDATA[submitted by    /u/OGMYT  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Technical Information Security Content &amp; Discussion</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Weird ICML decision [D]]]></title>
         <id>https://www.reddit.com/r/MachineLearning/comments/1t0o2pi/weird_icml_decision_d/</id>
@@ -463,6 +488,19 @@ The failure mode is treating every fake as an information accuracy problem when 
  [link]   [comments]]]></summary>
         <author>
             <name>Machine Learning</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Your Biggest Vulnerability is your Shitty Compensation]]></title>
+        <id>https://news.ycombinator.com/item?id=47971134</id>
+        <link href="https://green.spacedino.net/your-biggest-vulnerability-is-your-shitty-compensation/"/>
+        <updated>2026-05-01T03:53:44.000Z</updated>
+        <summary type="html"><![CDATA[Article URL: https://green.spacedino.net/your-biggest-vulnerability-is-your-shitty-compensation/
+Comments URL: https://news.ycombinator.com/item?id=47971134
+Points: 14
+# Comments: 3]]></summary>
+        <author>
+            <name>jfil</name>
         </author>
     </entry>
     <entry>

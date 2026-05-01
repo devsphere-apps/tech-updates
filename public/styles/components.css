@@ -172,6 +172,18 @@
   border-color: var(--color-gh-border);
 }
 
+.tag-tips {
+  background: var(--color-tips-bg);
+  color: var(--color-tips-text);
+  border-color: var(--color-tips-border);
+}
+
+.tag-aitools {
+  background: var(--color-aitools-bg);
+  color: var(--color-aitools-text);
+  border-color: var(--color-aitools-border);
+}
+
 .feed-card {
   display: flex;
   flex-direction: column;
@@ -546,6 +558,11 @@
 }
 
 .spotlight-card:focus-visible {
+  outline: var(--focus-ring-width) solid var(--color-text-link);
+  outline-offset: var(--focus-ring-offset);
+}
+
+.discovery-card:focus-visible {
   outline: var(--focus-ring-width) solid var(--color-text-link);
   outline-offset: var(--focus-ring-offset);
 }

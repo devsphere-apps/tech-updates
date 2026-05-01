@@ -69,6 +69,8 @@
         <button type="button" class="filter-tab" data-filter="hn" role="tab" aria-selected="false">Hacker News</button>
         <button type="button" class="filter-tab" data-filter="netsec" role="tab" aria-selected="false">Security Research</button>
         <button type="button" class="filter-tab" data-filter="gh" role="tab" aria-selected="false">GitHub</button>
+        <button type="button" class="filter-tab" data-filter="tips" role="tab" aria-selected="false">Tips &amp; Tricks</button>
+        <button type="button" class="filter-tab" data-filter="aitools" role="tab" aria-selected="false">Free AI Tools</button>
       </div>
 
       <div id="feed-content">
@@ -119,6 +121,170 @@
           {{/each}}
         {{/each}}
         {{/each}}
+
+        <h2 class="date-divider" id="curated-tips">Tips &amp; Tricks</h2>
+        <a href="https://dev.to/t/tips" class="feed-card featured" target="_blank" rel="noopener noreferrer" data-category="tips">
+          <div class="card-meta">
+            <span class="tag tag-tips">Tips &amp; Tricks</span>
+            <span class="card-dot" aria-hidden="true"></span>
+            <span class="card-source">dev.to</span>
+            <span class="card-time">2h ago</span>
+          </div>
+          <div class="card-title">Stop writing useEffect for data fetching — here's the React pattern that actually scales</div>
+          <div class="card-preview">A practical breakdown of React Query, SWR, and the new use() hook — when to use each, and why mixing them causes the bugs you can't reproduce.</div>
+        </a>
+        <a href="https://dev.to/t/git" class="feed-card" target="_blank" rel="noopener noreferrer" data-category="tips">
+          <div class="card-meta">
+            <span class="tag tag-tips">Tips &amp; Tricks</span>
+            <span class="card-dot" aria-hidden="true"></span>
+            <span class="card-source">dev.to</span>
+            <span class="card-time">5h ago</span>
+          </div>
+          <div class="card-title">Git aliases that save 30 minutes every day — a senior dev's dotfile secrets</div>
+          <div class="card-preview">git cm, git undo, git wip — the aliases that experienced engineers swear by but rarely document.</div>
+        </a>
+        <a href="https://www.reddit.com/r/commandline" class="feed-card" target="_blank" rel="noopener noreferrer" data-category="tips">
+          <div class="card-meta">
+            <span class="tag tag-tips">Tips &amp; Tricks</span>
+            <span class="card-dot" aria-hidden="true"></span>
+            <span class="card-source">r/commandline</span>
+            <span class="card-time">8h ago</span>
+          </div>
+          <div class="card-title">Terminal tricks most developers don't know exist — but definitely should</div>
+          <div class="card-preview">fzf, ripgrep, bat, zoxide — the modern Unix toolkit that makes navigating your machine 10x faster.</div>
+        </a>
+        <a href="https://news.ycombinator.com/" class="feed-card" target="_blank" rel="noopener noreferrer" data-category="tips">
+          <div class="card-meta">
+            <span class="tag tag-tips">Tips &amp; Tricks</span>
+            <span class="card-dot" aria-hidden="true"></span>
+            <span class="card-source">Hacker News</span>
+            <span class="card-time">10h ago</span>
+          </div>
+          <div class="card-title">How to read a CVE report like a security engineer — a practical field guide</div>
+          <div class="card-preview">Translating CVSS scores, affected versions, and exploit conditions into something your team can actually act on.</div>
+        </a>
+        <a href="https://dev.to/t/python" class="feed-card" target="_blank" rel="noopener noreferrer" data-category="tips">
+          <div class="card-meta">
+            <span class="tag tag-tips">Tips &amp; Tricks</span>
+            <span class="card-dot" aria-hidden="true"></span>
+            <span class="card-source">dev.to</span>
+            <span class="card-time">12h ago</span>
+          </div>
+          <div class="card-title">Python one-liners that every developer should know — from list comprehensions to walrus operators</div>
+          <div class="card-preview">Patterns that keep scripts readable while cutting boilerplate.</div>
+        </a>
+        <a href="https://www.reddit.com/r/webdev" class="feed-card" target="_blank" rel="noopener noreferrer" data-category="tips">
+          <div class="card-meta">
+            <span class="tag tag-tips">Tips &amp; Tricks</span>
+            <span class="card-dot" aria-hidden="true"></span>
+            <span class="card-source">r/webdev</span>
+            <span class="card-time">1d ago</span>
+          </div>
+          <div class="card-title">CSS container queries are finally ready to replace media queries — here's how to migrate</div>
+          <div class="card-preview">Sizing components from their parent container, not the viewport.</div>
+        </a>
+        <a href="https://dev.to/t/vscode" class="feed-card" target="_blank" rel="noopener noreferrer" data-category="tips">
+          <div class="card-meta">
+            <span class="tag tag-tips">Tips &amp; Tricks</span>
+            <span class="card-dot" aria-hidden="true"></span>
+            <span class="card-source">dev.to</span>
+            <span class="card-time">1d ago</span>
+          </div>
+          <div class="card-title">VS Code shortcuts most developers never discover — the ones that actually save time</div>
+          <div class="card-preview">Multi-cursor, jump-to-symbol, and terminal integration tips.</div>
+        </a>
+        <a href="https://www.reddit.com/r/ExperiencedDevs" class="feed-card" target="_blank" rel="noopener noreferrer" data-category="tips">
+          <div class="card-meta">
+            <span class="tag tag-tips">Tips &amp; Tricks</span>
+            <span class="card-dot" aria-hidden="true"></span>
+            <span class="card-source">r/ExperiencedDevs</span>
+            <span class="card-time">2d ago</span>
+          </div>
+          <div class="card-title">How I structure my code reviews to actually improve quality — not just catch bugs</div>
+          <div class="card-preview">Framing feedback, scope, and follow-ups for senior-level review culture.</div>
+        </a>
+
+        <h2 class="date-divider" id="curated-aitools">Free AI Tools</h2>
+        <a href="https://github.com/danielmiessler/fabric" class="feed-card featured" target="_blank" rel="noopener noreferrer" data-category="aitools">
+          <div class="card-meta">
+            <span class="tag tag-aitools">Free AI Tool</span>
+            <span class="card-dot" aria-hidden="true"></span>
+            <span class="card-source">GitHub</span>
+            <span class="card-time">1h ago</span>
+          </div>
+          <div class="card-title">Fabric — open-source AI framework to augment humans using a modular set of Markdown prompts</div>
+          <div class="card-preview">Fabric is designed to help humans apply AI to everyday challenges. It provides a CLI and web UI with a huge library of "patterns" — reusable AI prompts for writing, summarizing, analyzing, and more. Completely free and self-hostable.</div>
+        </a>
+        <a href="https://msty.app" class="feed-card" target="_blank" rel="noopener noreferrer" data-category="aitools">
+          <div class="card-meta">
+            <span class="tag tag-aitools">Free AI Tool</span>
+            <span class="card-dot" aria-hidden="true"></span>
+            <span class="card-source">msty.app</span>
+            <span class="card-time">3h ago</span>
+          </div>
+          <div class="card-title">Msty — run LLMs locally, completely free, with a polished native desktop UI. No cloud, no subscription.</div>
+          <div class="card-preview">Download Llama, Mistral, Phi, and more with one click. Chat stays on your machine. Works offline.</div>
+        </a>
+        <a href="https://github.com/All-Hands-AI/OpenHands" class="feed-card" target="_blank" rel="noopener noreferrer" data-category="aitools">
+          <div class="card-meta">
+            <span class="tag tag-aitools">Free AI Tool</span>
+            <span class="card-dot" aria-hidden="true"></span>
+            <span class="card-source">GitHub</span>
+            <span class="card-time">6h ago</span>
+          </div>
+          <div class="card-title">OpenHands — open-source AI agent that can write code, fix bugs, run terminal commands, and browse the web</div>
+          <div class="card-preview">The free alternative to Devin. Give it a task, it opens a browser, writes code, and ships. Fully self-hostable on your own machine or server.</div>
+        </a>
+        <a href="https://github.com/lobehub/lobe-chat" class="feed-card" target="_blank" rel="noopener noreferrer" data-category="aitools">
+          <div class="card-meta">
+            <span class="tag tag-aitools">Free AI Tool</span>
+            <span class="card-dot" aria-hidden="true"></span>
+            <span class="card-source">GitHub</span>
+            <span class="card-time">12h ago</span>
+          </div>
+          <div class="card-title">Lobe Chat — free, open-source chat UI that supports Claude, GPT-4, Gemini, Ollama, and every major model</div>
+          <div class="card-preview">One interface for all your AI providers. Plugin system, image generation, voice, file upload. Self-host in one command with Docker.</div>
+        </a>
+        <a href="https://github.com/openai/whisper" class="feed-card" target="_blank" rel="noopener noreferrer" data-category="aitools">
+          <div class="card-meta">
+            <span class="tag tag-aitools">Free AI Tool</span>
+            <span class="card-dot" aria-hidden="true"></span>
+            <span class="card-source">GitHub</span>
+            <span class="card-time">1d ago</span>
+          </div>
+          <div class="card-title">Whisper — OpenAI's free, open-source speech recognition that runs entirely on your machine</div>
+          <div class="card-preview">Local speech-to-text pipelines without sending audio to the cloud.</div>
+        </a>
+        <a href="https://notebooklm.google.com" class="feed-card" target="_blank" rel="noopener noreferrer" data-category="aitools">
+          <div class="card-meta">
+            <span class="tag tag-aitools">Free AI Tool</span>
+            <span class="card-dot" aria-hidden="true"></span>
+            <span class="card-source">Google Labs</span>
+            <span class="card-time">1d ago</span>
+          </div>
+          <div class="card-title">NotebookLM — Google's free AI research assistant that reads your documents and answers questions about them</div>
+          <div class="card-preview">Upload PDFs, Docs, YouTube videos, or audio files. NotebookLM builds a private AI tutor trained only on your sources. Audio overviews are remarkable.</div>
+        </a>
+        <a href="https://github.com/Significant-Gravitas/AutoGPT" class="feed-card" target="_blank" rel="noopener noreferrer" data-category="aitools">
+          <div class="card-meta">
+            <span class="tag tag-aitools">Free AI Tool</span>
+            <span class="card-dot" aria-hidden="true"></span>
+            <span class="card-source">GitHub</span>
+            <span class="card-time">2d ago</span>
+          </div>
+          <div class="card-title">AutoGPT — the original open-source AI agent framework. Still the most flexible for custom autonomous workflows</div>
+          <div class="card-preview">Chain tools and memory for longer-running agent experiments.</div>
+        </a>
+        <a href="https://www.perplexity.ai" class="feed-card" target="_blank" rel="noopener noreferrer" data-category="aitools">
+          <div class="card-meta">
+            <span class="tag tag-aitools">Free AI Tool</span>
+            <span class="card-dot" aria-hidden="true"></span>
+            <span class="card-source">Perplexity AI</span>
+            <span class="card-time">2d ago</span>
+          </div>
+          <div class="card-title">Perplexity — free AI search engine with real-time web access, citations, and follow-up questions built in</div>
+          <div class="card-preview">Answer-first search with linked sources for verification.</div>
+        </a>
       </div>
     </main>
 

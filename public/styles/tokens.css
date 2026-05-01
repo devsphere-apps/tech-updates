@@ -67,6 +67,14 @@
   --color-gh-text: #3d3d3a;
   --color-gh-border: #d0cfc9;
 
+  --color-tips-bg: #fef0e0;
+  --color-tips-text: #8a4a00;
+  --color-tips-border: #f9cfa0;
+
+  --color-aitools-bg: #f2effe;
+  --color-aitools-text: #4a2d9c;
+  --color-aitools-border: #c9bcfa;
+
   --space-1: 4px;
   --space-2: 8px;
   --space-3: 12px;
@@ -144,6 +152,14 @@ html[data-theme="dark"] {
   --color-gh-bg: #252527;
   --color-gh-text: #b8b6b0;
   --color-gh-border: #3a3a3d;
+
+  --color-tips-bg: #2d1a00;
+  --color-tips-text: #f0aa55;
+  --color-tips-border: #5a3600;
+
+  --color-aitools-bg: #1c1040;
+  --color-aitools-text: #b09af8;
+  --color-aitools-border: #352880;
 
   --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.3);
   --shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.4), 0 0 0 0.5px rgba(255, 255, 255, 0.04);
