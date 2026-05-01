@@ -1,11 +1,14 @@
-#########################
-# Full reference
-# https://github.com/osmoscraft/osmosfeed/blob/master/docs/osmosfeed-yaml-reference.md
-#########################
+cacheUrl: https://devsphere-apps.github.io/tech-updates/cache.json
 
-# cacheUrl: https://GITHUB_USERNAME.github.io/REPO_NAME/cache.json
 sources:
-  - href: https://github.com/osmoscraft/osmosfeed/releases.atom # Get new feature announcement via this feed
-  - href: https://css-tricks.com/feed/
-  - href: https://www.smashingmagazine.com/feed/
-  - href: https://www.freecodecamp.org/news/rss/
+  # 🌍 General Tech
+  - href: https://github.blog/feed/
+  - href: https://hnrss.org/frontpage
+
+  # 🤖 AI
+  - href: https://www.reddit.com/r/MachineLearning/.rss
+  - href: https://www.reddit.com/r/artificial/.rss
+
+  # 🔐 Cybersecurity
+  - href: https://www.reddit.com/r/netsec/.rss
+  - href: https://www.reddit.com/r/cybersecurity/.rss
