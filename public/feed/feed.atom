@@ -2,10 +2,62 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://devsphere-apps.github.io/tech-updates/feed/index.html</id>
     <title>osmos::feed</title>
-    <updated>2026-05-01T06:52:17.377Z</updated>
+    <updated>2026-05-01T07:11:04.577Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://devsphere-apps.github.io/tech-updates/feed/index.html"/>
     <link rel="self" href="https://devsphere-apps.github.io/tech-updates/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Justice Department Intervenes in xAI lawsuit Challenging Colorado’s ‘Algorithmic Discrimination’ Law]]></title>
+        <id>https://www.reddit.com/r/artificial/comments/1t0lz3k/justice_department_intervenes_in_xai_lawsuit/</id>
+        <link href="https://www.reddit.com/r/artificial/comments/1t0lz3k/justice_department_intervenes_in_xai_lawsuit/"/>
+        <updated>2026-05-01T07:04:03.000Z</updated>
+        <summary type="html"><![CDATA[submitted by    /u/Somethingwittycool  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Artificial Intelligence (AI)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Just started a full Ethical Hacking course on YouTube… here’s my honest experience so far]]></title>
+        <id>https://www.reddit.com/r/cybersecurity/comments/1t0luo5/just_started_a_full_ethical_hacking_course_on/</id>
+        <link href="https://www.reddit.com/r/cybersecurity/comments/1t0luo5/just_started_a_full_ethical_hacking_course_on/"/>
+        <updated>2026-05-01T06:57:35.000Z</updated>
+        <summary type="html"><![CDATA[So I randomly came across a full ethical hacking masterclass on YouTube a few days ago and decided to give it a shot. I wasn’t expecting much (because… free YouTube course), but it’s actually been surprisingly solid.
+ For context, I’m not a complete beginner in tech, but I had basically zero hands-on experience with ethical hacking before this. I mostly just knew the usual buzzwords like “phishing,” “SQL injection,” etc., without really understanding how they actually work.
+ The course starts pretty basic—networking, how the internet works, Linux fundamentals—which felt slow at first, but now I kinda see why they did that. Once it moved into things like scanning, enumeration, and basic exploitation, those fundamentals started to matter a lot.
+ The most interesting part for me so far has been:
+  
+Actually seeing how attacks are performed step-by-step
+ Learning tools (even simple ones) and understanding what they do, not just running them blindly
+ Realizing how easy some vulnerabilities are if systems aren’t set up properly
+  
+At the same time, it’s not all smooth:
+  
+Some parts feel outdated or rushed
+ You really need to practice alongside (just watching is useless)
+ It can get overwhelming quickly if you don’t take notes
+  
+Also, one thing that surprised me: ethical hacking is way less “hacking movie vibes” and way more patience, research, and trial-and-error. It’s honestly closer to debugging than anything flashy.
+ I’ve only been at it for a short time, but I can already tell this isn’t something you “learn in a week.” It feels more like a long-term skill that builds gradually.
+ If anyone else here started with YouTube for ethical hacking—did it actually work out for you? Or should I eventually switch to platforms like TryHackMe / Hack The Box?
+    submitted by    /u/AbaloneRare3239  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>cybersecurity</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Must your chatbot rat you out?]]></title>
+        <id>https://www.reddit.com/r/artificial/comments/1t0lrh1/must_your_chatbot_rat_you_out/</id>
+        <link href="https://www.reddit.com/r/artificial/comments/1t0lrh1/must_your_chatbot_rat_you_out/"/>
+        <updated>2026-05-01T06:52:35.000Z</updated>
+        <summary type="html"><![CDATA[New court cases may take chatbot conversations another step away from privacy
+ You may recall that court cases have recently held users’ conversations with public “retail” chatbots like the publicly available versions of ChatGPT, Grok, Claude, etc. are not confidential, because the chatbot purveyor can look in on those conversations at will. (I have previously posted about that lack of privacy here.) However, certain private “enterprise” versions or other specially closed-off versions of chatbots may still offer confidentiality to users.
+ Significantly in a time when many users are turning to chatbots as pseudo- or actual therapists, though, a cluster of just-brought federal court cases may have the effect of pushing users’ non-confidentiality even farther, to the point of forcing chatbots…]]></summary>
+        <author>
+            <name>Artificial Intelligence (AI)</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Advice from graduates or industry experts]]></title>
         <id>https://www.reddit.com/r/cybersecurity/comments/1t0lepo/advice_from_graduates_or_industry_experts/</id>

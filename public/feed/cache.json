@@ -587,6 +587,26 @@
       "siteUrl": "https://www.reddit.com/r/artificial/",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/artificial/comments/1t0lz3k/justice_department_intervenes_in_xai_lawsuit/",
+          "author": null,
+          "description": "submitted by    /u/Somethingwittycool  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/artificial/comments/1t0lz3k/justice_department_intervenes_in_xai_lawsuit/",
+          "publishedOn": "2026-05-01T07:04:03.000Z",
+          "wordCount": 28,
+          "title": "Justice Department Intervenes in xAI lawsuit Challenging Colorado’s ‘Algorithmic Discrimination’ Law",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/artificial/comments/1t0lrh1/must_your_chatbot_rat_you_out/",
+          "author": null,
+          "description": "New court cases may take chatbot conversations another step away from privacy\n You may recall that court cases have recently held users’ conversations with public “retail” chatbots like the publicly available versions of ChatGPT, Grok, Claude, etc. are not confidential, because the chatbot purveyor can look in on those conversations at will. (I have previously posted about that lack of privacy here.) However, certain private “enterprise” versions or other specially closed-off versions of chatbots may still offer confidentiality to users.\n Significantly in a time when many users are turning to chatbots as pseudo- or actual therapists, though, a cluster of just-brought federal court cases may have the effect of pushing users’ non-confidentiality even farther, to the point of forcing chatbots…",
+          "link": "https://www.reddit.com/r/artificial/comments/1t0lrh1/must_your_chatbot_rat_you_out/",
+          "publishedOn": "2026-05-01T06:52:35.000Z",
+          "wordCount": 28,
+          "title": "Must your chatbot rat you out?",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/artificial/comments/1t0k8vt/opensourced_a_lattice_osinspired_multisensor/",
           "author": null,
           "description": "Anduril's Lattice OS concept has always fascinated me: a network of cheap heterogeneous sensors fused at the edge into a single AI-driven situational picture. The interesting question is how much of that is actually achievable today on non-classified hardware.\n Answer, at least at small scale: a surprising amount.\n I built OVERWATCH as a community reference implementation of the same idea. Multiple cameras (IP cameras + phones via browser), all feeding into a shared perception pipeline on a $500 Jetson Orin Nano. YOLOv8n TensorRT FP16 for detection, adaptive Kalman for tracking, self-calibrating cross-camera homography for fused world-model predictions.\n The part that surprised me most: the self-calibrating calibration. You don't tell the system anything about where cameras are. It watches for moments when two cameras see the same person simultaneously, records foot-point correspondence pairs, and computes the projective transform between camera coordinate systems on its own via RANSAC. After about 5 seconds of co-visibility it has a usable homography. It self-heals if a camera moves.\n In 2020 this would have required custom hardware, weeks of calibration, and a meaningful compute budget. In 2025 it runs on a dev kit.\n Repo: github.com/mandarwagh9/overwatch\n What other capabilities that were \"enterprise-only\" five years ago are now commoditized? Curious where people see the edge AI ceiling right now.\n    submitted by    /u/Straight_Stable_6095  \n [link]   [comments]",
@@ -1080,6 +1100,16 @@
       "feedUrl": "https://www.reddit.com/r/cybersecurity/.rss",
       "siteUrl": "https://www.reddit.com/r/cybersecurity/",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/cybersecurity/comments/1t0luo5/just_started_a_full_ethical_hacking_course_on/",
+          "author": null,
+          "description": "So I randomly came across a full ethical hacking masterclass on YouTube a few days ago and decided to give it a shot. I wasn’t expecting much (because… free YouTube course), but it’s actually been surprisingly solid.\n For context, I’m not a complete beginner in tech, but I had basically zero hands-on experience with ethical hacking before this. I mostly just knew the usual buzzwords like “phishing,” “SQL injection,” etc., without really understanding how they actually work.\n The course starts pretty basic—networking, how the internet works, Linux fundamentals—which felt slow at first, but now I kinda see why they did that. Once it moved into things like scanning, enumeration, and basic exploitation, those fundamentals started to matter a lot.\n The most interesting part for me so far has been:\n  \nActually seeing how attacks are performed step-by-step\n Learning tools (even simple ones) and understanding what they do, not just running them blindly\n Realizing how easy some vulnerabilities are if systems aren’t set up properly\n  \nAt the same time, it’s not all smooth:\n  \nSome parts feel outdated or rushed\n You really need to practice alongside (just watching is useless)\n It can get overwhelming quickly if you don’t take notes\n  \nAlso, one thing that surprised me: ethical hacking is way less “hacking movie vibes” and way more patience, research, and trial-and-error. It’s honestly closer to debugging than anything flashy.\n I’ve only been at it for a short time, but I can already tell this isn’t something you “learn in a week.” It feels more like a long-term skill that builds gradually.\n If anyone else here started with YouTube for ethical hacking—did it actually work out for you? Or should I eventually switch to platforms like TryHackMe / Hack The Box?\n    submitted by    /u/AbaloneRare3239  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/cybersecurity/comments/1t0luo5/just_started_a_full_ethical_hacking_course_on/",
+          "publishedOn": "2026-05-01T06:57:35.000Z",
+          "wordCount": 28,
+          "title": "Just started a full Ethical Hacking course on YouTube… here’s my honest experience so far",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/cybersecurity/comments/1t0lepo/advice_from_graduates_or_industry_experts/",
           "author": null,
