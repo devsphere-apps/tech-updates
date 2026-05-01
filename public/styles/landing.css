@@ -40,10 +40,6 @@
 }
 
 .hero-headline-accent {
-  font-family: var(--font-body);
-  font-weight: var(--weight-medium);
-  font-style: normal;
-  letter-spacing: var(--tracking-wide);
   color: #c41515;
   text-shadow: 0 0 1px rgba(196, 21, 21, 0.35);
   background: linear-gradient(
@@ -56,6 +52,21 @@
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
   padding-inline: 0.04em;
+}
+
+.hero-headline-accent--day {
+  font-family: var(--font-hero-accent-day);
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: -0.03em;
+  font-optical-sizing: auto;
+}
+
+.hero-headline-accent--time {
+  font-family: var(--font-hero-accent-time);
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.04em;
 }
 
 html[data-theme="dark"] .hero-headline-accent {

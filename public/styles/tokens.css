@@ -3,6 +3,9 @@
 :root {
   --font-display: "DM Serif Display", Georgia, serif;
   --font-body: "DM Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  /* Landing hero accents (loaded on homepage only) */
+  --font-hero-accent-day: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-hero-accent-time: "Outfit", "DM Sans", -apple-system, system-ui, sans-serif;
   --font-mono: "SF Mono", "Fira Code", ui-monospace, monospace;
 
   --text-xs: 11px;
