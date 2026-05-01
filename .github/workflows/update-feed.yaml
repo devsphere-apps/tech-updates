@@ -5,9 +5,6 @@ on:
     branches:
       - main
   schedule:
-    # Adjust refresh schedule here. By default, it runs once per day.
-    # Syntax reference: https://docs.github.com/en/actions/reference/events-that-trigger-workflows#schedule
-    # Recommended tool: https://crontab.guru/
     - cron: "0 0 * * *"
 
 jobs:
@@ -15,17 +12,29 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v2.1.4
+      # ✅ Checkout latest code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # ✅ Setup Node
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: "16"
+          node-version: "18"
+
+      # ✅ Install deps
       - name: Install dependencies
-        run: npm i
+        run: npm install
+
+      # ✅ Build your site
       - name: Build the feed
         run: npm run build
+
+      # 🔥 DEPLOY (FIXED + CLEAN DEPLOY)
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+          publish_branch: gh-pages
+          force_orphan: true

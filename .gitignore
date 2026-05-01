@@ -3,3 +3,4 @@ package-lock.json
 .build-landing-index.html
 .build-osmosfeed-cache.json
 .build-public-seo-stash
+.DS_Store
