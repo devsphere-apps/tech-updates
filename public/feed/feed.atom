@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://devsphere-apps.github.io/tech-updates/feed/index.html</id>
     <title>osmos::feed</title>
-    <updated>2026-05-01T08:10:35.713Z</updated>
+    <updated>2026-05-01T08:23:38.894Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://devsphere-apps.github.io/tech-updates/feed/index.html"/>
     <link rel="self" href="https://devsphere-apps.github.io/tech-updates/feed/feed.atom"/>
@@ -190,6 +190,19 @@ Points: 23
  [link]   [comments]]]></summary>
         <author>
             <name>cybersecurity</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[If I Could Make My Own GitHub]]></title>
+        <id>https://news.ycombinator.com/item?id=47971771</id>
+        <link href="https://matduggan.com/if-i-could-make-my-own-github/"/>
+        <updated>2026-05-01T06:21:01.000Z</updated>
+        <summary type="html"><![CDATA[Article URL: https://matduggan.com/if-i-could-make-my-own-github/
+Comments URL: https://news.ycombinator.com/item?id=47971771
+Points: 3
+# Comments: 0]]></summary>
+        <author>
+            <name>vinhnx</name>
         </author>
     </entry>
     <entry>

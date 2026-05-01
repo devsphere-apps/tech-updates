@@ -20,6 +20,7 @@ const landingSrc = path.join(root, "landing", "index.html");
 const landingStash = path.join(root, ".build-landing-index.html");
 const cacheStash = path.join(root, ".build-osmosfeed-cache.json");
 const seoStashDir = path.join(root, ".build-public-seo-stash");
+const assetsStashDir = path.join(root, ".build-public-assets-stash");
 
 function runOsmosfeed() {
   const result = spawnSync("npx", ["osmosfeed", "build"], {
@@ -75,6 +76,12 @@ async function main() {
     }
   }
 
+  const publicAssets = path.join(publicDir, "assets");
+  await fs.remove(assetsStashDir).catch(() => {});
+  if (await fs.pathExists(publicAssets)) {
+    await fs.copy(publicAssets, assetsStashDir, { overwrite: true });
+  }
+
   let buildFailed = false;
 
   try {
@@ -112,6 +119,11 @@ async function main() {
           { overwrite: true },
         );
       }
+    }
+    if (await fs.pathExists(assetsStashDir)) {
+      await fs.copy(assetsStashDir, path.join(publicDir, "assets"), {
+        overwrite: true,
+      });
     }
     await fs.ensureDir(feedDir);
   }

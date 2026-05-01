@@ -123,6 +123,16 @@
           "imageUrl": "https://yadin.com/notes/wp-content/uploads/2026/05/Lucky_Strike_ad_1926-10-wide-1024x576.jpg"
         },
         {
+          "id": "https://news.ycombinator.com/item?id=47971771",
+          "author": "vinhnx",
+          "description": "Article URL: https://matduggan.com/if-i-could-make-my-own-github/\nComments URL: https://news.ycombinator.com/item?id=47971771\nPoints: 3\n# Comments: 0",
+          "link": "https://matduggan.com/if-i-could-make-my-own-github/",
+          "publishedOn": "2026-05-01T06:21:01.000Z",
+          "wordCount": 1864,
+          "title": "If I Could Make My Own GitHub",
+          "imageUrl": null
+        },
+        {
           "id": "https://news.ycombinator.com/item?id=47971768",
           "author": "tosh",
           "description": "Article URL: https://www.macrumors.com/2026/04/30/mac-studio-mac-mini-constrained-months/\nComments URL: https://news.ycombinator.com/item?id=47971768\nPoints: 9\n# Comments: 0",
@@ -622,7 +632,7 @@
           "description": "Zoom have just launched their Claude Connector bringing a whole host of data & information into your Claude workspace.\n As a Claude Cowork user, I took it for a test drive to understand where it could be utilised. There is so much data from meetings, chats, whiteboards etc. It helped identify areas where I can present better & run customer workshops more successfully!\n https://youtu.be/17gn-_2gbSY\n    submitted by    /u/Southern-Neat9536  \n [link]   [comments]",
           "link": "https://www.reddit.com/r/artificial/comments/1t0n4bc/zoom_claude_connector/",
           "publishedOn": "2026-05-01T08:10:04.000Z",
-          "wordCount": 28,
+          "wordCount": null,
           "title": "Zoom + Claude Connector",
           "imageUrl": null
         },
