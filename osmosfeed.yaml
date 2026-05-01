@@ -1,4 +1,6 @@
-cacheUrl: https://devsphere-apps.github.io/tech-updates/cache.json
+# Osmosfeed writes to ./public first; npm run build moves artifacts to ./public/feed/.
+# cacheUrl must match the deployed cache.json location (GitHub Pages).
+cacheUrl: https://devsphere-apps.github.io/tech-updates/feed/cache.json
 
 sources:
   # 🌍 General Tech

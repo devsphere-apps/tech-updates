@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tech-updates — AI & Cybersecurity News</title>
+    <meta
+      name="description"
+      content="Curated AI and cybersecurity news without the noise. Scan sources, filter signal, get the updates that matter."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              sand: {
+                DEFAULT: "#f5f1ea",
+                dark: "#ebe4d8",
+                ink: "#1c1917",
+                muted: "#57534e",
+              },
+            },
+            fontFamily: {
+              sans: ['"DM Sans"', "system-ui", "sans-serif"],
+              display: ['"Fraunces"', "Georgia", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="min-h-screen bg-[#f5f1ea] font-sans text-stone-900 antialiased">
+    <!-- Navbar -->
+    <header
+      class="sticky top-0 z-50 border-b border-stone-200/60 bg-[#f5f1ea]/90 backdrop-blur-md"
+    >
+      <nav class="mx-auto flex max-w-5xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+        <a href="./" class="font-display text-lg font-semibold tracking-tight text-stone-900">
+          tech-updates
+        </a>
+        <a
+          href="feed/"
+          class="rounded-full bg-stone-900 px-4 py-2 text-sm font-medium text-[#f5f1ea] transition hover:bg-stone-800"
+        >
+          View Feed
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="mx-auto max-w-5xl px-4 pt-14 pb-16 text-center sm:px-6 sm:pt-20 sm:pb-20 lg:px-8">
+        <p
+          class="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-stone-500 sm:text-sm"
+        >
+          Curated for builders & security teams
+        </p>
+        <h1
+          class="font-display mx-auto max-w-3xl text-4xl font-bold leading-tight tracking-tight text-stone-900 sm:text-5xl lg:text-6xl"
+        >
+          AI & Cybersecurity News, Simplified.
+        </h1>
+        <p
+          class="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-stone-600 sm:text-xl"
+        >
+          We scan trusted sources so you don’t have to. Get a focused stream of what’s
+          changing in AI, security, and startups—without doomscrolling or vendor fluff.
+        </p>
+        <div
+          class="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4"
+        >
+          <a
+            href="feed/"
+            class="inline-flex w-full items-center justify-center rounded-full bg-stone-900 px-8 py-3.5 text-sm font-semibold text-[#f5f1ea] shadow-sm transition hover:bg-stone-800 sm:w-auto"
+          >
+            Explore News
+          </a>
+          <a
+            href="#how-it-works"
+            class="inline-flex w-full items-center justify-center rounded-full border border-stone-300 bg-white/50 px-8 py-3.5 text-sm font-semibold text-stone-800 transition hover:border-stone-400 hover:bg-white/80 sm:w-auto"
+          >
+            How it works
+          </a>
+        </div>
+      </section>
+
+      <!-- How it works -->
+      <section
+        id="how-it-works"
+        class="border-t border-stone-200/70 bg-white/40 py-16 sm:py-20"
+      >
+        <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <div class="text-center">
+            <h2 class="font-display text-3xl font-bold tracking-tight text-stone-900 sm:text-4xl">
+              How it works
+            </h2>
+            <p class="mx-auto mt-3 max-w-xl text-stone-600">
+              Three steps from raw headlines to a feed you can actually use.
+            </p>
+          </div>
+          <ol
+            class="mt-12 grid gap-8 sm:grid-cols-3 sm:gap-6"
+          >
+            <li
+              class="relative rounded-2xl border border-stone-200/80 bg-[#f5f1ea]/60 p-6 text-center shadow-sm"
+            >
+              <span
+                class="font-display mb-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-stone-900 text-sm font-bold text-[#f5f1ea]"
+                >1</span
+              >
+              <h3 class="font-display text-lg font-semibold text-stone-900">
+                Scan sources
+              </h3>
+              <p class="mt-2 text-sm leading-relaxed text-stone-600">
+                We monitor reliable outlets, research, and industry moves so coverage stays
+                broad but grounded.
+              </p>
+            </li>
+            <li
+              class="relative rounded-2xl border border-stone-200/80 bg-[#f5f1ea]/60 p-6 text-center shadow-sm"
+            >
+              <span
+                class="font-display mb-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-stone-900 text-sm font-bold text-[#f5f1ea]"
+                >2</span
+              >
+              <h3 class="font-display text-lg font-semibold text-stone-900">
+                Filter signal
+              </h3>
+              <p class="mt-2 text-sm leading-relaxed text-stone-600">
+                Noise and repeats get cut. What’s left is the story, the risk, or the product
+                shift worth knowing.
+              </p>
+            </li>
+            <li
+              class="relative rounded-2xl border border-stone-200/80 bg-[#f5f1ea]/60 p-6 text-center shadow-sm"
+            >
+              <span
+                class="font-display mb-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-stone-900 text-sm font-bold text-[#f5f1ea]"
+                >3</span
+              >
+              <h3 class="font-display text-lg font-semibold text-stone-900">
+                Show updates
+              </h3>
+              <p class="mt-2 text-sm leading-relaxed text-stone-600">
+                Your feed stays scannable: headlines, context, and categories you care about
+                in one place.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Categories -->
+      <section class="mx-auto max-w-5xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+        <div class="text-center">
+          <h2 class="font-display text-3xl font-bold tracking-tight text-stone-900 sm:text-4xl">
+            Categories
+          </h2>
+          <p class="mx-auto mt-3 max-w-xl text-stone-600">
+            Pick your lane—we keep each stream tight and relevant.
+          </p>
+        </div>
+        <div class="mt-12 grid gap-6 sm:grid-cols-3">
+          <article
+            class="group rounded-2xl border border-stone-200/80 bg-white/60 p-8 text-center shadow-sm transition hover:border-stone-300 hover:shadow-md"
+          >
+            <div
+              class="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-stone-900/5 text-2xl"
+              aria-hidden="true"
+            >
+              ✦
+            </div>
+            <h3 class="font-display text-xl font-semibold text-stone-900">AI</h3>
+            <p class="mt-2 text-sm leading-relaxed text-stone-600">
+              Models, regulation, tooling, and research that change how teams ship.
+            </p>
+          </article>
+          <article
+            class="group rounded-2xl border border-stone-200/80 bg-white/60 p-8 text-center shadow-sm transition hover:border-stone-300 hover:shadow-md"
+          >
+            <div
+              class="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-stone-900/5 text-2xl"
+              aria-hidden="true"
+            >
+              ◆
+            </div>
+            <h3 class="font-display text-xl font-semibold text-stone-900">Cybersecurity</h3>
+            <p class="mt-2 text-sm leading-relaxed text-stone-600">
+              Incidents, patches, and defensive practices—summarized, not sensationalized.
+            </p>
+          </article>
+          <article
+            class="group rounded-2xl border border-stone-200/80 bg-white/60 p-8 text-center shadow-sm transition hover:border-stone-300 hover:shadow-md"
+          >
+            <div
+              class="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-stone-900/5 text-2xl"
+              aria-hidden="true"
+            >
+              ↗
+            </div>
+            <h3 class="font-display text-xl font-semibold text-stone-900">Startups</h3>
+            <p class="mt-2 text-sm leading-relaxed text-stone-600">
+              Funding, product launches, and market moves from the builder ecosystem.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Final CTA -->
+      <section class="border-t border-stone-200/70 bg-white/40 py-16 sm:py-24">
+        <div
+          class="mx-auto max-w-3xl rounded-3xl border border-stone-200/80 bg-[#f5f1ea] px-6 py-12 text-center shadow-sm sm:px-12"
+        >
+          <h2 class="font-display text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">
+            Stay ahead without the overload
+          </h2>
+          <p class="mx-auto mt-4 max-w-lg text-stone-600">
+            Open the feed and scan today’s signal in minutes—not hours.
+          </p>
+          <a
+            href="feed/"
+            class="mt-8 inline-flex items-center justify-center rounded-full bg-stone-900 px-8 py-3.5 text-sm font-semibold text-[#f5f1ea] transition hover:bg-stone-800"
+          >
+            Go to feed
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-stone-200/60 py-8 text-center">
+      <p class="text-sm text-stone-500">
+        <span class="font-display font-semibold text-stone-700">tech-updates</span>
+        · Curated tech news
+      </p>
+    </footer>
+  </body>
+</html>
