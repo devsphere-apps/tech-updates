@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agentic AI Engineer — Daily Feed</title>
+    <meta
+      name="description"
+      content="Jobs, courses, tools and news for Agentic AI Engineers"
+    />
+    <meta name="theme-color" content="#F7F4EF" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&family=DM+Serif+Display:ital@0;1&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&family=Outfit:wght@600;700&display=optional"
+      as="style"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&family=DM+Serif+Display:ital@0;1&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&family=Outfit:wght@600;700&display=optional"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/tokens.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/components.css" />
+    <link rel="stylesheet" href="styles/landing.css" />
+    <script src="scripts/theme.js"></script>
+  </head>
+  <body class="landing-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="nav" id="main-nav">
+      <div class="nav-inner">
+        <a href="./" class="nav-logo">Tech-updates</a>
+        <div class="nav-actions">
+          <button
+            type="button"
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Toggle light or dark theme"
+          >
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+            <svg class="icon-sun" style="display: none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+            </svg>
+          </button>
+          <a href="feed/" class="btn btn-primary btn-sm">View Feed</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="hero-inner">
+          <p class="hero-eyebrow">AI &amp; Cybersecurity News — Simplified.</p>
+          <h1 class="hero-headline">
+            Before you <span class="hero-headline-accent hero-headline-accent--day">start your day</span>, spend
+            <span class="hero-headline-accent hero-headline-accent--time">15 minutes</span> here.
+          </h1>
+          <p class="hero-body">
+            We filter AI &amp; cybersecurity news so you only see what matters.<br />
+            Less noise. More signal.
+          </p>
+          <div class="hero-ctas">
+            <a href="feed/" class="btn btn-primary">Explore News</a>
+            <a href="#how-it-works" class="btn btn-ghost">How it works</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="ticker-section" aria-label="Latest headlines">
+        <div class="ticker-wrap">
+          <div class="ticker-track" id="ticker-track">
+            <a href="feed/" class="ticker-item"
+              ><span class="tag tag-ai">AI</span>Zoom launches Claude Connector for workspace data</a
+            >
+            <a href="feed/" class="ticker-item"
+              ><span class="tag tag-cyber">Cybersecurity</span>AI finds 38 flaws in health record platform</a
+            >
+            <a href="feed/" class="ticker-item"
+              ><span class="tag tag-hn">HN</span>cPanel &amp; WHM Auth Bypass — CVE-2026-41940</a
+            >
+            <a href="feed/" class="ticker-item"
+              ><span class="tag tag-ml">ML</span>Hackable ML compiler in 5,000 lines of Python</a
+            >
+            <a href="feed/" class="ticker-item"
+              ><span class="tag tag-cyber">Cybersecurity</span>CISA orders feds to patch Windows zero-day</a
+            >
+            <a href="feed/" class="ticker-item"
+              ><span class="tag tag-ai">AI</span>Mark Zuckerberg: AI costs contributed to 8,000 layoffs</a
+            >
+            <a href="feed/" class="ticker-item"
+              ><span class="tag tag-ai">AI</span>Zoom launches Claude Connector for workspace data</a
+            >
+            <a href="feed/" class="ticker-item"
+              ><span class="tag tag-cyber">Cybersecurity</span>AI finds 38 flaws in health record platform</a
+            >
+            <a href="feed/" class="ticker-item"
+              ><span class="tag tag-hn">HN</span>cPanel &amp; WHM Auth Bypass — CVE-2026-41940</a
+            >
+            <a href="feed/" class="ticker-item"
+              ><span class="tag tag-ml">ML</span>Hackable ML compiler in 5,000 lines of Python</a
+            >
+            <a href="feed/" class="ticker-item"
+              ><span class="tag tag-cyber">Cybersecurity</span>CISA orders feds to patch Windows zero-day</a
+            >
+            <a href="feed/" class="ticker-item"
+              ><span class="tag tag-ai">AI</span>Mark Zuckerberg: AI costs contributed to 8,000 layoffs</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="categories-section">
+        <h2 class="section-heading">Categories</h2>
+        <p class="section-subheading">Pick your lane—we keep each stream tight and relevant.</p>
+        <div class="categories-grid">
+          <article class="category-card category-card--ai">
+            <div class="category-icon" aria-hidden="true">✦</div>
+            <h3 class="category-name">AI</h3>
+            <p class="category-desc">
+              Models, regulation, tooling, and research that change how teams ship.
+            </p>
+          </article>
+          <article class="category-card category-card--cyber">
+            <div class="category-icon" aria-hidden="true">◆</div>
+            <h3 class="category-name">Cybersecurity</h3>
+            <p class="category-desc">
+              Incidents, patches, and defensive practices—summarized, not sensationalized.
+            </p>
+          </article>
+          <article class="category-card category-card--startups">
+            <div class="category-icon" aria-hidden="true">↗</div>
+            <h3 class="category-name">Startups</h3>
+            <p class="category-desc">
+              Funding, product launches, and market moves from the builder ecosystem.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="spotlight-section" aria-labelledby="spotlight-title">
+        <div class="spotlight-inner">
+          <h2 class="spotlight-title" id="spotlight-title">Latest signal</h2>
+          <p class="spotlight-subtitle">Updated continuously from trusted sources</p>
+          <div class="spotlight-grid" id="spotlight-grid">
+            <a href="feed/" class="spotlight-card">
+              <div class="spotlight-card-title">
+                Open the feed for the newest AI stories — this card updates when cache loads.
+              </div>
+              <div class="spotlight-card-source">Artificial Intelligence (AI)</div>
+            </a>
+            <a href="feed/" class="spotlight-card">
+              <div class="spotlight-card-title">
+                Security research and incident roundups from netsec and cybersecurity feeds.
+              </div>
+              <div class="spotlight-card-source">cybersecurity</div>
+            </a>
+            <a href="feed/" class="spotlight-card">
+              <div class="spotlight-card-title">
+                Papers, tools, and ML discussion from r/MachineLearning and friends.
+              </div>
+              <div class="spotlight-card-source">Machine Learning</div>
+            </a>
+          </div>
+          <a href="feed/" class="btn btn-ghost" style="margin-top: var(--space-8)">See full feed →</a>
+        </div>
+      </section>
+
+      <section class="discovery-section" id="discovery">
+        <div class="discovery-inner">
+          <div class="discovery-header">
+            <h2 class="section-heading">Discover more signal</h2>
+            <p class="section-subheading">Beyond the headlines — tools and tricks that actually move the needle.</p>
+          </div>
+
+          <div class="discovery-grid">
+            <div class="discovery-column">
+              <div class="discovery-column-header">
+                <span class="tag tag-tips">Tips &amp; Tricks</span>
+                <h3 class="discovery-column-title">Coding &amp; tech, simplified</h3>
+                <p class="discovery-column-desc">
+                  Practical techniques from developers, engineers, and builders — condensed into things you can actually use today.
+                </p>
+              </div>
+
+              <div class="discovery-feed">
+                <a href="feed/#tips" class="discovery-card" data-category="tips">
+                  <div class="discovery-card-meta">
+                    <span class="tag tag-tips">Tips &amp; Tricks</span>
+                    <span class="card-time">2h ago</span>
+                  </div>
+                  <div class="discovery-card-title">Stop writing useEffect for data fetching — here's the pattern that actually scales</div>
+                </a>
+
+                <a href="feed/#tips" class="discovery-card" data-category="tips">
+                  <div class="discovery-card-meta">
+                    <span class="tag tag-tips">Tips &amp; Tricks</span>
+                    <span class="card-time">5h ago</span>
+                  </div>
+                  <div class="discovery-card-title">Git aliases that save 30 minutes every day — a senior dev's dotfile secrets</div>
+                </a>
+
+                <a href="feed/#tips" class="discovery-card" data-category="tips">
+                  <div class="discovery-card-meta">
+                    <span class="tag tag-tips">Tips &amp; Tricks</span>
+                    <span class="card-time">8h ago</span>
+                  </div>
+                  <div class="discovery-card-title">Terminal tricks most developers don't know exist (but should)</div>
+                </a>
+
+                <a href="feed/#tips" class="discovery-card" data-category="tips">
+                  <div class="discovery-card-meta">
+                    <span class="tag tag-tips">Tips &amp; Tricks</span>
+                    <span class="card-time">1d ago</span>
+                  </div>
+                  <div class="discovery-card-title">How to read a CVE report like a security engineer — a practical guide</div>
+                </a>
+              </div>
+
+              <a href="feed/" class="discovery-see-more">See all tips &amp; tricks →</a>
+            </div>
+
+            <div class="discovery-column">
+              <div class="discovery-column-header">
+                <span class="tag tag-aitools">Free AI Tools</span>
+                <h3 class="discovery-column-title">What's actually free &amp; useful</h3>
+                <p class="discovery-column-desc">
+                  The latest free AI tools worth knowing. We filter out the hype — only tools with real use cases make the list.
+                </p>
+              </div>
+
+              <div class="discovery-feed">
+                <a href="feed/#aitools" class="discovery-card" data-category="aitools">
+                  <div class="discovery-card-meta">
+                    <span class="tag tag-aitools">Free AI Tool</span>
+                    <span class="card-time">1h ago</span>
+                  </div>
+                  <div class="discovery-card-title">Fabric — open-source AI framework to augment humans using a set of Markdown-based prompts</div>
+                  <div class="discovery-card-url">github.com/danielmiessler/fabric</div>
+                </a>
+
+                <a href="feed/#aitools" class="discovery-card" data-category="aitools">
+                  <div class="discovery-card-meta">
+                    <span class="tag tag-aitools">Free AI Tool</span>
+                    <span class="card-time">3h ago</span>
+                  </div>
+                  <div class="discovery-card-title">Msty — run LLMs locally, free, with a beautiful native UI. No cloud required.</div>
+                  <div class="discovery-card-url">msty.app</div>
+                </a>
+
+                <a href="feed/#aitools" class="discovery-card" data-category="aitools">
+                  <div class="discovery-card-meta">
+                    <span class="tag tag-aitools">Free AI Tool</span>
+                    <span class="card-time">6h ago</span>
+                  </div>
+                  <div class="discovery-card-title">OpenHands — open-source AI software developer that can write code, fix bugs, run tests</div>
+                  <div class="discovery-card-url">github.com/All-Hands-AI/OpenHands</div>
+                </a>
+
+                <a href="feed/#aitools" class="discovery-card" data-category="aitools">
+                  <div class="discovery-card-meta">
+                    <span class="tag tag-aitools">Free AI Tool</span>
+                    <span class="card-time">12h ago</span>
+                  </div>
+                  <div class="discovery-card-title">Lobe Chat — free, open-source ChatGPT/Claude UI that supports every major model provider</div>
+                  <div class="discovery-card-url">github.com/lobehub/lobe-chat</div>
+                </a>
+              </div>
+
+              <a href="feed/" class="discovery-see-more">See all free AI tools →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="how-it-works" id="how-it-works">
+        <h2 class="section-heading">How it works</h2>
+        <p class="section-subheading">
+          Three steps from raw headlines to a feed you can actually use.
+        </p>
+        <ol class="steps-grid">
+          <li class="step-card">
+            <span class="step-number">1</span>
+            <h3 class="step-title">Scan sources</h3>
+            <p class="step-body">
+              We monitor reliable outlets, research, and industry moves so coverage stays
+              broad but grounded.
+            </p>
+          </li>
+          <li class="step-card">
+            <span class="step-number">2</span>
+            <h3 class="step-title">Filter signal</h3>
+            <p class="step-body">
+              Noise and repeats get cut. What’s left is the story, the risk, or the product
+              shift worth knowing.
+            </p>
+          </li>
+          <li class="step-card">
+            <span class="step-number">3</span>
+            <h3 class="step-title">Show updates</h3>
+            <p class="step-body">
+              Your feed stays scannable: headlines, context, and categories you care about
+              in one place.
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="cta-section">
+        <div class="cta-inner">
+          <h2 class="cta-title">Stay ahead without the overload</h2>
+          <p class="cta-body">Open the feed and scan today’s signal in minutes — not hours.</p>
+          <a href="feed/" class="btn btn-primary">Go to feed</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="landing-footer">
+      <div class="landing-footer-inner">
+        <a href="./" class="nav-logo">Tech-updates</a>
+        <span style="font-size: var(--text-xs); color: var(--color-text-muted)">Curated tech news</span>
+      </div>
+    </footer>
+
+    <script src="scripts/landing.js" defer></script>
+  </body>
+</html>
