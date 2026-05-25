@@ -50,6 +50,11 @@
       tagClass: "tag-ai",
       label: "Berkeley AI",
     },
+    Remotive: {
+      category: "jobs",
+      tagClass: "tag-ai",
+      label: "Remote Jobs",
+    },
   };
 
   var HF_RAG_PATTERN =
