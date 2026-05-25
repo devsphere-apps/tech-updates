@@ -1,34 +1,34 @@
 (function () {
   var SOURCE_MAP = {
-    "Artificial Intelligence (AI)": {
-      category: "ai",
+    "LangChain Blog": {
+      category: "langchain",
       tagClass: "tag-ai",
-      label: "Artificial Intelligence",
+      label: "LangChain",
     },
-    cybersecurity: {
-      category: "cybersecurity",
-      tagClass: "tag-cyber",
-      label: "Cybersecurity",
+    "Hugging Face - Blog": {
+      category: "models",
+      tagClass: "tag-ai",
+      label: "HuggingFace",
     },
-    "Machine Learning": {
-      category: "ml",
-      tagClass: "tag-ml",
-      label: "Machine Learning",
+    "DeepLearning.AI — The Batch": {
+      category: "courses",
+      tagClass: "tag-ai",
+      label: "DeepLearning.AI",
     },
-    "Hacker News: Front Page": {
-      category: "hn",
-      tagClass: "tag-hn",
-      label: "Hacker News",
+    "Simon Willison's Weblog": {
+      category: "agents",
+      tagClass: "tag-ai",
+      label: "AI Engineering",
     },
-    "Technical Information Security Content & Discussion": {
-      category: "netsec",
-      tagClass: "tag-netsec",
-      label: "Security Research",
+    "Anthropic Blog": {
+      category: "models",
+      tagClass: "tag-ai",
+      label: "Anthropic",
     },
-    "The GitHub Blog": {
-      category: "gh",
-      tagClass: "tag-gh",
-      label: "GitHub",
+    "OpenAI Blog": {
+      category: "models",
+      tagClass: "tag-ai",
+      label: "OpenAI",
     },
   };
 
