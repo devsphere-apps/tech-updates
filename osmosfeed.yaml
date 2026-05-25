@@ -11,5 +11,12 @@ sources:
   # HuggingFace — Models, agents, research
   - href: https://huggingface.co/blog/feed.xml
 
-  # Simon Willison — AI engineering, agents, tools
-  - href: https://simonwillison.net/atom/everything/
+  # Agentic AI newsletters & engineering
+  - href: https://www.newsletter.swirlai.com/feed
+
+  - href: https://aitidbits.substack.com/feed
+
+  - href: https://www.latent.space/feed
+
+  # RAG & research
+  - href: https://bair.berkeley.edu/blog/feed.xml

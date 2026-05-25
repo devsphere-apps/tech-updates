@@ -15,36 +15,76 @@
       tagClass: "tag-ai",
       label: "DeepLearning.AI",
     },
-    "Simon Willison's Weblog": {
+    "SwirlAI Newsletter": {
       category: "agents",
+      tagClass: "tag-ai",
+      label: "Agentic AI",
+    },
+    "Swirl AI": {
+      category: "agents",
+      tagClass: "tag-ai",
+      label: "Agentic AI",
+    },
+    "Latent.Space": {
+      category: "agents",
+      tagClass: "tag-ai",
+      label: "Latent Space",
+    },
+    "Latent Space": {
+      category: "agents",
+      tagClass: "tag-ai",
+      label: "Latent Space",
+    },
+    "AI Tidbits": {
+      category: "rag",
       tagClass: "tag-ai",
       label: "AI Engineering",
     },
-    "Anthropic Blog": {
-      category: "models",
+    "The Berkeley Artificial Intelligence Research Blog": {
+      category: "rag",
       tagClass: "tag-ai",
-      label: "Anthropic",
+      label: "Berkeley AI",
     },
-    "OpenAI Blog": {
-      category: "models",
+    "BAIR Blog": {
+      category: "rag",
       tagClass: "tag-ai",
-      label: "OpenAI",
+      label: "Berkeley AI",
     },
   };
+
+  var HF_RAG_PATTERN =
+    /\b(rag|retrieval|embedding|embeddings|vector|semantic search|rerank|reranking|knowledge base|chunking|indexing)\b/i;
+
+  function resolveCategory(card, raw, meta) {
+    if (raw === "Hugging Face - Blog") {
+      var titleEl = card.querySelector(".card-title");
+      var previewEl = card.querySelector(".card-preview");
+      var text = [
+        titleEl ? titleEl.textContent : "",
+        previewEl ? previewEl.textContent : "",
+      ].join(" ");
+      if (HF_RAG_PATTERN.test(text)) {
+        return "rag";
+      }
+    }
+    return meta ? meta.category : "other";
+  }
 
   function applyCategoryTags() {
     document.querySelectorAll(".feed-card[data-source-title]").forEach(function (card) {
       var raw = card.getAttribute("data-source-title");
       var meta = SOURCE_MAP[raw];
-      if (!meta) {
-        card.setAttribute("data-category", "other");
-      } else {
-        card.setAttribute("data-category", meta.category);
-      }
+      var category = resolveCategory(card, raw, meta);
+      card.setAttribute("data-category", category);
+
       var tagEl = card.querySelector(".js-source-tag");
       if (!tagEl) return;
       if (meta) {
-        tagEl.textContent = meta.label;
+        var label = meta.label;
+        if (raw === "Hugging Face - Blog" && category === "rag") {
+          label = "RAG";
+        }
+        tagEl.textContent = label;
         tagEl.className = "tag js-source-tag " + meta.tagClass;
       } else {
         tagEl.textContent = raw || "News";
