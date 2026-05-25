@@ -2,10 +2,938 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://devsphere-apps.github.io/tech-updates/feed/index.html</id>
     <title>Agentic AI Engineer — Daily Feed</title>
-    <updated>2026-05-16T21:38:35.311Z</updated>
+    <updated>2026-05-25T10:16:29.009Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://devsphere-apps.github.io/tech-updates/feed/index.html"/>
     <link rel="self" href="https://devsphere-apps.github.io/tech-updates/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[datasette 1.0a30]]></title>
+        <id>https://simonwillison.net/2026/May/24/datasette/#atom-everything</id>
+        <link href="https://simonwillison.net/2026/May/24/datasette/#atom-everything"/>
+        <updated>2026-05-24T23:52:37.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong>Release:</strong> <a href="https://github.com/simonw/datasette/releases/tag/1.0a30">datasette 1.0a30</a></p>
+        <p>The big new feature in this alpha is a new customizable "Jump to..." menu, described in detail in <a href="https://datasette.io/blog/2026/jump-menu/">The extensible "Jump to" menu in Datasette 1.0a30</a> on the Datasette blog. You can try it out by hitting <code>/</code> on <a href="https://latest.datasette.io/">latest.datasette.io</a> - it looks like this:</p>
+<p><img alt="Animated demo - the Jump to menu appears, and as the user types it filters to specific databases and tables and debug options" src="https://static.simonwillison.net/static/2026/menu.gif" /></p>
+<p>The new <a href="https://docs.datasette.io/en/latest/plugin_hooks.html#jump-items-sql-datasette-actor-request">jump_items_sql()</a> plugin hook allows plugins to add their own items to the set that's searched by the plugin.</p>
+    
+    
+        <p>Tags: <a href="https://simonwillison.net/tags/projects">projects</a>, <a href="https://simonwillison.net/tags/datasette">datasette</a>, <a href="https://simonwillison.net/tags/annotated-release-notes">annotated-release-notes</a></p>]]></summary>
+        <author>
+            <name>Simon Willison's Weblog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[datasette-agent 0.1a4]]></title>
+        <id>https://simonwillison.net/2026/May/24/datasette-agent/#atom-everything</id>
+        <link href="https://simonwillison.net/2026/May/24/datasette-agent/#atom-everything"/>
+        <updated>2026-05-24T23:19:34.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong>Release:</strong> <a href="https://github.com/datasette/datasette-agent/releases/tag/0.1a4">datasette-agent 0.1a4</a></p>
+        <p>Taking advantage of the new <a href="https://docs.datasette.io/en/latest/javascript_plugins.html#javascript-plugins-makejumpsections">makeJumpSections()</a> JavaScript plugin hook added in <a href="https://docs.datasette.io/en/latest/changelog.html#a30-2026-05-24">Datasette 1.0a30</a>, <code>datasette-agent</code> now presents this "Start a new agent chat" interface as part of the Jump to menu, any time you hit <code>/</code>:</p>
+<p><img alt="Animated demo - this time the demo starts on agent.datasette.io and when the menu opens it has a new Start chat box below the search box - entering 'count entries' and hitting the button causes it to start an agent conversation that counts the number of entries and returns 3300." src="https://static.simonwillison.net/static/2026/menu-agent.gif" /></p>
+<p>You can try this out by signing into <a href="https://agent.datasette.io/">agent.datasette.io</a> using your GitHub account.</p>
+    
+    
+        <p>Tags: <a href="https://simonwillison.net/tags/datasette">datasette</a>, <a href="https://simonwillison.net/tags/datasette-agent">datasette-agent</a></p>]]></summary>
+        <author>
+            <name>Simon Willison's Weblog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[datasette-fixtures 0.1a0]]></title>
+        <id>https://simonwillison.net/2026/May/24/datasette-fixtures/#atom-everything</id>
+        <link href="https://simonwillison.net/2026/May/24/datasette-fixtures/#atom-everything"/>
+        <updated>2026-05-24T21:38:32.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong>Release:</strong> <a href="https://github.com/datasette/datasette-fixtures/releases/tag/0.1a0">datasette-fixtures 0.1a0</a></p>
+        <p>One of the smaller features in <a href="https://docs.datasette.io/en/latest/changelog.html#a30-2026-05-24">Datasette 1.0a30</a> is this:</p>
+<blockquote>
+<p>New documented <a href="https://docs.datasette.io/en/latest/testing_plugins.html#datasette-fixtures-populate-fixture-database">datasette.fixtures.populate_fixture_database(conn)</a> helper for creating the fixture database tables used by Datasette's own tests, intended for plugin test suites.</p>
+</blockquote>
+<p>This new plugin takes advantage of that API. You can try it out using <code>uvx</code> without even installing Datasette like this:</p>
+<pre>uvx --prerelease=allow \
+  --with datasette-fixtures datasette \
+  --get /fixtures/roadside_attractions.json</pre>
+<p>Which outputs:</p>
+<pre>{
+  <span class="pl-ent">"ok"</span>: <span class="pl-c1">true</span>,
+  <span class="pl-ent">"next"</span>: <span class="pl-c1">null</span>,
+  <span class="pl-ent">"rows"</span>: [
+    {<span class="pl-ent">"pk"</span>: <span class="pl-c1">1</span>, <span class="pl-ent">"name"</span>: <span class="pl-s"><span class="pl-pds">"</span>The Mystery Spot<span class="pl-pds">"</span></span>, <span class="pl-ent">"address"</span>: <span class="pl-s"><span class="pl-pds">"</span>465 Mystery Spot Road, Santa Cruz, CA 95065<span class="pl-pds">"</span></span>, <span class="pl-ent">"url"</span>: <span class="pl-s"><span class="pl-pds">"</span>https://www.mysteryspot.com/<span class="pl-pds">"</span></span>, <span class="pl-ent">"latitude"</span>: <span class="pl-c1">37.0167</span>, <span class="pl-ent">"longitude"</span>: <span class="pl-c1">-122.0024</span>},
+    {<span class="pl-ent">"pk"</span>: <span class="pl-c1">2</span>, <span class="pl-ent">"name"</span>: <span class="pl-s"><span class="pl-pds">"</span>Winchester Mystery House<span class="pl-pds">"</span></span>, <span class="pl-ent">"address"</span>: <span class="pl-s"><span class="pl-pds">"</span>525 South Winchester Boulevard, San Jose, CA 95128<span class="pl-pds">"</span></span>, <span class="pl-ent">"url"</span>: <span class="pl-s"><span class="pl-pds">"</span>https://winchestermysteryhouse.com/<span class="pl-pds">"</span></span>, <span class="pl-ent">"latitude"</span>: <span class="pl-c1">37.3184</span>, <span class="pl-ent">"longitude"</span>: <span class="pl-c1">-121.9511</span>},
+    {<span class="pl-ent">"pk"</span>: <span class="pl-c1">3</span>, <span class="pl-ent">"name"</span>: <span class="pl-s"><span class="pl-pds">"</span>Burlingame Museum of PEZ Memorabilia<span class="pl-pds">"</span></span>, <span class="pl-ent">"address"</span>: <span class="pl-s"><span class="pl-pds">"</span>214 California Drive, Burlingame, CA 94010<span class="pl-pds">"</span></span>, <span class="pl-ent">"url"</span>: <span class="pl-c1">null</span>, <span class="pl-ent">"latitude"</span>: <span class="pl-c1">37.5793</span>, <span class="pl-ent">"longitude"</span>: <span class="pl-c1">-122.3442</span>},
+    {<span class="pl-ent">"pk"</span>: <span class="pl-c1">4</span>, <span class="pl-ent">"name"</span>: <span class="pl-s"><span class="pl-pds">"</span>Bigfoot Discovery Museum<span class="pl-pds">"</span></span>, <span class="pl-ent">"address"</span>: <span class="pl-s"><span class="pl-pds">"</span>5497 Highway 9, Felton, CA 95018<span class="pl-pds">"</span></span>, <span class="pl-ent">"url"</span>: <span class="pl-s"><span class="pl-pds">"</span>https://www.bigfootdiscoveryproject.com/<span class="pl-pds">"</span></span>, <span class="pl-ent">"latitude"</span>: <span class="pl-c1">37.0414</span>, <span class="pl-ent">"longitude"</span>: <span class="pl-c1">-122.0725</span>}
+  ],
+  <span class="pl-ent">"truncated"</span>: <span class="pl-c1">false</span>
+}</pre>
+    
+    
+        <p>Tags: <a href="https://simonwillison.net/tags/datasette">datasette</a>, <a href="https://simonwillison.net/tags/uv">uv</a></p>]]></summary>
+        <author>
+            <name>Simon Willison's Weblog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Quoting Armin Ronacher]]></title>
+        <id>https://simonwillison.net/2026/May/24/armin-ronacher/#atom-everything</id>
+        <link href="https://simonwillison.net/2026/May/24/armin-ronacher/#atom-everything"/>
+        <updated>2026-05-24T18:46:53.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote cite="https://lucumr.pocoo.org/2026/5/24/pi-oss/"><p>The most frustrating failure mode right now is that people submit issues that are not in their own voice. They contain an observed problem somewhere, but it has been thrown into a clanker and the clanker reworded it and made a huge mess of it. Typically, it was prompted so badly that the conclusions produced are more often than not inaccurate but always full of confidence. The result is complete guesswork on root causes, fake-minimal repros, suggested implementation strategies, analogies to adjacent but often the wrong code, and long lists of error classes that might or might not matter. [...]</p>
+<p>So at least personally, I increasingly want issue reports to be condensed to what the human actually observed:</p>
+<ol>
+<li>I ran this command.</li>
+<li>I expected this to happen.</li>
+<li>This happened instead.</li>
+<li>Here is the exact error or log.</li>
+</ol></blockquote>
+<p class="cite">&mdash; <a href="https://lucumr.pocoo.org/2026/5/24/pi-oss/">Armin Ronacher</a>, on slop issues filed against <a href="https://pi.dev/">Pi</a></p>
+
+    <p>Tags: <a href="https://simonwillison.net/tags/ai">ai</a>, <a href="https://simonwillison.net/tags/github-issues">github-issues</a>, <a href="https://simonwillison.net/tags/llms">llms</a>, <a href="https://simonwillison.net/tags/ai-ethics">ai-ethics</a>, <a href="https://simonwillison.net/tags/open-source">open-source</a>, <a href="https://simonwillison.net/tags/coding-agents">coding-agents</a>, <a href="https://simonwillison.net/tags/generative-ai">generative-ai</a>, <a href="https://simonwillison.net/tags/armin-ronacher">armin-ronacher</a>, <a href="https://simonwillison.net/tags/pi">pi</a>, <a href="https://simonwillison.net/tags/slop">slop</a></p>]]></summary>
+        <author>
+            <name>Simon Willison's Weblog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Mad House — Usborne Creepy Computer Games]]></title>
+        <id>https://simonwillison.net/2026/May/24/usborne-mad-house/#atom-everything</id>
+        <link href="https://simonwillison.net/2026/May/24/usborne-mad-house/#atom-everything"/>
+        <updated>2026-05-24T17:14:11.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong>Tool:</strong> <a href="https://tools.simonwillison.net/usborne-mad-house">Mad House — Usborne Creepy Computer Games</a></p>
+        <p>Via <a href="https://news.ycombinator.com/item?id=48258194">Hacker News</a> I learned that UK publisher Usborne published <a href="https://usborne.com/us/books/computer-and-coding-books">free PDFs of their 1980s Computer Books</a>, some of which I remember working through on my Commodore 64 as a child.</p>
+<p>These were so great! Beautifully illustrated books with fun projects made up of code you could type into your own machine.</p>
+<p>I remember playing "Mad House" typed in from the 1983 book "Creepy Computer Games", so I fed that PDF <a href="https://claude.ai/share/7b4a5617-f586-4744-b082-1650cab607cb">into Claude</a> and had it build an interactive version of that game in JavaScript and HTML:</p>
+<blockquote>
+<p><code>Build a vanilla JS artifact that exactly recreates the game Mad House from this book, make sure it's mobile friendly and has a suitable retro aesthetic</code></p>
+<p><code>Credit the book title and link to https://usborne.com/us/books/computer-and-coding-books</code></p>
+</blockquote>
+<p><img alt="Screenshot of a retro green-on-black terminal-style game interface titled &quot;MAD HOUSE — A REAL NIGHTMARE —&quot; with a REC indicator, FOOTSTEPS 240, DOORS counter, three rows of ASCII corridors made of asterisks with &quot;&gt;&quot; and &quot;&lt;&quot; door markers, &quot;PRESS START TO BEGIN&quot; text, NEAR DOOR controls (X and C) and FAR DOOR controls (N and M), and a &quot;▶ START / RESTART&quot; button at the bottom." src="https://static.simonwillison.net/static/2026/mad-house.jpg" /></p>
+    
+    
+        <p>Tags: <a href="https://simonwillison.net/tags/computer-history">computer-history</a>, <a href="https://simonwillison.net/tags/games">games</a>, <a href="https://simonwillison.net/tags/tools">tools</a></p>]]></summary>
+        <author>
+            <name>Simon Willison's Weblog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[On the <dl>]]></title>
+        <id>https://simonwillison.net/2026/May/23/on-the-dl/#atom-everything</id>
+        <link href="https://simonwillison.net/2026/May/23/on-the-dl/#atom-everything"/>
+        <updated>2026-05-23T20:24:48.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong><a href="https://benmyers.dev/blog/on-the-dl/">On the &lt;dl&gt;</a></strong></p>
+I learned a few new-to-me things about the <code>&lt;dl&gt;</code> element from this article by Ben Meyer:</p>
+<ol>
+<li>A <code>&lt;dt&gt;</code> can be followed by <em>multiple</em> <code>&lt;dd&gt;</code></li>
+<li>You can optionally group the <code>&lt;dt&gt;</code> and <code>&lt;dd&gt;</code> elements in a <code>&lt;div&gt;</code> for styling - but only a <code>&lt;div&gt;</code>.</li>
+<li>You can label them using ARIA.</li>
+<li>They've been called "description lists", not "definition lists", since <a href="https://www.w3.org/TR/2008/WD-html5-20080122/#the-dl">an HTML5 draft in 2008</a>.</li>
+</ol>
+<p>So this is valid:</p>
+<pre><span class="pl-kos">&lt;</span><span class="pl-ent">h2</span> <span class="pl-c1">id</span>="<span class="pl-s">credits</span>"<span class="pl-kos">&gt;</span>Credits<span class="pl-kos">&lt;/</span><span class="pl-ent">h2</span><span class="pl-kos">&gt;</span>
+<span class="pl-kos">&lt;</span><span class="pl-ent">dl</span> <span class="pl-c1">aria-labelledby</span>="<span class="pl-s">credits</span>"<span class="pl-kos">&gt;</span>
+  <span class="pl-kos">&lt;</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span>
+    <span class="pl-kos">&lt;</span><span class="pl-ent">dt</span><span class="pl-kos">&gt;</span>Author<span class="pl-kos">&lt;/</span><span class="pl-ent">dt</span><span class="pl-kos">&gt;</span>
+    <span class="pl-kos">&lt;</span><span class="pl-ent">dd</span><span class="pl-kos">&gt;</span>Jeffrey Zeldman<span class="pl-kos">&lt;/</span><span class="pl-ent">dd</span><span class="pl-kos">&gt;</span>
+    <span class="pl-kos">&lt;</span><span class="pl-ent">dd</span><span class="pl-kos">&gt;</span>Ethan Marcotte<span class="pl-kos">&lt;/</span><span class="pl-ent">dd</span><span class="pl-kos">&gt;</span>
+  <span class="pl-kos">&lt;/</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span>
+<span class="pl-kos">&lt;/</span><span class="pl-ent">dl</span><span class="pl-kos">&gt;</span></pre>
+
+<p>Here's a useful note from Adrian Roselli on <a href="https://adrianroselli.com/2025/01/updated-brief-note-on-description-list-support.html">screen reader support for description lists</a>.
+
+    <p><small></small>Via <a href="https://news.ycombinator.com/item?id=48247325">Hacker News</a></small></p>
+
+
+    <p>Tags: <a href="https://simonwillison.net/tags/css">css</a>, <a href="https://simonwillison.net/tags/html">html</a>, <a href="https://simonwillison.net/tags/screen-readers">screen-readers</a>, <a href="https://simonwillison.net/tags/web-standards">web-standards</a></p>]]></summary>
+        <author>
+            <name>Simon Willison's Weblog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Towards Speed-of-Light Text Generation with Nemotron-Labs Diffusion Language Models]]></title>
+        <id>https://huggingface.co/blog/nvidia/nemotron-labs-diffusion</id>
+        <link href="https://huggingface.co/blog/nvidia/nemotron-labs-diffusion"/>
+        <updated>2026-05-23T00:02:03.000Z</updated>
+        <summary type="html"><![CDATA[The Hugging Face blog]]></summary>
+        <author>
+            <name>Hugging Face - Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The memory shortage is causing a repricing of consumer electronics]]></title>
+        <id>https://simonwillison.net/2026/May/22/memory-shortage/#atom-everything</id>
+        <link href="https://simonwillison.net/2026/May/22/memory-shortage/#atom-everything"/>
+        <updated>2026-05-22T22:01:31.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong><a href="https://davidoks.blog/p/ai-is-killing-the-cheap-smartphone">The memory shortage is causing a repricing of consumer electronics</a></strong></p>
+David Oks provides the clearest explanation I've seen yet of why consumer products that use memory are likely to get significantly more expensive over the next few years.</p>
+<p>The short version is that memory manufacturers - of which there are just three remaining large companies - have a fixed capacity in terms of how many wafers they can process at any one time. This fixed wafer capacity is then split between DDR - used in desktops and servers, LPDDR - used in mobile phones and low-energy devices, and HBM - used with GPUs.</p>
+<p>Until recently, HBM got just 2% of that wafer allocation. The enormous growth in AI data centers has pushed that up to an expected 20% by the end of 2026, and "a single gigabyte of HBM consumes more than three times the wafer capacity that a gigabyte of DDR or LPDDR does".</p>
+<p>Memory companies have learned from the extinction of their rivals that you should always under-provision rather than over-provision your fabricator capacity. The profit margins and demand for HBM (high-bandwidth memory) will constrain the production of consumer-device RAM for several years.</p>
+<p>This is already being felt in the sub-$100 smartphone market, which is particularly important to markets like Africa and South Asia.</p>
+<p>(The original title of the piece was "AI is killing the cheap smartphone" but I'm using the Hacker News rephrased title, which I think does more justice to the content.)
+
+    <p><small></small>Via <a href="https://news.ycombinator.com/item?id=48229319">Hacker News</a></small></p>
+
+
+    <p>Tags: <a href="https://simonwillison.net/tags/memory">memory</a>, <a href="https://simonwillison.net/tags/ai">ai</a>, <a href="https://simonwillison.net/tags/ai-ethics">ai-ethics</a></p>]]></summary>
+        <author>
+            <name>Simon Willison's Weblog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Specialization Beats Scale: A Strategic Variable Most AI Procurement Decisions Overlook]]></title>
+        <id>https://huggingface.co/blog/Dharma-AI/specialization-beats-scale</id>
+        <link href="https://huggingface.co/blog/Dharma-AI/specialization-beats-scale"/>
+        <updated>2026-05-22T15:25:59.000Z</updated>
+        <summary type="html"><![CDATA[The Hugging Face blog]]></summary>
+        <author>
+            <name>Hugging Face - Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[FTC to Require Cox Media Group, Two Other Firms to Pay Nearly $1 Million to Settle Charges They Deceived Customers About “Active Listening” AI-Powered Marketing Service]]></title>
+        <id>https://simonwillison.net/2026/May/22/ftc-active-listening/#atom-everything</id>
+        <link href="https://simonwillison.net/2026/May/22/ftc-active-listening/#atom-everything"/>
+        <updated>2026-05-22T04:48:32.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong><a href="https://www.ftc.gov/news-events/news/press-releases/2026/05/ftc-require-cox-media-group-two-other-firms-pay-nearly-1-million-settle-charges-they-deceived">FTC to Require Cox Media Group, Two Other Firms to Pay Nearly $1 Million to Settle Charges They Deceived Customers About “Active Listening” AI-Powered Marketing Service</a></strong></p>
+Back in 2024 Cox Media Group were caught trying to sell advertisers packages based on "active listening", with <a href="https://www.documentcloud.org/documents/25051283-cmg-pitch-deck-on-voice-data-advertising-active-listening/">this deck</a> which claimed:</p>
+<blockquote>
+<ul>
+<li>Smart devices capture real-time intent data by listening to our conversations</li>
+<li>Advertisers can pair this voice-data with behavioral data to target in-market consumers</li>
+</ul>
+</blockquote>
+<p>I wrote about this <a href="https://simonwillison.net/2024/Sep/2/facebook-cmg/">in September 2024</a>. My theory:</p>
+<blockquote>
+<p>I think <strong>active listening</strong> is the term that the team came up with for “something that sounds fancy but really just means the way ad targeting platforms work already”. Then they got over-excited about the new metaphor and added that first couple of slides that talk about “voice data”, without really understanding how the tech works or what kind of a shitstorm that could kick off when people who DID understand technology started paying attention to their marketing.</p>
+</blockquote>
+<p>This FTC press release appears to confirm that's pretty much what happened:</p>
+<blockquote>
+<p>CMG, MindSift and 1010 Digital Works claimed their “Active Listening” branded marketing service listened in on consumers’ conversations overheard by smart devices, in real time, to target advertising [...]</p>
+<p>According to the complaints, this service did not, in fact, listen in on consumers’ conversations or use voice data at all—nor did the service accurately place ads in customers’ desired locations. Instead, the service the companies provided consisted of reselling—at a significant markup—email lists obtained from other data brokers.</p>
+</blockquote>
+<p>The FTC also clarify that hiding an "opt-in" to using voice data in terms of service would not be acceptable, as tricks like that do not constitute "adequate consent":</p>
+<blockquote>
+<p>The FTC also alleged that all three companies deceived potential customers by claiming that consumers had opted into the Active Listening service. The company, however, did not seek or obtain consumers’ consent, according to the complaints. Instead, the companies claimed that consumers had “opted in” by agreeing to the terms of service that people have to accept when downloading and using apps. Clicking through mandatory terms of service does not constitute “opt-in consent” for such an invasive service or for use of consumers’ voice data from inside their homes. If the Active Listening service had functioned as advertised, this collection and use of consumers’ voice data without adequate consent would itself violate Section 5 of the FTC Act.</p>
+</blockquote>
+<p>Attempting to myth bust <a href="https://simonwillison.net/tags/microphone-ads-conspiracy/">the conspiracy theory</a> that our mobile devices target ads to us based on spying through the microphones continues to be my least rewarding niche online hobby. It's nice to have a new piece of ammunition.
+
+    <p><small></small>Via <a href="https://twitter.com/nydiatisdale/status/2057657844321705993">@nydiatisdale</a></small></p>
+
+
+    <p>Tags: <a href="https://simonwillison.net/tags/privacy">privacy</a>, <a href="https://simonwillison.net/tags/microphone-ads-conspiracy">microphone-ads-conspiracy</a></p>]]></summary>
+        <author>
+            <name>Simon Willison's Weblog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hermes vs. OpenClaw, Cybersecurity Alarms Ring, More-Interactive Conversations, Can Agents Do Human Work?]]></title>
+        <id>https://www.deeplearning.ai/the-batch/issue-354</id>
+        <link href="https://www.deeplearning.ai/the-batch/issue-354"/>
+        <updated>2026-05-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[DeepLearning.AI The Batch — May 22, 2026]]></summary>
+        <author>
+            <name>DeepLearning.AI — The Batch</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Datasette Agent]]></title>
+        <id>https://simonwillison.net/2026/May/21/datasette-agent/#atom-everything</id>
+        <link href="https://simonwillison.net/2026/May/21/datasette-agent/#atom-everything"/>
+        <updated>2026-05-21T19:52:19.000Z</updated>
+        <summary type="html"><![CDATA[<p>We just <a href="https://datasette.io/blog/2026/datasette-agent/">announced the first release of Datasette Agent</a>, a new extensible AI assistant for Datasette. I've been working on my <a href="https://llm.datasette.io/">LLM</a> Python library for just over three years now, and Datasette Agent represents the moment that LLM and <a href="https://datasette.io/">Datasette</a> finally come together. I'm really excited about it!</p>
+<p>Datasette Agent provides a conversational interface for asking questions of the data you have stored in Datasette. Add the <a href="https://github.com/datasette/datasette-agent-charts">datasette-agent-charts</a> plugin and it can generate charts of your data as well.</p>
+<h4 id="the-demo">The demo</h4>
+<p>The <a href="">announcement post</a> (on the new Datasette project blog) includes this <a href="https://www.youtube.com/watch?v=AFZKp6hbFjI">demo video</a>:</p>
+
+<iframe style="margin-bottom: 1.5em;" width="560" height="315" src="https://www.youtube-nocookie.com/embed/AFZKp6hbFjI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="allowfullscreen"> </iframe>
+
+
+<p>I recorded the video against the new <a href="https://agent.datasette.io/">agent.datasette.io</a> live demo instance, which runs Datasette Agent against example databases including the classic <a href="https://datasette.io/global-power-plants">global-power-plants</a> by <a href="https://www.wri.org/research/global-database-power-plants">WRI</a>, and a copy of the <a href="https://datasette.simonwillison.net/">Datasette backup</a> of my blog.</p>
+<p>The live demo runs on <a href="https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-lite">Gemini 3.1 Flash-Lite</a> - it's cheap, fast and has no trouble writing SQLite queries.</p>
+<p>A question I asked in the demo was:</p>
+<blockquote>
+<p>when did Simon most recently see a pelican?</p>
+</blockquote>
+<p>Which ran <a href="https://datasette.simonwillison.net/simonwillisonblog?sql=SELECT+title%2C+commentary%2C+created+FROM+blog_beat+WHERE+beat_type+%3D+%27sighting%27+AND+%28title+LIKE+%27%25pelican%25%27+OR+commentary+LIKE+%27%25pelican%25%27%29+ORDER+BY+created+DESC+LIMIT+5">this SQL query</a>:</p>
+<div class="highlight highlight-source-sql"><pre><span class="pl-k">SELECT</span>
+  title, commentary, created
+<span class="pl-k">FROM</span>
+  blog_beat
+<span class="pl-k">WHERE</span>
+  beat_type <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>sighting<span class="pl-pds">'</span></span>
+  <span class="pl-k">AND</span> (title <span class="pl-k">LIKE</span> <span class="pl-s"><span class="pl-pds">'</span>%pelican%<span class="pl-pds">'</span></span> <span class="pl-k">OR</span> commentary <span class="pl-k">LIKE</span> <span class="pl-s"><span class="pl-pds">'</span>%pelican%<span class="pl-pds">'</span></span>)
+<span class="pl-k">ORDER BY</span>
+  created <span class="pl-k">DESC</span>
+<span class="pl-k">LIMIT</span>
+  <span class="pl-c1">5</span></pre></div>
+<p>And replied:</p>
+<blockquote>
+<p>The most recent sighting of a pelican by Simon was recorded on <strong>May 20, 2026</strong>.</p>
+<p>The observation included a California Brown Pelican, along with a Common Loon, Canada Goose, Striped Shore Crab, and a California Sea Lion.</p>
+</blockquote>
+<p>Here's <a href="https://simonwillison.net/2026/May/20/sighting-363395265/">that sighting on my blog</a>, and the <a href="https://gist.github.com/simonw/a46d17b69659a4866adb1d868280091d">Markdown export</a> of the full conversation transcript.</p>
+<h4 id="the-plugins">The plugins</h4>
+<p>My favorite feature of Datasette Agent is that, like the rest of Datasette, it's extensible using plugins.</p>
+<p>We've shipped three plugins so far:</p>
+<ul>
+<li>
+<a href="https://github.com/datasette/datasette-agent-charts">datasette-agent-charts</a>, shown in the video, adds charts to Datasette Agent, powered by <a href="https://observablehq.com/plot/">Observable Plot</a>.</li>
+<li>
+<a href="https://github.com/datasette/datasette-agent-openai-imagegen">datasette-agent-openai-imagegen</a> adds an image generation tool to Datasette Agent using <a href="https://openai.com/index/introducing-chatgpt-images-2-0/">ChatGPT Images 2.0</a>.</li>
+<li>
+<a href="https://github.com/datasette/datasette-agent-sprites">datasette-agent-sprites</a> provides tools for executing code in a <a href="https://sprites.dev/">Fly Sprites</a> persistent sandbox.</li>
+</ul>
+<p>Building plugins is <em>really fun</em>. I have a bunch more prototypes that aren't quite alpha-quality yet.</p>
+<p>Claude Code and OpenAI Codex are both proving excellent at writing plugins - just point them at a checkout of the <a href="https://github.com/datasette/datasette-agent">datasette-agent repo</a> for reference and tell them what you want to build!</p>
+<h4 id="running-it-against-local-models">Running it against local models</h4>
+<p>I've also been having fun running the new plugin against local models. Here's a <code>uv</code> one-liner to run the plugin against <a href="https://huggingface.co/google/gemma-4-26B-A4B">gemma-4-26b-a4b</a> in <a href="https://lmstudio.ai">LM Studio</a> on a Mac:</p>
+<div class="highlight highlight-source-shell"><pre>uvx --prerelease=allow \
+  --with datasette-agent --with llm-lmstudio \
+  datasette --internal internal.db --root \
+  -s plugins.datasette-llm.default_model lmstudio/google/gemma-4-26b-a4b \
+  data.db</pre></div>
+<p>Datasette Agent needs reliable tool calls and the ability for a model to produce SQL queries that run against SQLite. The open weight models released in the past six months are increasingly able to handle that.</p>
+<h4 id="what-s-next">What's next</h4>
+<p>Datasette Agent opens up <em>so many</em> opportunities for the LLM and Datasette ecosystem in general.</p>
+<p>It's already informed <a href="https://simonwillison.net/2026/Apr/29/llm/">the major LLM 0.32a0 refactor</a> which I'm nearly ready to roll into a stable release, maybe with some additional "LLM agent" abstractions extracte from Datasette Agent itself.</p>
+<p>I've been exploring my own take on the Claude Artifacts, which is shaping up nicely as a plugin.</p>
+<p>I'm excited to use Datasette Agent to build my own <a href="https://simonwillison.net/2026/May/19/5-minute-llms/#5-minutes-llms.013.jpeg">Claw</a> - a personal AI assistant built around data imported from different parts of my digital life, which is a neat excuse to revisit my older <a href="https://dogsheep.github.io">Dogsheep</a> family of tools.</p>
+<p>We'll also be rolling out Datasette Agent for users of <a href="https://datasette.cloud/">Datasette Cloud</a>.</p>
+<p>Join our <a href="https://discord.gg/hdxyusUFv">#datasette-agent Discord channel</a> if you'd like to talk about the project.</p>
+    
+        <p>Tags: <a href="https://simonwillison.net/tags/projects">projects</a>, <a href="https://simonwillison.net/tags/sqlite">sqlite</a>, <a href="https://simonwillison.net/tags/ai">ai</a>, <a href="https://simonwillison.net/tags/datasette">datasette</a>, <a href="https://simonwillison.net/tags/generative-ai">generative-ai</a>, <a href="https://simonwillison.net/tags/llms">llms</a>, <a href="https://simonwillison.net/tags/llm">llm</a>, <a href="https://simonwillison.net/tags/uv">uv</a>, <a href="https://simonwillison.net/tags/datasette-agent">datasette-agent</a></p>]]></summary>
+        <author>
+            <name>Simon Willison's Weblog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[datasette-agent-sprites 0.1a0]]></title>
+        <id>https://simonwillison.net/2026/May/21/datasette-agent-sprites/#atom-everything</id>
+        <link href="https://simonwillison.net/2026/May/21/datasette-agent-sprites/#atom-everything"/>
+        <updated>2026-05-21T18:21:07.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong>Release:</strong> <a href="https://github.com/datasette/datasette-agent-sprites/releases/tag/0.1a0">datasette-agent-sprites 0.1a0</a></p>
+        <p>A Datasette Agent plugin for running commands in a <a href="https://sprites.dev">Fly Sprites</a> sandbox.</p>
+    
+    
+        <p>Tags: <a href="https://simonwillison.net/tags/sandboxing">sandboxing</a>, <a href="https://simonwillison.net/tags/datasette">datasette</a>, <a href="https://simonwillison.net/tags/fly">fly</a>, <a href="https://simonwillison.net/tags/datasette-agent">datasette-agent</a></p>]]></summary>
+        <author>
+            <name>Simon Willison's Weblog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[datasette-agent-charts 0.1a2]]></title>
+        <id>https://simonwillison.net/2026/May/21/datasette-agent-charts/#atom-everything</id>
+        <link href="https://simonwillison.net/2026/May/21/datasette-agent-charts/#atom-everything"/>
+        <updated>2026-05-21T15:15:58.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong>Release:</strong> <a href="https://github.com/datasette/datasette-agent-charts/releases/tag/0.1a2">datasette-agent-charts 0.1a2</a></p>
+        <blockquote>
+<ul>
+<li>"View SQL query" buttons below rendered charts.</li>
+</ul>
+</blockquote>
+    
+    
+        <p>Tags: <a href="https://simonwillison.net/tags/datasette">datasette</a>, <a href="https://simonwillison.net/tags/datasette-agent">datasette-agent</a></p>]]></summary>
+        <author>
+            <name>Simon Willison's Weblog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[datasette-agent 0.1a3]]></title>
+        <id>https://simonwillison.net/2026/May/21/datasette-agent-2/#atom-everything</id>
+        <link href="https://simonwillison.net/2026/May/21/datasette-agent-2/#atom-everything"/>
+        <updated>2026-05-21T15:04:09.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong>Release:</strong> <a href="https://github.com/datasette/datasette-agent/releases/tag/0.1a3">datasette-agent 0.1a3</a></p>
+        <blockquote>
+<ul>
+<li>"View SQL query" buttons for both visible tables and collapsed SQL result tool calls.</li>
+<li>Don't display empty reasoning chunks</li>
+<li>Improved handling of truncated responses - table still displays to the user even if the SQL results were truncated when showing the agent.</li>
+</ul>
+</blockquote>
+<p>See <a href="https://datasette.io/blog/2026/datasette-agent/">Datasette Agent, an extensible AI assistant for Datasette</a>.</p>
+    
+    
+        <p>Tags: <a href="https://simonwillison.net/tags/datasette">datasette</a>, <a href="https://simonwillison.net/tags/datasette-agent">datasette-agent</a></p>]]></summary>
+        <author>
+            <name>Simon Willison's Weblog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[From Token Streams to Agent Streams]]></title>
+        <id>https://www.langchain.com/blog/token-streams-to-agent-streams</id>
+        <link href="https://www.langchain.com/blog/token-streams-to-agent-streams"/>
+        <updated>2026-05-21T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[LangChain / Open Source / LangGraph — By Christian Bromann, Nick Hollon — May 21, 2026]]></summary>
+        <author>
+            <name>Christian Bromann, Nick Hollon</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How Auth Proxy secures network access for LangSmith agent sandboxes]]></title>
+        <id>https://www.langchain.com/blog/how-auth-proxy-secures-network-access-for-langsmith-agent-sandboxes</id>
+        <link href="https://www.langchain.com/blog/how-auth-proxy-secures-network-access-for-langsmith-agent-sandboxes"/>
+        <updated>2026-05-21T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[LangSmith — By Mukil Loganathan — May 21, 2026]]></summary>
+        <author>
+            <name>Mukil Loganathan</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Quoting SpaceX S-1]]></title>
+        <id>https://simonwillison.net/2026/May/20/spacex-s1/#atom-everything</id>
+        <link href="https://simonwillison.net/2026/May/20/spacex-s1/#atom-everything"/>
+        <updated>2026-05-20T22:26:36.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote cite="https://www.sec.gov/Archives/edgar/data/1181412/000162828026036936/spaceexplorationtechnologi.htm"><p>We have the ability to use compute resources to support our proprietary AI applications (such as Grok 5, which is currently being trained at COLOSSUS II), while also providing access to select compute capacity to third-party customers. For example, in May 2026, we entered into <strong>Cloud Services Agreements with Anthropic PBC</strong> (“Anthropic”), an AI research and development public benefit corporation, with respect to access to <strong>compute capacity across COLOSSUS and COLOSSUS II</strong>. Pursuant to these agreements, the customer <strong>has agreed to pay us $1.25 billion per month</strong> through May 2029, with capacity ramping in May and June 2026 at a reduced fee. The agreements may be terminated by either party upon 90 days’ notice.</p></blockquote>
+<p class="cite">&mdash; <a href="https://www.sec.gov/Archives/edgar/data/1181412/000162828026036936/spaceexplorationtechnologi.htm">SpaceX S-1</a>, highlights mine</p>
+
+    <p>Tags: <a href="https://simonwillison.net/tags/anthropic">anthropic</a>, <a href="https://simonwillison.net/tags/grok">grok</a>, <a href="https://simonwillison.net/tags/generative-ai">generative-ai</a>, <a href="https://simonwillison.net/tags/ai">ai</a>, <a href="https://simonwillison.net/tags/llms">llms</a></p>]]></summary>
+        <author>
+            <name>Simon Willison's Weblog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How fast is 10 tokens per second really?]]></title>
+        <id>https://simonwillison.net/2026/May/20/tokens-per-second/#atom-everything</id>
+        <link href="https://simonwillison.net/2026/May/20/tokens-per-second/#atom-everything"/>
+        <updated>2026-05-20T17:57:45.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong><a href="https://mikeveerman.github.io/tokenspeed/">How fast is 10 tokens per second really?</a></strong></p>
+Neat little HTML app by Mike Veerman (<a href="https://github.com/MikeVeerman/tokenspeed/blob/master/index.html">source code here</a>) which simulates LLM token output speeds from 5/second to 800/second.</p>
+<p>Useful if you see a model advertised as "30 tokens/second" and want to get a feel for what that actually looks like.
+
+    <p><small></small>Via <a href="https://news.ycombinator.com/item?id=48174920">Hacker News</a></small></p>
+
+
+    <p>Tags: <a href="https://simonwillison.net/tags/ai">ai</a>, <a href="https://simonwillison.net/tags/generative-ai">generative-ai</a>, <a href="https://simonwillison.net/tags/llms">llms</a></p>]]></summary>
+        <author>
+            <name>Simon Willison's Weblog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Google I/O, Gemini Spark, Antigravity]]></title>
+        <id>https://simonwillison.net/2026/May/20/google-io/#atom-everything</id>
+        <link href="https://simonwillison.net/2026/May/20/google-io/#atom-everything"/>
+        <updated>2026-05-20T15:32:17.000Z</updated>
+        <summary type="html"><![CDATA[<p>It's hard to find much to write about Google I/O this year because I have a policy of not writing about anything that I can't try out myself, and a lot of the big announcements are "coming soon".</p>
+<p>I actually prefer to write about things that are in general availability, because I've had instances in the past where the previews didn't match what was released to the general public later on.</p>
+<p>Aside from <a href="https://simonwillison.net/2026/May/19/gemini-35-flash/">Gemini 3.5 Flash</a> the most interesting announcement looks to be Google's upcoming OpenClaw competitor <a href="https://gemini.google/overview/agent/spark/">Gemini Spark</a>, described as "your personal AI agent" which can "connect natively with your favorite Google apps like Gmail, Calendar, Drive, Docs, Sheets, Slides, YouTube, and Google Maps". The FAQ for that also includes this confusing detail:</p>
+<blockquote>
+<p><strong>What Gemini model does Gemini Spark run on?</strong></p>
+<p>Gemini Spark runs on Gemini 3.5 Flash and Antigravity.</p>
+</blockquote>
+<p>The <a href="https://antigravity.google/">antigravity.google</a> website currently lists Antigravity as a desktop app, a CLI agent tool (written in Go), the <a href="https://github.com/google-antigravity/antigravity-sdk-python">Antigravity SDK</a> (an open source Python wrapper around a bundled closed source Go binary), and the original Antigravity IDE (a VS Code fork).</p>
+<p>I guess Gemini Spark, the user-facing hosted agent product, might be running on that Go binary, but I'm not sure why that's worth mentioning in the FAQ!</p>
+<p>Naturally I went looking for notes on how Gemini Spark intends to handle the risk of prompt injection. The best information I could find on that was in the <a href="https://cloud.google.com/blog/products/ai-machine-learning/innovations-from-google-io-26-on-google-cloud">Everything Google Cloud customers need to know coming out of Google I/O</a> post aimed at enterprise customers, which includes:</p>
+<blockquote>
+<p>Spark operates in a fully managed, secure runtime on Google Cloud, meaning you get enterprise-grade security without ever having to manage the underlying infrastructure. Every task executes in a fresh, strictly isolated, ephemeral VM to help ensure data never overlaps between sessions. To protect your enterprise, all traffic routes through our secure Agent Gateway that enforces Data Loss Prevention (DLP) policies, while user credentials remain fully encrypted and are never exposed directly to the agent.</p>
+</blockquote>
+<p>Given how many people are going to be piping <em>very</em> sensitive data through Gemini Spark in the near future I hope they've made this bullet-proof, or this could be a top candidate for the agent security <a href="https://simonwillison.net/2026/Jan/8/llm-predictions-for-2026/#1-year-a-challenger-disaster-for-coding-agent-security">challenger disaster</a> that we still haven't seen.</p>
+<p>Also of note: in <a href="https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/">Transitioning Gemini CLI to Antigravity CLI</a> Google announce that the <a href="https://github.com/google-gemini/gemini-cli">open source Gemini CLI</a> tool (Apache 2.0 licensed TypeScript) will stop working with their AI subscription plans on June 18th, replaced by the new closed source <a href="https://github.com/google-antigravity/antigravity-cli">Antigravity CLI</a>.</p>
+
+    <p>Tags: <a href="https://simonwillison.net/tags/gemini">gemini</a>, <a href="https://simonwillison.net/tags/google">google</a>, <a href="https://simonwillison.net/tags/generative-ai">generative-ai</a>, <a href="https://simonwillison.net/tags/ai">ai</a>, <a href="https://simonwillison.net/tags/google-io">google-io</a>, <a href="https://simonwillison.net/tags/llms">llms</a>, <a href="https://simonwillison.net/tags/prompt-injection">prompt-injection</a></p>]]></summary>
+        <author>
+            <name>Simon Willison's Weblog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[datasette-agent-charts 0.1a1]]></title>
+        <id>https://simonwillison.net/2026/May/20/datasette-agent-charts/#atom-everything</id>
+        <link href="https://simonwillison.net/2026/May/20/datasette-agent-charts/#atom-everything"/>
+        <updated>2026-05-20T14:52:16.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong>Release:</strong> <a href="https://github.com/datasette/datasette-agent-charts/releases/tag/0.1a1">datasette-agent-charts 0.1a1</a></p>
+        <blockquote>
+<ul>
+<li>More color! Bar and waffle charts without a color column are shaded by magnitude with a sequential color scheme; color columns holding text values use the <code>observable10</code> categorical scheme. #2</li>
+<li>Now checks <code>execute-sql</code> permission before running the query to find the column names.</li>
+<li>Charts now display interactive tooltips.</li>
+<li>Fixed a bug where <code>waffleY</code> charts were not described to the agent.</li>
+</ul>
+</blockquote>
+    
+    
+        <p>Tags: <a href="https://simonwillison.net/tags/datasette">datasette</a>, <a href="https://simonwillison.net/tags/datasette-agent">datasette-agent</a></p>]]></summary>
+        <author>
+            <name>Simon Willison's Weblog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Give Your Agents an Interpreter]]></title>
+        <id>https://www.langchain.com/blog/give-your-agents-an-interpreter</id>
+        <link href="https://www.langchain.com/blog/give-your-agents-an-interpreter"/>
+        <updated>2026-05-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Deep Agents / Agent Architecture / Open Source — By Hunter Lovell — May 20, 2026]]></summary>
+        <author>
+            <name>Hunter Lovell</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[llm-gemini 0.32]]></title>
+        <id>https://simonwillison.net/2026/May/19/llm-gemini-2/#atom-everything</id>
+        <link href="https://simonwillison.net/2026/May/19/llm-gemini-2/#atom-everything"/>
+        <updated>2026-05-19T23:46:27.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong>Release:</strong> <a href="https://github.com/simonw/llm-gemini/releases/tag/0.32">llm-gemini 0.32</a></p>
+        <blockquote>
+<ul>
+<li>New model <code>gemini-3.5-flash</code> for <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/">Gemini 3.5 Flash</a>.</li>
+</ul>
+</blockquote>
+<p>See also my <a href="https://simonwillison.net/2026/May/19/gemini-35-flash/">notes on Gemini 3.5 Flash</a>, and <a href="https://simonwillison.net/2026/May/19/gemini-35-flash/#a-pelican-on-a-bicycle">the pelican</a> I drew using this upgrade to the plugin.</p>
+    
+    
+        <p>Tags: <a href="https://simonwillison.net/tags/gemini">gemini</a>, <a href="https://simonwillison.net/tags/llm">llm</a></p>]]></summary>
+        <author>
+            <name>Simon Willison's Weblog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Gemini 3.5 Flash: more expensive, but Google plan to use it for everything]]></title>
+        <id>https://simonwillison.net/2026/May/19/gemini-35-flash/#atom-everything</id>
+        <link href="https://simonwillison.net/2026/May/19/gemini-35-flash/#atom-everything"/>
+        <updated>2026-05-19T22:40:25.000Z</updated>
+        <summary type="html"><![CDATA[<p>Today at Google I/O, Google <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/">released Gemini 3.5 Flash</a>. This one skipped the <code>-preview</code> modifier and went straight to general availability, and Google appear to be using it for a whole lot of their key products:</p>
+<blockquote>
+<p>3.5 Flash is available today to billions of people globally:</p>
+<ul>
+<li>For everyone via the Gemini app and AI Mode in <a href="https://blog.google/products-and-platforms/products/search/search-io-2026">Google Search</a>
+</li>
+<li>For developers in our agent-first development platform Google Antigravity and Gemini API in Google AI Studio and Android Studio</li>
+<li>For enterprises in Gemini Enterprise Agent Platform and Gemini Enterprise.</li>
+</ul>
+</blockquote>
+<p>As usual with Gemini, the most interesting details are tucked away in the <a href="https://ai.google.dev/gemini-api/docs/whats-new-gemini-3.5">What's new in Gemini 3.5 Flash</a> developer documentation. It mostly has the same set of platform features as the previous Gemini 3.x series, albeit with no <a href="https://ai.google.dev/gemini-api/docs/computer-use">computer use</a>. The model ID is <code>gemini-3.5-flash</code>. The knowledge cut-off is January 2025, and it supports 1,048,576 input tokens and 65,536 maximum output tokens.</p>
+<p>Google are also pushing a new <a href="https://ai.google.dev/gemini-api/docs/interactions">Interactions API</a>, currently in beta, which looks to me like their version of the patterns introduced by <a href="https://developers.openai.com/api/reference/responses/overview">OpenAI Responses</a> - in particular server-side history management.</p>
+<h4 id="the-price-has-gone-up">The price has gone up</h4>
+<p>Gemini 3.5 Flash is accompanied by a notable price bump. The previous models in the "Flash" family were <a href="https://ai.google.dev/gemini-api/docs/models/gemini-3-flash-preview">Gemini 3 Flash Preview</a> and <a href="https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-lite">Gemini 3.1 Flash-Lite</a>. The new 3.5 Flash is 3x the price of 3 Flash Preview and 6x the price of 3.1 Flash-Lite (see <a href="https://www.llm-prices.com/#sel=gemini-3-flash-preview%2Cgemini-3.5-flash%2Cgemini-3.1-flash-lite-preview">price comparison here</a>).</p>
+<p>At $1.50/million input and $9/million output it's getting close in price to Google's Gemini 3.1 Pro, which is $2 and $12.</p>
+<p>The Gemini team promise that 3.5 Pro will roll out "next month" - presumably at an even higher price.</p>
+<p>This fits a trend: OpenAI's GPT-5.5 was 2x the price of GPT-5.4, and Claude Opus 4.7 is around 1.46x the price of 4.6 when you take the <a href="https://simonwillison.net/2026/Apr/20/claude-token-counts/">new tokenizer into account</a>.</p>
+<p>Given the price increase it's interesting to see Google roll it out for so many of their own free-to-consumer products. It feels like all three of the major AI labs are starting to probe the price tolerance of their API customers.</p>
+<p>Artificial Analysis publish the cost to run their proprietary benchmark against models, which is a useful way to take things like tokenization and increased volume of reasoning tokens into account. Some numbers worth comparing:</p>
+<ul>
+<li>
+<a href="https://artificialanalysis.ai/models/gemini-3-5-flash">Gemini 3.5 Flash (high)</a>: $1,551.60</li>
+<li>
+<a href="https://artificialanalysis.ai/models/gemini-3-1-pro-preview">Gemini 3.1 Pro Preview</a>: $892.28</li>
+<li>
+<a href="https://artificialanalysis.ai/models/gemini-3-flash-reasoning">Gemini 3 Flash Preview (Reasoning)</a>: $278.26</li>
+<li>
+<a href="https://artificialanalysis.ai/models/gemini-3-1-flash-lite-preview">Gemini 3.1 Flash-Lite Preview</a>: $93.60</li>
+</ul>
+<p>Running the benchmark for 3.5 Flash (high) cost significantly more than 3.1 Pro Preview!</p>
+<p>Here are some numbers from other vendors:</p>
+<ul>
+<li>
+<a href="https://artificialanalysis.ai/models/claude-opus-4-7">Claude Opus 4.7 (Adaptive Reasoning, Max Effort)</a>: $5,117.14</li>
+<li>
+<a href="https://artificialanalysis.ai/models/claude-opus-4-7-non-reasoning">Claude Opus 4.7 (Non-reasoning, High Effort)</a>: $1,217.23</li>
+<li>
+<a href="https://artificialanalysis.ai/models/gpt-5-5">GPT-5.5 (xhigh)</a>: $3,357.00</li>
+<li>
+<a href="https://artificialanalysis.ai/models/gpt-5-5-medium">GPT-5.5 (medium)</a>: $1,199.14</li>
+</ul>
+<h4 id="a-pelican-on-a-bicycle">A pelican on a bicycle</h4>
+<p>I ran "Generate an SVG of a pelican riding a bicycle" <a href="https://gist.github.com/simonw/09cc5a5545d7e75b33b75ffa92a34601">against the Gemini API</a> and got back this pelican, which is a <em>lot</em>:</p>
+<p><img src="https://static.simonwillison.net/static/2026/gemini-3.5-flash.png" alt="Black background, bats in the sky against a stylized moon. Pelican is funky looking. Very good beak. Bicycle frame is a bit twisted, and the bar from pedals to back wheel is missing. Bike lamp illuminates the road in front. Quite stylish." style="max-width: 100%;" /></p>
+<p>From the code comments: <code>&lt;!-- Pelican Eye / Sunglasses (Cool Retro Aviators) --&gt;</code></p>
+<p><a href="https://news.ycombinator.com/item?id=48196570#48198275">hedgehog on Hacker News</a>:</p>
+<blockquote>
+<p>That pelican looks like it's in Miami for a crypto conference.</p>
+</blockquote>
+<p>That one cost me 11 input tokens and 14,403 output tokens, for a total cost of <a href="https://www.llm-prices.com/#it=11&amp;ot=14403&amp;sel=gemini-3.5-flash">just under 13 cents</a>.</p>
+    
+        <p>Tags: <a href="https://simonwillison.net/tags/google">google</a>, <a href="https://simonwillison.net/tags/ai">ai</a>, <a href="https://simonwillison.net/tags/generative-ai">generative-ai</a>, <a href="https://simonwillison.net/tags/llms">llms</a>, <a href="https://simonwillison.net/tags/gemini">gemini</a>, <a href="https://simonwillison.net/tags/llm-pricing">llm-pricing</a>, <a href="https://simonwillison.net/tags/pelican-riding-a-bicycle">pelican-riding-a-bicycle</a>, <a href="https://simonwillison.net/tags/llm-release">llm-release</a></p>]]></summary>
+        <author>
+            <name>Simon Willison's Weblog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[datasette-llm-accountant 0.1a4]]></title>
+        <id>https://simonwillison.net/2026/May/19/datasette-llm-accountant/#atom-everything</id>
+        <link href="https://simonwillison.net/2026/May/19/datasette-llm-accountant/#atom-everything"/>
+        <updated>2026-05-19T20:45:43.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong>Release:</strong> <a href="https://github.com/datasette/datasette-llm-accountant/releases/tag/0.1a4">datasette-llm-accountant 0.1a4</a></p>
+        <blockquote>
+<ul>
+<li>Fixed bug tracking chains of responses. Refs <a href="https://github.com/datasette/datasette-llm/issues/7">datasette-llm#7</a></li>
+</ul>
+</blockquote>
+    
+    
+        <p>Tags: <a href="https://simonwillison.net/tags/llm">llm</a>, <a href="https://simonwillison.net/tags/datasette">datasette</a></p>]]></summary>
+        <author>
+            <name>Simon Willison's Weblog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[llm-gemini 0.32a0]]></title>
+        <id>https://simonwillison.net/2026/May/19/llm-gemini/#atom-everything</id>
+        <link href="https://simonwillison.net/2026/May/19/llm-gemini/#atom-everything"/>
+        <updated>2026-05-19T20:36:23.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong>Release:</strong> <a href="https://github.com/simonw/llm-gemini/releases/tag/0.32a0">llm-gemini 0.32a0</a></p>
+        <blockquote>
+<ul>
+<li>Compatible with <code>llm&gt;=0.32a0</code> alpha - adds the ability to stream reasoning tokens.</li>
+</ul>
+</blockquote>
+    
+    
+        <p>Tags: <a href="https://simonwillison.net/tags/gemini">gemini</a>, <a href="https://simonwillison.net/tags/llm">llm</a></p>]]></summary>
+        <author>
+            <name>Simon Willison's Weblog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[datasette-llm 0.1a8]]></title>
+        <id>https://simonwillison.net/2026/May/19/datasette-llm/#atom-everything</id>
+        <link href="https://simonwillison.net/2026/May/19/datasette-llm/#atom-everything"/>
+        <updated>2026-05-19T20:28:16.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong>Release:</strong> <a href="https://github.com/datasette/datasette-llm/releases/tag/0.1a8">datasette-llm 0.1a8</a></p>
+        <blockquote>
+<ul>
+<li>Fix for bug where <code>llm_prompt_context()</code> hook did not fully collect chains of responses. #7</li>
+</ul>
+</blockquote>]]></summary>
+        <author>
+            <name>Simon Willison's Weblog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[OlmoEarth v1.1: A more efficient family of models]]></title>
+        <id>https://huggingface.co/blog/allenai/olmoearth-v1-1</id>
+        <link href="https://huggingface.co/blog/allenai/olmoearth-v1-1"/>
+        <updated>2026-05-19T18:38:09.000Z</updated>
+        <summary type="html"><![CDATA[The Hugging Face blog]]></summary>
+        <author>
+            <name>Hugging Face - Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The last six months in LLMs in five minutes]]></title>
+        <id>https://simonwillison.net/2026/May/19/5-minute-llms/#atom-everything</id>
+        <link href="https://simonwillison.net/2026/May/19/5-minute-llms/#atom-everything"/>
+        <updated>2026-05-19T01:09:44.000Z</updated>
+        <summary type="html"><![CDATA[<p>I put together these annotated slides from my five minute lightning talk at PyCon US 2026, using the <a href="https://tools.simonwillison.net/annotated-presentations">latest iteration</a> of my <a href="https://simonwillison.net/2023/Aug/6/annotated-presentations/">annotated presentation tool</a>.</p>
+
+<div class="slide" id="5-minutes-llms.001.jpeg">
+  <img loading="lazy" src="https://static.simonwillison.net/static/2026/5-minutes-llms/5-minutes-llms.001.jpeg" alt="The last six months in LLMs in
+five minutes
+
+Simon Willison - simonwillison.net
+
+PyCon US 2026 Lightning Talk
+" style="max-width: 100%" />
+  <div><a style="float: right; text-decoration: none; border-bottom: none; padding-left: 1em;" href="https://simonwillison.net/2026/May/19/5-minute-llms/#5-minutes-llms.001.jpeg">#</a>
+  <p>I presented this lightning talk at PyCon US 2026, attempting to summarize the last six months of developments in LLMs in five minutes.</p>
+  </div>
+</div>
+<div class="slide" id="5-minutes-llms.002.jpeg">
+  <img loading="lazy" src="https://static.simonwillison.net/static/2026/5-minutes-llms/5-minutes-llms.002.jpeg" alt="The November inflection point
+" style="max-width: 100%" />
+  <div><a style="float: right; text-decoration: none; border-bottom: none; padding-left: 1em;" href="https://simonwillison.net/2026/May/19/5-minute-llms/#5-minutes-llms.002.jpeg">#</a>
+  <p>Six months is a pretty convenient time period to cover, because it captures what I've been calling the <a href="https://simonwillison.net/tags/november-2025-inflection/">November 2025 inflection point</a>. November was a critical month in LLMs, especially for coding.</p>
+  </div>
+</div>
+<div class="slide" id="5-minutes-llms.003.jpeg">
+  <img loading="lazy" src="https://static.simonwillison.net/static/2026/5-minutes-llms/5-minutes-llms.003.jpeg" alt="The “best” model changed hands 5 times
+between Anthropic, OpenAl and Google
+" style="max-width: 100%" />
+  <div><a style="float: right; text-decoration: none; border-bottom: none; padding-left: 1em;" href="https://simonwillison.net/2026/May/19/5-minute-llms/#5-minutes-llms.003.jpeg">#</a>
+  <p>For one thing, the supposedly "best" model (depending mostly on vibes) changed hands five times between the three big providers.</p>
+  </div>
+</div>
+<div class="slide" id="5-minutes-llms.004.jpeg">
+  <img loading="lazy" src="https://static.simonwillison.net/static/2026/5-minutes-llms/5-minutes-llms.004.jpeg" alt="Generate an SVG of a
+pelican riding a bicycle
+" style="max-width: 100%" />
+  <div><a style="float: right; text-decoration: none; border-bottom: none; padding-left: 1em;" href="https://simonwillison.net/2026/May/19/5-minute-llms/#5-minutes-llms.004.jpeg">#</a>
+  <p>As always, I'm using my <a href="https://simonwillison.net/tags/pelican-riding-a-bicycle/">Generate an SVG of a pelican riding a bicycle</a> test to help illustrate the differences between the models.</p>
+<p>Why this test? Because pelicans are hard to draw, bicycles are hard to draw, pelicans <em>can't ride bicycles</em>... and there's zero chance any AI lab would train a model for such a ridiculous task.</p>
+  </div>
+</div>
+<div class="slide" id="5-minutes-llms.005.jpeg">
+  <img loading="lazy" src="https://static.simonwillison.net/static/2026/5-minutes-llms/5-minutes-llms.005.jpeg" alt="Five pelicans, one for each of the following models. Varying qualities!" style="max-width: 100%" />
+  <div><a style="float: right; text-decoration: none; border-bottom: none; padding-left: 1em;" href="https://simonwillison.net/2026/May/19/5-minute-llms/#5-minutes-llms.005.jpeg">#</a>
+  <p>At the start of November the widely acknowledged "best" model was Claude Sonnet 4.5, released on <a href="https://simonwillison.net/2025/Sep/29/claude-sonnet-4-5/">29th September</a>. It drew me this pelican.</p>
+<p>In November it was overtaken by <a href="https://simonwillison.net/2025/Nov/13/gpt-51/">GPT-5.1</a>, then <a href="https://simonwillison.net/2025/Nov/18/gemini-3/">Gemini 3</a>, then <a href="https://simonwillison.net/2025/Nov/19/gpt-51-codex-max/">GPT-5.1 Codex Max</a>, and then Anthropic took the crown back again with <a href="https://simonwillison.net/2025/Nov/24/claude-opus/">Claude Opus 4.5</a>.</p>
+<p>I think Gemini 3 drew the best pelican out of this lot, but pelicans aren't everything. Most practitioners will agree that Opus 4.5 held the crown for the next couple of months.</p>
+  </div>
+</div>
+<div class="slide" id="5-minutes-llms.006.jpeg">
+  <img loading="lazy" src="https://static.simonwillison.net/static/2026/5-minutes-llms/5-minutes-llms.006.jpeg" alt="The coding agents got good
+" style="max-width: 100%" />
+  <div><a style="float: right; text-decoration: none; border-bottom: none; padding-left: 1em;" href="https://simonwillison.net/2026/May/19/5-minute-llms/#5-minutes-llms.006.jpeg">#</a>
+  <p>It took a little while for this to become clear, but the real news from November was that the coding agents got <em>good</em>.</p>
+<p>OpenAI and Anthropic had spent most of 2025 running <a href="https://simonwillison.net/2025/Dec/19/andrej-karpathy/">Reinforcement Learning from Verifiable Rewards</a> to increase the quality of code written by their models, especially when paired up with their Codex and Claude Code agent harnesses.</p>
+<p>In November the results of this work became apparent. Coding agents went from often-work to mostly-work, crossing a quality barrier where you could use them as a daily-driver to get real work done, without needing to spend most of your time fixing their stupid mistakes.</p>
+  </div>
+</div>
+<div class="slide" id="5-minutes-llms.007.jpeg">
+  <img loading="lazy" src="https://static.simonwillison.net/static/2026/5-minutes-llms/5-minutes-llms.007.jpeg" alt="Screenshot of &quot;Initial commit&quot; on GitHub to steipete/Warelay, commit f6dd362, steipete authored on Nov 24, 2025
+
+It&#39;s a copy of the MIT license" style="max-width: 100%" />
+  <div><a style="float: right; text-decoration: none; border-bottom: none; padding-left: 1em;" href="https://simonwillison.net/2026/May/19/5-minute-llms/#5-minutes-llms.007.jpeg">#</a>
+  <p>Also in November, this happened - the first commit to an obscure (back then) repo called "Warelay" by some guy called Pete.</p>
+  </div>
+</div>
+<div class="slide" id="5-minutes-llms.008.jpeg">
+  <img loading="lazy" src="https://static.simonwillison.net/static/2026/5-minutes-llms/5-minutes-llms.008.jpeg" alt="December/January
+(A little bit of LLM psychosis)
+" style="max-width: 100%" />
+  <div><a style="float: right; text-decoration: none; border-bottom: none; padding-left: 1em;" href="https://simonwillison.net/2026/May/19/5-minute-llms/#5-minutes-llms.008.jpeg">#</a>
+  <p>Over the holiday period, from December to January, a whole lot of us took advantage of the break to have a poke at these new models and coding agents and see what they could do.</p>
+<p>They could do a lot! Some of us got a little bit over-excited. I had my own short-lived bout of a form of LLM psychosis as I started spinning up wildly ambitious projects to see how far I could push them.</p>
+  </div>
+</div>
+<div class="slide" id="5-minutes-llms.009.jpeg">
+  <img loading="lazy" src="https://static.simonwillison.net/static/2026/5-minutes-llms/5-minutes-llms.009.jpeg" alt="micro-javascript playground
+Execute JavaScript code in a sandboxed micro-javascript environment powered by Pyodide
+
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var doubled = numbers.map(n =&gt; n * 2);
+console.log(&#39;Doubled: &quot;&#39;, doubled);
+var evens = numbers.filter(n =&gt; n % 2 === 0);
+console.log(&#39;Evens: &#39;, evens);
+var sum = numbers.reduce((a, b) =&gt; a + b, @);
+console.log(&#39;Sum:&quot;, sum);
+
+Output 27
+Doubled: [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+Evens: [2, 4, 6, 8, 10]
+Sum: 55
+Execution time: 8.00ms
+About: micro-javascript is a pure Python JavaScript interpreter with configurable memory and time limits. This playground runs entirely in your browser using
+Pyodide (Python compiled to WebAssembly). View on GitHub" style="max-width: 100%" />
+  <div><a style="float: right; text-decoration: none; border-bottom: none; padding-left: 1em;" href="https://simonwillison.net/2026/May/19/5-minute-llms/#5-minutes-llms.009.jpeg">#</a>
+  <p>One of my projects was a vibe-coded implementation of JavaScript in Python - a loose port of <a href="https://github.com/bellard/mquickjs">MicroQuickJS</a> - which I called <a href="https://github.com/simonw/micro-javascript">micro-javascript</a>. You can try it out in your browser in <a href="https://simonw.github.io/micro-javascript/playground.html">this playground</a>.</p>
+  </div>
+</div>
+<div class="slide" id="5-minutes-llms.010.jpeg">
+  <img loading="lazy" src="https://static.simonwillison.net/static/2026/5-minutes-llms/5-minutes-llms.010.jpeg" alt="JavaScript running in Python running in Pyodide running in WebAssembly running in JavaScript" style="max-width: 100%" />
+  <div><a style="float: right; text-decoration: none; border-bottom: none; padding-left: 1em;" href="https://simonwillison.net/2026/May/19/5-minute-llms/#5-minutes-llms.010.jpeg">#</a>
+  <p>That playground demo shows JavaScript code run using my micro-javascript library, in Python, running inside Pyodide, running in WebAssembly, running in JavaScript, running in a browser!</p>
+<p>It's pretty cool! But did anyone out there <em>need</em> a buggy, slow, insecure half-baked implementation of JavaScript in Python?</p>
+<p>They did not. I have quite a few other projects from that holiday period that I have since quietly retired!</p>
+  </div>
+</div>
+<div class="slide" id="5-minutes-llms.011.jpeg">
+  <img loading="lazy" src="https://static.simonwillison.net/static/2026/5-minutes-llms/5-minutes-llms.011.jpeg" alt="February 2026
+" style="max-width: 100%" />
+  <div><a style="float: right; text-decoration: none; border-bottom: none; padding-left: 1em;" href="https://simonwillison.net/2026/May/19/5-minute-llms/#5-minutes-llms.011.jpeg">#</a>
+  <p>On to February. Remember that Warelay project that had its first commit at the end of November?</p>
+  </div>
+</div>
+<div class="slide" id="5-minutes-llms.012.jpeg">
+  <img loading="lazy" src="https://static.simonwillison.net/static/2026/5-minutes-llms/5-minutes-llms.012.jpeg" alt="Warelay → CLAWDIS → CLAWDBOT →
+Clawdbot → Moltbot →🦞 OpenClaw" style="max-width: 100%" />
+  <div><a style="float: right; text-decoration: none; border-bottom: none; padding-left: 1em;" href="https://simonwillison.net/2026/May/19/5-minute-llms/#5-minutes-llms.012.jpeg">#</a>
+  <p>In December and January it had gone through <a href="https://simonwillison.net/2026/May/16/openclaw-names/">quite a few name changes</a>... and by February it was taking the world by storm under its final name, OpenClaw.</p>
+<p>The amount of attention it got is pretty astonishing for a project that was less than three months old.</p>
+  </div>
+</div>
+<div class="slide" id="5-minutes-llms.013.jpeg">
+  <img loading="lazy" src="https://static.simonwillison.net/static/2026/5-minutes-llms/5-minutes-llms.013.jpeg" alt="Generic term: Claw
+" style="max-width: 100%" />
+  <div><a style="float: right; text-decoration: none; border-bottom: none; padding-left: 1em;" href="https://simonwillison.net/2026/May/19/5-minute-llms/#5-minutes-llms.013.jpeg">#</a>
+  <p>OpenClaw is a "personal AI assistant", and we actually got a generic term for these, based on NanoClaw and ZeroClaw and suchlike... they're called <strong>Claws</strong>.</p>
+  </div>
+</div>
+<div class="slide" id="5-minutes-llms.014.jpeg">
+  <img loading="lazy" src="https://static.simonwillison.net/static/2026/5-minutes-llms/5-minutes-llms.014.jpeg" alt="An aquarium for your Claw
+" style="max-width: 100%" />
+  <div><a style="float: right; text-decoration: none; border-bottom: none; padding-left: 1em;" href="https://simonwillison.net/2026/May/19/5-minute-llms/#5-minutes-llms.014.jpeg">#</a>
+  <p>Mac Minis started to sell out around Silicon Valley, because people were buying them to run their Claws.</p>
+<p><a href="https://www.dbreunig.com/">Drew Breunig</a> joked to me that this is because they're the new digital pets, and a Mac Mini is the perfect aquarium for your Claw.</p>
+  </div>
+</div>
+<div class="slide" id="5-minutes-llms.015.jpeg">
+  <img loading="lazy" src="https://static.simonwillison.net/static/2026/5-minutes-llms/5-minutes-llms.015.jpeg" alt="Alfred Molina&#39;s Doc Ock in Spider-Man 2, tearing apart a New York subway train with his four claws." style="max-width: 100%" />
+  <div><a style="float: right; text-decoration: none; border-bottom: none; padding-left: 1em;" href="https://simonwillison.net/2026/May/19/5-minute-llms/#5-minutes-llms.015.jpeg">#</a>
+  <p>My favourite metaphor for Claws is Alfred Molina's Doc Ock in the 2004 movie Spider-Man 2. His claws were powered by AI, and were perfectly safe provided nothing damaged his inhibitor chip... after which they turned evil and took over.</p>
+  </div>
+</div>
+<div class="slide" id="5-minutes-llms.016.jpeg">
+  <img loading="lazy" src="https://static.simonwillison.net/static/2026/5-minutes-llms/5-minutes-llms.016.jpeg" alt="Gemini 3.1 Pro
+
+A really good illustration of a pelican riding a bicycle.
+" style="max-width: 100%" />
+  <div><a style="float: right; text-decoration: none; border-bottom: none; padding-left: 1em;" href="https://simonwillison.net/2026/May/19/5-minute-llms/#5-minutes-llms.016.jpeg">#</a>
+  <p>Also in February: Gemini 3.1 Pro came out, and drew me a <em>really good pelican riding a bicycle</em>. Look at this! It's even got a fish in its basket.</p>
+  </div>
+</div>
+<div class="slide" id="5-minutes-llms.017.jpeg">
+  <img loading="lazy" src="https://static.simonwillison.net/static/2026/5-minutes-llms/5-minutes-llms.017.jpeg" alt="Gemini 3 Pro pelican contrasted with Gemini 3.1 Pro, as animated SVGs" style="max-width: 100%" />
+  <div><a style="float: right; text-decoration: none; border-bottom: none; padding-left: 1em;" href="https://simonwillison.net/2026/May/19/5-minute-llms/#5-minutes-llms.017.jpeg">#</a>
+  <p>And then Google's Jeff Dean <a href="https://simonwillison.net/2026/Feb/19/gemini-31-pro/#jeff-dean">tweeted this video</a> of an animated pelican riding a bicycle, plus a frog on a penny-farthing and a giraffe driving a tiny car and an ostrich on roller skates and a turtle kickflipping a skateboard and a dachshund driving a stretch limousine.</p>
+<p>So maybe the AI labs have been paying attention after all!</p>
+  </div>
+</div>
+<div class="slide" id="5-minutes-llms.018.jpeg">
+  <img loading="lazy" src="https://static.simonwillison.net/static/2026/5-minutes-llms/5-minutes-llms.018.jpeg" alt="April 2026
+" style="max-width: 100%" />
+  <div><a style="float: right; text-decoration: none; border-bottom: none; padding-left: 1em;" href="https://simonwillison.net/2026/May/19/5-minute-llms/#5-minutes-llms.018.jpeg">#</a>
+  <p>A lot of stuff happened just in the past month.</p>
+  </div>
+</div>
+<div class="slide" id="5-minutes-llms.019.jpeg">
+  <img loading="lazy" src="https://static.simonwillison.net/static/2026/5-minutes-llms/5-minutes-llms.019.jpeg" alt="Gemma 4 26B-A4B (17.99GB)
+
+A pretty decent pelican riding a bicycle, though the bike is a bit mis-shapen." style="max-width: 100%" />
+  <div><a style="float: right; text-decoration: none; border-bottom: none; padding-left: 1em;" href="https://simonwillison.net/2026/May/19/5-minute-llms/#5-minutes-llms.019.jpeg">#</a>
+  <p>Google released the <a href="https://simonwillison.net/2026/Apr/2/gemma-4/">Gemma 4</a> series of models, which are the most capable open weight models I've seen from a US company.</p>
+  </div>
+</div>
+<div class="slide" id="5-minutes-llms.020.jpeg">
+  <img loading="lazy" src="https://static.simonwillison.net/static/2026/5-minutes-llms/5-minutes-llms.020.jpeg" alt="GLM-5.1
+MIT, 754B parameter, 1.51TB!
+" style="max-width: 100%" />
+  <div><a style="float: right; text-decoration: none; border-bottom: none; padding-left: 1em;" href="https://simonwillison.net/2026/May/19/5-minute-llms/#5-minutes-llms.020.jpeg">#</a>
+  <p>Also last month, Chinese AI lab GLM came out with <a href="https://simonwillison.net/2026/Apr/7/glm-51/">GLM-5.1</a> - an open weight 1.5TB monster! This is a very effective model... if you can afford the hardware to run it.</p>
+  </div>
+</div>
+<div class="slide" id="5-minutes-llms.021.jpeg">
+  <img loading="lazy" src="https://static.simonwillison.net/static/2026/5-minutes-llms/5-minutes-llms.021.jpeg" alt="" style="max-width: 100%" />
+  <div><a style="float: right; text-decoration: none; border-bottom: none; padding-left: 1em;" href="https://simonwillison.net/2026/May/19/5-minute-llms/#5-minutes-llms.021.jpeg">#</a>
+  <p>GLM-5.1 drew me this very competent pelican on a bicycle.</p>
+  </div>
+</div>
+<div class="slide" id="5-minutes-llms.022.jpeg">
+  <img loading="lazy" src="https://static.simonwillison.net/static/2026/5-minutes-llms/5-minutes-llms.022.jpeg" alt="The bike is wonky, the pelican is floating." style="max-width: 100%" />
+  <div><a style="float: right; text-decoration: none; border-bottom: none; padding-left: 1em;" href="https://simonwillison.net/2026/May/19/5-minute-llms/#5-minutes-llms.022.jpeg">#</a>
+  <p>... though when it <a href="https://gisthost.github.io/?73bb6808b18c2482f66e5f082c75f36e">tried to animate it</a> the bicycle bounced off into the top and the bicycle got warped.</p>
+  </div>
+</div>
+<div class="slide" id="5-minutes-llms.023.jpeg">
+  <img loading="lazy" src="https://static.simonwillison.net/static/2026/5-minutes-llms/5-minutes-llms.023.jpeg" alt="Screenshot of Bluesky
+
+Charles
+‪@charles.capps.me‬
+I think you should pester it with another animal using another method of locomotion. 
+
+Something tells me it was trained for this. I can&#39;t quite put my finger on it. /s
+
+NORTH VIRGINIA OPOSSUM ON AN E-SCOOTER!!" style="max-width: 100%" />
+  <div><a style="float: right; text-decoration: none; border-bottom: none; padding-left: 1em;" href="https://simonwillison.net/2026/May/19/5-minute-llms/#5-minutes-llms.023.jpeg">#</a>
+  <p>Charles on Bluesky suggested I try it with a North Virginia Opossum on an E-scooter</p>
+  </div>
+</div>
+<div class="slide" id="5-minutes-llms.024.jpeg">
+  <img loading="lazy" src="https://static.simonwillison.net/static/2026/5-minutes-llms/5-minutes-llms.024.jpeg" alt="NORTH VIRGINIA OPOSSUM
+CRUISING THE COMMONWEALTH SINCE DUSK
+
+And a really cool illustration of a possum." style="max-width: 100%" />
+  <div><a style="float: right; text-decoration: none; border-bottom: none; padding-left: 1em;" href="https://simonwillison.net/2026/May/19/5-minute-llms/#5-minutes-llms.024.jpeg">#</a>
+  <p>And it did this! I've tried this on other models and they don't even come close. "Cruising the commonwealth since dusk" is perfect. It's <a href="https://static.simonwillison.net/static/2026/glm-possum-escooter.html">animated too</a>.</p>
+  </div>
+</div>
+<div class="slide" id="5-minutes-llms.025.jpeg">
+  <img loading="lazy" src="https://static.simonwillison.net/static/2026/5-minutes-llms/5-minutes-llms.025.jpeg" alt="Qwen3.6-35B-A3B is a 20.9GB file that runs on my laptop
+
+It drew a better pelican on a bicycle than Opus 4.7, which messed up the bicycle frame." style="max-width: 100%" />
+  <div><a style="float: right; text-decoration: none; border-bottom: none; padding-left: 1em;" href="https://simonwillison.net/2026/May/19/5-minute-llms/#5-minutes-llms.025.jpeg">#</a>
+  <p>The other neat Chinese open weight models in April came from Qwen. <a href="https://simonwillison.net/2026/Apr/16/qwen-beats-opus/">Qwen3.6-35B-A3B on my laptop drew me a better pelican than Claude Opus 4.7</a>. That's a 20.9GB open weights model that runs on my laptop!</p>
+<p>(I think this mainly demonstrates that the pelican on the bicycle has firmly exceeded its limits as a useful benchmark.)</p>
+  </div>
+</div>
+<div class="slide" id="5-minutes-llms.026.jpeg">
+  <img loading="lazy" src="https://static.simonwillison.net/static/2026/5-minutes-llms/5-minutes-llms.026.jpeg" alt="Claude Sonnet 4.5 pelican for comparison." style="max-width: 100%" />
+  <div><a style="float: right; text-decoration: none; border-bottom: none; padding-left: 1em;" href="https://simonwillison.net/2026/May/19/5-minute-llms/#5-minutes-llms.026.jpeg">#</a>
+  <p>Here's that Claude Sonnet 4.5 pelican from September for comparison. </p>
+  </div>
+</div>
+<div class="slide" id="5-minutes-llms.027.jpeg">
+  <img loading="lazy" src="https://static.simonwillison.net/static/2026/5-minutes-llms/5-minutes-llms.027.jpeg" alt="The themes of the past 6 months:
+Coding agents got really good
+Local models wildly outperform expectations
+" style="max-width: 100%" />
+  <div><a style="float: right; text-decoration: none; border-bottom: none; padding-left: 1em;" href="https://simonwillison.net/2026/May/19/5-minute-llms/#5-minutes-llms.027.jpeg">#</a>
+  <p>So those were the two main themes of the past six months. The coding agents got really good... and the laptop-available models, while a lot weaker than the frontier, have started wildly outperforming expectations.</p>
+  </div>
+</div>
+    
+        <p>Tags: <a href="https://simonwillison.net/tags/lightning-talks">lightning-talks</a>, <a href="https://simonwillison.net/tags/pycon">pycon</a>, <a href="https://simonwillison.net/tags/speaking">speaking</a>, <a href="https://simonwillison.net/tags/ai">ai</a>, <a href="https://simonwillison.net/tags/generative-ai">generative-ai</a>, <a href="https://simonwillison.net/tags/local-llms">local-llms</a>, <a href="https://simonwillison.net/tags/llms">llms</a>, <a href="https://simonwillison.net/tags/annotated-talks">annotated-talks</a>, <a href="https://simonwillison.net/tags/pelican-riding-a-bicycle">pelican-riding-a-bicycle</a>, <a href="https://simonwillison.net/tags/coding-agents">coding-agents</a></p>]]></summary>
+        <author>
+            <name>Simon Willison's Weblog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How We Built LangSmith Engine, Our Agent for Improving Agents]]></title>
+        <id>https://www.langchain.com/blog/how-we-built-langsmith-engine-our-agent-for-improving-agents</id>
+        <link href="https://www.langchain.com/blog/how-we-built-langsmith-engine-our-agent-for-improving-agents"/>
+        <updated>2026-05-19T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[By Palash Shah — May 19, 2026]]></summary>
+        <author>
+            <name>Palash Shah</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introducing the Ettin Reranker Family]]></title>
+        <id>https://huggingface.co/blog/ettin-reranker</id>
+        <link href="https://huggingface.co/blog/ettin-reranker"/>
+        <updated>2026-05-19T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The Hugging Face blog]]></summary>
+        <author>
+            <name>Hugging Face - Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation]]></title>
+        <id>https://huggingface.co/blog/nvidia/cosmos-fine-tuning-for-robot-video-generation</id>
+        <link href="https://huggingface.co/blog/nvidia/cosmos-fine-tuning-for-robot-video-generation"/>
+        <updated>2026-05-18T16:00:21.000Z</updated>
+        <summary type="html"><![CDATA[The Hugging Face blog]]></summary>
+        <author>
+            <name>Hugging Face - Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[PaddleOCR 3.5: Running OCR and Document Parsing Tasks with a Transformers Backend]]></title>
+        <id>https://huggingface.co/blog/PaddlePaddle/paddleocr-transformers</id>
+        <link href="https://huggingface.co/blog/PaddlePaddle/paddleocr-transformers"/>
+        <updated>2026-05-18T15:12:46.000Z</updated>
+        <summary type="html"><![CDATA[The Hugging Face blog]]></summary>
+        <author>
+            <name>Hugging Face - Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Glaucous-winged Gull, Brown Pelican, Snowy Egret, Canada Goose]]></title>
+        <id>https://simonwillison.net/2026/May/18/sighting-362781627/#atom-everything</id>
+        <link href="https://simonwillison.net/2026/May/18/sighting-362781627/#atom-everything"/>
+        <updated>2026-05-18T14:51:00.000Z</updated>
+        <summary type="html"><![CDATA[<p><img src="https://static.inaturalist.org/photos/662161673/large.jpg" alt="Glaucous-winged Gull"></p><p><img src="https://static.inaturalist.org/photos/662161721/large.jpg" alt="Glaucous-winged Gull"></p><p><img src="https://static.inaturalist.org/photos/662161937/large.jpg" alt="Brown Pelican"></p><p><img src="https://static.inaturalist.org/photos/662161148/large.jpg" alt="Snowy Egret"></p><p><img src="https://static.inaturalist.org/photos/662161189/large.jpg" alt="Snowy Egret"></p><p><img src="https://static.inaturalist.org/photos/662160828/large.jpg" alt="Canada Goose"></p><p><img src="https://static.inaturalist.org/photos/662160866/large.jpg" alt="Canada Goose"></p><p>Glaucous-winged Gull, Brown Pelican, Snowy Egret, Canada Goose, in Los Angeles River, CA, US</p><p>I'm heading home from PyCon US today so I went on a last morning walk to try and spot a pelican. I saw one! Didn't get a great photo of that, but I did see some goslings down by the swan boat lake.</p>]]></summary>
+        <author>
+            <name>Simon Willison's Weblog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The Open Agent Leaderboard]]></title>
+        <id>https://huggingface.co/blog/ibm-research/open-agent-leaderboard</id>
+        <link href="https://huggingface.co/blog/ibm-research/open-agent-leaderboard"/>
+        <updated>2026-05-18T14:12:58.000Z</updated>
+        <summary type="html"><![CDATA[The Hugging Face blog]]></summary>
+        <author>
+            <name>Hugging Face - Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GDS weighs in on the NHS's decision to retreat from Open Source]]></title>
+        <id>https://simonwillison.net/2026/May/17/gds-weighs-in/#atom-everything</id>
+        <link href="https://simonwillison.net/2026/May/17/gds-weighs-in/#atom-everything"/>
+        <updated>2026-05-17T15:59:41.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong><a href="https://shkspr.mobi/blog/2026/05/gds-weighs-in-on-the-nhss-decision-to-retreat-from-open-source/">GDS weighs in on the NHS&#x27;s decision to retreat from Open Source</a></strong></p>
+Terence Eden continues his coverage of the NHS' <a href="https://shkspr.mobi/blog/2026/05/nhs-goes-to-war-against-open-source/">poorly considered decision</a> to close down access to their open source repositories in response to vulnerabilities reported to them as part of <a href="https://simonwillison.net/2026/Apr/7/project-glasswing/">Project Glasswing</a>.</p>
+<p>Now the Government Digital Service have joined the conversation with <a href="https://www.gov.uk/guidance/ai-open-code-and-vulnerability-risk-in-the-public-sector">AI, open code and vulnerability risk in the public sector</a>, published May 14th. Their key recommendation:</p>
+<blockquote>
+<p>Keep open by default. Making everything private adds additional delivery and policy costs, and can reduce reuse and scrutiny. Openness should remain the default posture, with closure used sparingly and deliberately. </p>
+</blockquote>
+<p>While they don't mention the NHS by name, Terence speaks the language of the civil service and interprets this as a major escalation:</p>
+<blockquote>
+<p>Within the UK's Civil Service you occasionally hear the expression "being invited to a meeting <em>without biscuits</em>". It implies a rather frosty discussion without any of the polite niceties of a normal meeting. In general though, even when people have severe disagreements, it is rare for tempers to fray. It is even rarer for those internal disagreements to spill over into public.</p>
+</blockquote>
+
+
+    <p>Tags: <a href="https://simonwillison.net/tags/open-source">open-source</a>, <a href="https://simonwillison.net/tags/security">security</a>, <a href="https://simonwillison.net/tags/ai">ai</a>, <a href="https://simonwillison.net/tags/generative-ai">generative-ai</a>, <a href="https://simonwillison.net/tags/llms">llms</a>, <a href="https://simonwillison.net/tags/gov-uk">gov-uk</a>, <a href="https://simonwillison.net/tags/terence-eden">terence-eden</a>, <a href="https://simonwillison.net/tags/ai-ethics">ai-ethics</a>, <a href="https://simonwillison.net/tags/ai-security-research">ai-security-research</a></p>]]></summary>
+        <author>
+            <name>Simon Willison's Weblog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Warelay -> OpenClaw]]></title>
         <id>https://simonwillison.net/2026/May/16/openclaw-names/#atom-everything</id>
@@ -115,6 +1043,34 @@
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[datasette-agent 0.1a2]]></title>
+        <id>https://simonwillison.net/2026/May/15/datasette-agent/#atom-everything</id>
+        <link href="https://simonwillison.net/2026/May/15/datasette-agent/#atom-everything"/>
+        <updated>2026-05-15T00:03:00.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong>Release:</strong> <a href="https://github.com/datasette/datasette-agent/releases/tag/0.1a2">datasette-agent 0.1a2</a></p>
+        <blockquote>
+<ul>
+<li>Tool availability can now be attached to a <code>required_permission</code>. The default background agent tools now require the new <code>datasette-agent-background</code> permission. #10</li>
+</ul>
+</blockquote>
+    
+    
+        <p>Tags: <a href="https://simonwillison.net/tags/datasette">datasette</a>, <a href="https://simonwillison.net/tags/datasette-agent">datasette-agent</a></p>]]></summary>
+        <author>
+            <name>Simon Willison's Weblog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[China Thwarts Meta’s Agentic Ambition, U.S. Evaluates Upcoming Models, AI Diagnoses Mammograms]]></title>
+        <id>https://www.deeplearning.ai/the-batch/issue-353</id>
+        <link href="https://www.deeplearning.ai/the-batch/issue-353"/>
+        <updated>2026-05-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[DeepLearning.AI The Batch — May 15, 2026]]></summary>
+        <author>
+            <name>DeepLearning.AI — The Batch</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Not so locked in any more]]></title>
         <id>https://simonwillison.net/2026/May/14/not-so-locked-in/#atom-everything</id>
         <link href="https://simonwillison.net/2026/May/14/not-so-locked-in/#atom-everything"/>
@@ -149,13 +1105,21 @@
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[China Thwarts Meta’s Agentic Ambition, U.S. Evaluates Upcoming Models, AI Diagnoses Mammograms]]></title>
-        <id>https://www.deeplearning.ai/the-batch/issue-353</id>
-        <link href="https://www.deeplearning.ai/the-batch/issue-353"/>
-        <updated>2026-05-14T19:00:00.000Z</updated>
-        <summary type="html"><![CDATA[DeepLearning.AI The Batch — May 15, 2026]]></summary>
+        <title type="html"><![CDATA[datasette-agent 0.1a1]]></title>
+        <id>https://simonwillison.net/2026/May/14/datasette-agent/#atom-everything</id>
+        <link href="https://simonwillison.net/2026/May/14/datasette-agent/#atom-everything"/>
+        <updated>2026-05-14T22:01:42.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong>Release:</strong> <a href="https://github.com/datasette/datasette-agent/releases/tag/0.1a1">datasette-agent 0.1a1</a></p>
+        <blockquote>
+<ul>
+<li>Now uses the <code>execute-sql</code> permission when deciding which tables to list to the user. #8</li>
+</ul>
+</blockquote>
+    
+    
+        <p>Tags: <a href="https://simonwillison.net/tags/datasette">datasette</a>, <a href="https://simonwillison.net/tags/datasette-agent">datasette-agent</a></p>]]></summary>
         <author>
-            <name>DeepLearning.AI — The Batch</name>
+            <name>Simon Willison's Weblog</name>
         </author>
     </entry>
     <entry>
@@ -198,6 +1162,26 @@
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Everything we shipped at Interrupt]]></title>
+        <id>https://www.langchain.com/blog/interrupt-2026-overview</id>
+        <link href="https://www.langchain.com/blog/interrupt-2026-overview"/>
+        <updated>2026-05-14T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Company Announcements / LangSmith — By Jacob Talbot — May 14, 2026]]></summary>
+        <author>
+            <name>Jacob Talbot</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introducing LangChain Labs]]></title>
+        <id>https://www.langchain.com/blog/introducing-langchain-labs</id>
+        <link href="https://www.langchain.com/blog/introducing-langchain-labs"/>
+        <updated>2026-05-14T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Company Announcements — By Harrison Chase — May 14, 2026]]></summary>
+        <author>
+            <name>Harrison Chase</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Unlocking asynchronicity in continuous batching]]></title>
         <id>https://huggingface.co/blog/continuous_async</id>
         <link href="https://huggingface.co/blog/continuous_async"/>
@@ -220,26 +1204,6 @@ We have a bunch of neat Datasette announcements in the pipeline so we decided it
     <p>Tags: <a href="https://simonwillison.net/tags/ai">ai</a>, <a href="https://simonwillison.net/tags/datasette">datasette</a>, <a href="https://simonwillison.net/tags/generative-ai">generative-ai</a>, <a href="https://simonwillison.net/tags/llms">llms</a>, <a href="https://simonwillison.net/tags/ai-assisted-programming">ai-assisted-programming</a>, <a href="https://simonwillison.net/tags/codex">codex</a></p>]]></summary>
         <author>
             <name>Simon Willison's Weblog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Everything we shipped at Interrupt]]></title>
-        <id>https://www.langchain.com/blog/interrupt-2026-overview</id>
-        <link href="https://www.langchain.com/blog/interrupt-2026-overview"/>
-        <updated>2026-05-13T19:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Company Announcements / LangSmith — By Jacob Talbot — May 14, 2026]]></summary>
-        <author>
-            <name>Jacob Talbot</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Introducing LangChain Labs]]></title>
-        <id>https://www.langchain.com/blog/introducing-langchain-labs</id>
-        <link href="https://www.langchain.com/blog/introducing-langchain-labs"/>
-        <updated>2026-05-13T19:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Company Announcements — By Harrison Chase — May 14, 2026]]></summary>
-        <author>
-            <name>Harrison Chase</name>
         </author>
     </entry>
     <entry>
@@ -270,6 +1234,76 @@ We have a bunch of neat Datasette announcements in the pipeline so we decided it
         <p>Tags: <a href="https://simonwillison.net/tags/content-security-policy">content-security-policy</a>, <a href="https://simonwillison.net/tags/iframes">iframes</a>, <a href="https://simonwillison.net/tags/security">security</a></p>]]></summary>
         <author>
             <name>Simon Willison's Weblog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introducing LangSmith Engine]]></title>
+        <id>https://www.langchain.com/blog/introducing-langsmith-engine</id>
+        <link href="https://www.langchain.com/blog/introducing-langsmith-engine"/>
+        <updated>2026-05-13T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[LangSmith — By Ben Tannyhill — May 13, 2026]]></summary>
+        <author>
+            <name>Ben Tannyhill</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[We built SmithDB, the data layer for agent observability]]></title>
+        <id>https://www.langchain.com/blog/introducing-smithdb</id>
+        <link href="https://www.langchain.com/blog/introducing-smithdb"/>
+        <updated>2026-05-13T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[LangSmith — By Ankush Gola — May 13, 2026]]></summary>
+        <author>
+            <name>Ankush Gola</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introducing LangSmith Context Hub]]></title>
+        <id>https://www.langchain.com/blog/introducing-context-hub</id>
+        <link href="https://www.langchain.com/blog/introducing-context-hub"/>
+        <updated>2026-05-13T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[LangSmith — By Harrison Chase — May 13, 2026]]></summary>
+        <author>
+            <name>Harrison Chase</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[LangSmith Sandboxes are Generally Available]]></title>
+        <id>https://www.langchain.com/blog/langsmith-sandboxes-generally-available</id>
+        <link href="https://www.langchain.com/blog/langsmith-sandboxes-generally-available"/>
+        <updated>2026-05-13T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[LangSmith — By Mukhil Loganathan — May 13, 2026]]></summary>
+        <author>
+            <name>Mukhil Loganathan</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introducing Managed Deep Agents]]></title>
+        <id>https://www.langchain.com/blog/introducing-managed-deep-agents</id>
+        <link href="https://www.langchain.com/blog/introducing-managed-deep-agents"/>
+        <updated>2026-05-13T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Deep Agents — By Victor Moreira — May 13, 2026]]></summary>
+        <author>
+            <name>Victor Moreira</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[New in Deep Agents v0.6]]></title>
+        <id>https://www.langchain.com/blog/deep-agents-0-6</id>
+        <link href="https://www.langchain.com/blog/deep-agents-0-6"/>
+        <updated>2026-05-13T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Deep Agents — By Sydney Runkle — May 13, 2026]]></summary>
+        <author>
+            <name>Sydney Runkle</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[LangSmith LLM Gateway: runtime governance built into the agent lifecycle]]></title>
+        <id>https://www.langchain.com/blog/introducing-llm-gateway</id>
+        <link href="https://www.langchain.com/blog/introducing-llm-gateway"/>
+        <updated>2026-05-13T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[LangSmith — By Martha Janicki — May 13, 2026]]></summary>
+        <author>
+            <name>Martha Janicki</name>
         </author>
     </entry>
     <entry>
@@ -322,76 +1356,6 @@ We have a bunch of neat Datasette announcements in the pipeline so we decided it
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Introducing LangSmith Engine]]></title>
-        <id>https://www.langchain.com/blog/introducing-langsmith-engine</id>
-        <link href="https://www.langchain.com/blog/introducing-langsmith-engine"/>
-        <updated>2026-05-12T19:00:00.000Z</updated>
-        <summary type="html"><![CDATA[LangSmith — By Ben Tannyhill — May 13, 2026]]></summary>
-        <author>
-            <name>Ben Tannyhill</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[We built SmithDB, the data layer for agent observability]]></title>
-        <id>https://www.langchain.com/blog/introducing-smithdb</id>
-        <link href="https://www.langchain.com/blog/introducing-smithdb"/>
-        <updated>2026-05-12T19:00:00.000Z</updated>
-        <summary type="html"><![CDATA[LangSmith — By Ankush Gola — May 13, 2026]]></summary>
-        <author>
-            <name>Ankush Gola</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Introducing LangSmith Context Hub]]></title>
-        <id>https://www.langchain.com/blog/introducing-context-hub</id>
-        <link href="https://www.langchain.com/blog/introducing-context-hub"/>
-        <updated>2026-05-12T19:00:00.000Z</updated>
-        <summary type="html"><![CDATA[LangSmith — By Harrison Chase — May 13, 2026]]></summary>
-        <author>
-            <name>Harrison Chase</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[LangSmith Sandboxes are Generally Available]]></title>
-        <id>https://www.langchain.com/blog/langsmith-sandboxes-generally-available</id>
-        <link href="https://www.langchain.com/blog/langsmith-sandboxes-generally-available"/>
-        <updated>2026-05-12T19:00:00.000Z</updated>
-        <summary type="html"><![CDATA[LangSmith — By Mukhil Loganathan — May 13, 2026]]></summary>
-        <author>
-            <name>Mukhil Loganathan</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Introducing Managed Deep Agents]]></title>
-        <id>https://www.langchain.com/blog/introducing-managed-deep-agents</id>
-        <link href="https://www.langchain.com/blog/introducing-managed-deep-agents"/>
-        <updated>2026-05-12T19:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Deep Agents — By Victor Moreira — May 13, 2026]]></summary>
-        <author>
-            <name>Victor Moreira</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[New in Deep Agents v0.6]]></title>
-        <id>https://www.langchain.com/blog/deep-agents-0-6</id>
-        <link href="https://www.langchain.com/blog/deep-agents-0-6"/>
-        <updated>2026-05-12T19:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Deep Agents — By Sydney Runkle — May 13, 2026]]></summary>
-        <author>
-            <name>Sydney Runkle</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[LangSmith LLM Gateway: runtime governance built into the agent lifecycle]]></title>
-        <id>https://www.langchain.com/blog/introducing-llm-gateway</id>
-        <link href="https://www.langchain.com/blog/introducing-llm-gateway"/>
-        <updated>2026-05-12T19:00:00.000Z</updated>
-        <summary type="html"><![CDATA[LangSmith — By Martha Janicki — May 13, 2026]]></summary>
-        <author>
-            <name>Martha Janicki</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[llm 0.32a2]]></title>
         <id>https://simonwillison.net/2026/May/12/llm/#atom-everything</id>
         <link href="https://simonwillison.net/2026/May/12/llm/#atom-everything"/>
@@ -407,6 +1371,16 @@ We have a bunch of neat Datasette announcements in the pipeline so we decided it
         <p>Tags: <a href="https://simonwillison.net/tags/llm">llm</a>, <a href="https://simonwillison.net/tags/projects">projects</a>, <a href="https://simonwillison.net/tags/openai">openai</a>, <a href="https://simonwillison.net/tags/generative-ai">generative-ai</a>, <a href="https://simonwillison.net/tags/annotated-release-notes">annotated-release-notes</a>, <a href="https://simonwillison.net/tags/ai">ai</a>, <a href="https://simonwillison.net/tags/llms">llms</a></p>]]></summary>
         <author>
             <name>Simon Willison's Weblog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Delta Channels: Evolving our Runtime for Long-Running Agents]]></title>
+        <id>https://www.langchain.com/blog/delta-channels-evolving-agent-runtime</id>
+        <link href="https://www.langchain.com/blog/delta-channels-evolving-agent-runtime"/>
+        <updated>2026-05-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Deep Agents / LangGraph — By Sydney Runkle — May 12, 2026]]></summary>
+        <author>
+            <name>Sydney Runkle</name>
         </author>
     </entry>
     <entry>
@@ -480,16 +1454,6 @@ Excellent, angry piece by Jason Koebler on how AI writing online is becoming imp
     <p>Tags: <a href="https://simonwillison.net/tags/definitions">definitions</a>, <a href="https://simonwillison.net/tags/ai">ai</a>, <a href="https://simonwillison.net/tags/generative-ai">generative-ai</a>, <a href="https://simonwillison.net/tags/llms">llms</a>, <a href="https://simonwillison.net/tags/slop">slop</a>, <a href="https://simonwillison.net/tags/jason-koebler">jason-koebler</a>, <a href="https://simonwillison.net/tags/ai-ethics">ai-ethics</a></p>]]></summary>
         <author>
             <name>Simon Willison's Weblog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Delta Channels: Evolving our Runtime for Long-Running Agents]]></title>
-        <id>https://www.langchain.com/blog/delta-channels-evolving-agent-runtime</id>
-        <link href="https://www.langchain.com/blog/delta-channels-evolving-agent-runtime"/>
-        <updated>2026-05-11T19:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Deep Agents / LangGraph — By Sydney Runkle — May 12, 2026]]></summary>
-        <author>
-            <name>Sydney Runkle</name>
         </author>
     </entry>
     <entry>
@@ -605,6 +1569,16 @@ Tobias Lütke describes Shopify's internal coding agent tool, River, which opera
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[The Agent Development Lifecycle]]></title>
+        <id>https://www.langchain.com/blog/the-agent-development-lifecycle</id>
+        <link href="https://www.langchain.com/blog/the-agent-development-lifecycle"/>
+        <updated>2026-05-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[By Harrison Chase — May 9, 2026]]></summary>
+        <author>
+            <name>Harrison Chase</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Using Claude Code: The Unreasonable Effectiveness of HTML]]></title>
         <id>https://simonwillison.net/2026/May/8/unreasonable-effectiveness-of-html/#atom-everything</id>
         <link href="https://simonwillison.net/2026/May/8/unreasonable-effectiveness-of-html/#atom-everything"/>
@@ -635,16 +1609,6 @@ Thought-provoking piece by Thariq Shihipar (on the Claude Code team at Anthropic
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[The Agent Development Lifecycle]]></title>
-        <id>https://www.langchain.com/blog/the-agent-development-lifecycle</id>
-        <link href="https://www.langchain.com/blog/the-agent-development-lifecycle"/>
-        <updated>2026-05-08T19:00:00.000Z</updated>
-        <summary type="html"><![CDATA[By Harrison Chase — May 9, 2026]]></summary>
-        <author>
-            <name>Harrison Chase</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[EMO: Pretraining mixture of experts for emergent modularity]]></title>
         <id>https://huggingface.co/blog/allenai/emo</id>
         <link href="https://huggingface.co/blog/allenai/emo"/>
@@ -652,6 +1616,16 @@ Thought-provoking piece by Thariq Shihipar (on the Claude Code team at Anthropic
         <summary type="html"><![CDATA[The Hugging Face blog]]></summary>
         <author>
             <name>Hugging Face - Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Building a company due diligence agent with Deep Agents, LangSmith and Parallel]]></title>
+        <id>https://www.langchain.com/blog/building-a-company-due-diligence-agent-with-deep-agents-langsmith-and-parallel</id>
+        <link href="https://www.langchain.com/blog/building-a-company-due-diligence-agent-with-deep-agents-langsmith-and-parallel"/>
+        <updated>2026-05-08T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Partner / Deep Agents — By Matt Harris, Nick Martitsch, Srimanth Tangedipalli, Karan Singh — May 8, 2026]]></summary>
+        <author>
+            <name>Matt Harris, Nick Martitsch, Srimanth Tangedipalli, Karan Singh</name>
         </author>
     </entry>
     <entry>
@@ -671,16 +1645,6 @@ Thought-provoking piece by Thariq Shihipar (on the Claude Code team at Anthropic
         <p>Tags: <a href="https://simonwillison.net/tags/llm-release">llm-release</a>, <a href="https://simonwillison.net/tags/gemini">gemini</a>, <a href="https://simonwillison.net/tags/llm">llm</a>, <a href="https://simonwillison.net/tags/google">google</a>, <a href="https://simonwillison.net/tags/generative-ai">generative-ai</a>, <a href="https://simonwillison.net/tags/ai">ai</a>, <a href="https://simonwillison.net/tags/llms">llms</a></p>]]></summary>
         <author>
             <name>Simon Willison's Weblog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Building a company due diligence agent with Deep Agents, LangSmith and Parallel]]></title>
-        <id>https://www.langchain.com/blog/building-a-company-due-diligence-agent-with-deep-agents-langsmith-and-parallel</id>
-        <link href="https://www.langchain.com/blog/building-a-company-due-diligence-agent-with-deep-agents-langsmith-and-parallel"/>
-        <updated>2026-05-07T19:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Partner / Deep Agents — By Matt Harris, Nick Martitsch, Srimanth Tangedipalli, Karan Singh — May 8, 2026]]></summary>
-        <author>
-            <name>Matt Harris, Nick Martitsch, Srimanth Tangedipalli, Karan Singh</name>
         </author>
     </entry>
     <entry>
@@ -805,7 +1769,7 @@ Fascinating, in-depth details on how Mozilla used their access to the Claude Myt
         <title type="html"><![CDATA[Agent observability needs feedback to power learning]]></title>
         <id>https://www.langchain.com/blog/agent-observability-needs-feedback-to-power-learning</id>
         <link href="https://www.langchain.com/blog/agent-observability-needs-feedback-to-power-learning"/>
-        <updated>2026-05-04T19:00:00.000Z</updated>
+        <updated>2026-05-05T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Harrison's In the Loop — By Harrison Chase — May 5, 2026]]></summary>
         <author>
             <name>Harrison Chase</name>
@@ -822,20 +1786,10 @@ Fascinating, in-depth details on how Mozilla used their access to the Claude Myt
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[DeepInfra on Hugging Face Inference Providers 🔥]]></title>
-        <id>https://huggingface.co/blog/inference-providers-deepinfra</id>
-        <link href="https://huggingface.co/blog/inference-providers-deepinfra"/>
-        <updated>2026-04-29T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[The Hugging Face blog]]></summary>
-        <author>
-            <name>Hugging Face - Blog</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Tuning Deep Agents to Work Well with Different Models]]></title>
         <id>https://www.langchain.com/blog/tuning-deep-agents-different-models</id>
         <link href="https://www.langchain.com/blog/tuning-deep-agents-different-models"/>
-        <updated>2026-04-28T19:00:00.000Z</updated>
+        <updated>2026-04-29T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Deep Agents / Agent Architecture / Open Source — By Vivek Trivedy, Mason Daugherty — April 29, 2026]]></summary>
         <author>
             <name>Vivek Trivedy, Mason Daugherty</name>
@@ -845,10 +1799,20 @@ Fascinating, in-depth details on how Mozilla used their access to the Claude Myt
         <title type="html"><![CDATA[How Madrigal Built a Flexible and Scalable Multi-Agent Research and Intelligence Platform for Pharma with LangChain and LangSmith]]></title>
         <id>https://www.langchain.com/blog/customers-madrigal</id>
         <link href="https://www.langchain.com/blog/customers-madrigal"/>
-        <updated>2026-04-28T19:00:00.000Z</updated>
+        <updated>2026-04-29T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Case Studies — By Parth Patel, Ron Filippo — April 29, 2026]]></summary>
         <author>
             <name>Parth Patel, Ron Filippo</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[DeepInfra on Hugging Face Inference Providers 🔥]]></title>
+        <id>https://huggingface.co/blog/inference-providers-deepinfra</id>
+        <link href="https://huggingface.co/blog/inference-providers-deepinfra"/>
+        <updated>2026-04-29T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The Hugging Face blog]]></summary>
+        <author>
+            <name>Hugging Face - Blog</name>
         </author>
     </entry>
     <entry>
@@ -865,7 +1829,7 @@ Fascinating, in-depth details on how Mozilla used their access to the Claude Myt
         <title type="html"><![CDATA[Interrupt Preview: Meet the MC]]></title>
         <id>https://www.langchain.com/blog/interrupt-preview-meet-the-mc</id>
         <link href="https://www.langchain.com/blog/interrupt-preview-meet-the-mc"/>
-        <updated>2026-04-27T19:00:00.000Z</updated>
+        <updated>2026-04-28T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Company Announcements — By Becca Weng — April 28, 2026]]></summary>
         <author>
             <name>Becca Weng</name>
@@ -876,46 +1840,6 @@ Fascinating, in-depth details on how Mozilla used their access to the Claude Myt
         <id>https://huggingface.co/blog/openai-privacy-filter-web-apps</id>
         <link href="https://huggingface.co/blog/openai-privacy-filter-web-apps"/>
         <updated>2026-04-27T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[The Hugging Face blog]]></summary>
-        <author>
-            <name>Hugging Face - Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[DeepSeek-V4: a million-token context that agents can actually use]]></title>
-        <id>https://huggingface.co/blog/deepseekv4</id>
-        <link href="https://huggingface.co/blog/deepseekv4"/>
-        <updated>2026-04-24T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[The Hugging Face blog]]></summary>
-        <author>
-            <name>Hugging Face - Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to Use Transformers.js in a Chrome Extension]]></title>
-        <id>https://huggingface.co/blog/transformersjs-chrome-extension</id>
-        <link href="https://huggingface.co/blog/transformersjs-chrome-extension"/>
-        <updated>2026-04-23T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[The Hugging Face blog]]></summary>
-        <author>
-            <name>Hugging Face - Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[QIMMA قِمّة ⛰: A Quality-First Arabic LLM Leaderboard]]></title>
-        <id>https://huggingface.co/blog/tiiuae/qimma-arabic-leaderboard</id>
-        <link href="https://huggingface.co/blog/tiiuae/qimma-arabic-leaderboard"/>
-        <updated>2026-04-21T10:09:58.000Z</updated>
-        <summary type="html"><![CDATA[The Hugging Face blog]]></summary>
-        <author>
-            <name>Hugging Face - Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[AI and the Future of Cybersecurity: Why Openness Matters]]></title>
-        <id>https://huggingface.co/blog/cybersecurity-openness</id>
-        <link href="https://huggingface.co/blog/cybersecurity-openness"/>
-        <updated>2026-04-21T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[The Hugging Face blog]]></summary>
         <author>
             <name>Hugging Face - Blog</name>

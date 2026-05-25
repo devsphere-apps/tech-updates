@@ -1,11 +1,15 @@
-# Osmosfeed writes to ./public first; npm run build moves artifacts to ./public/feed/.
-# cacheUrl must match the deployed cache.json location (GitHub Pages).
 cacheUrl: https://devsphere-apps.github.io/tech-updates/feed/cache.json
 siteTitle: "Agentic AI Engineer — Daily Feed"
 
 sources:
+  # LangChain / LangGraph — Core framework
   - href: https://blog.langchain.dev/rss/
+
+  # DeepLearning.AI — Best AI courses + news
   - href: https://www.deeplearning.ai/feed/
+
+  # HuggingFace — Models, agents, research
   - href: https://huggingface.co/blog/feed.xml
+
+  # Simon Willison — AI engineering, agents, tools
   - href: https://simonwillison.net/atom/everything/
-  - href: https://www.newsletter.swirlai.com/feed
