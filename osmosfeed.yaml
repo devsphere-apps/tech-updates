@@ -20,8 +20,3 @@ sources:
 
   # RAG & research
   - href: https://bair.berkeley.edu/blog/feed.xml
-
-  # Remote Agentic AI jobs (Remotive)
-  - href: https://remotive.com/remote-jobs/feed/category/software-dev?query=AI+agent
-  - href: https://remotive.com/remote-jobs/feed/category/software-dev?query=LangChain
-  - href: https://remotive.com/remote-jobs/feed/category/software-dev?query=LLM
