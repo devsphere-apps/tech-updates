@@ -1,0 +1,1125 @@
+{
+  "sources": [
+    {
+      "title": "LangChain Blog",
+      "feedUrl": "http://127.0.0.1:43123/langchain.xml",
+      "siteUrl": "https://www.langchain.com/blog",
+      "articles": [
+        {
+          "id": "https://www.langchain.com/blog/model-neutrality",
+          "author": "Neil Dahlke",
+          "description": "Agent Architecture — By Neil Dahlke — June 4, 2026",
+          "link": "https://www.langchain.com/blog/model-neutrality",
+          "publishedOn": "2026-06-04T00:00:00.000Z",
+          "wordCount": 5629,
+          "title": "Why Model Neutrality Matters More Than Cloud Neutrality",
+          "imageUrl": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a20e9ecceb33c3aa6859462_neutrality.png"
+        },
+        {
+          "id": "https://www.langchain.com/blog/how-to-build-a-custom-agent-harness",
+          "author": "Sydney Runkle",
+          "description": "Open Source / LangChain / Agent Architecture / Deep Agents — By Sydney Runkle — June 3, 2026",
+          "link": "https://www.langchain.com/blog/how-to-build-a-custom-agent-harness",
+          "publishedOn": "2026-06-03T00:00:00.000Z",
+          "wordCount": 5526,
+          "title": "How to Build a Custom Agent Harness",
+          "imageUrl": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a2035adfcf624bfe1b4fd22_94%20(1).png"
+        },
+        {
+          "id": "https://www.langchain.com/blog/how-harmonic-rebuilt-scout-on-deep-agents-and-4xd-retention-with-langsmith",
+          "author": "Sofia Sulikowski",
+          "description": "Case Studies — By Sofia Sulikowski — June 3, 2026",
+          "link": "https://www.langchain.com/blog/how-harmonic-rebuilt-scout-on-deep-agents-and-4xd-retention-with-langsmith",
+          "publishedOn": "2026-06-03T00:00:00.000Z",
+          "wordCount": 5905,
+          "title": "How Harmonic Rebuilt Scout on Deep Agents and 4x'd Retention with LangSmith",
+          "imageUrl": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a1dc0ab47392c70667a8201_Harmonic-blog.png"
+        },
+        {
+          "id": "https://www.langchain.com/blog/designing-efficient-verifiers-for-legal-agents",
+          "author": "LangChain Labs, Harvey",
+          "description": "LangChain Labs — By LangChain Labs, Harvey — June 2, 2026",
+          "link": "https://www.langchain.com/blog/designing-efficient-verifiers-for-legal-agents",
+          "publishedOn": "2026-06-02T00:00:00.000Z",
+          "wordCount": 5667,
+          "title": "Designing Efficient Verifiers for Legal Agents",
+          "imageUrl": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a1f1447c8d75200df0aff63_Frame%2014%20(1).png"
+        },
+        {
+          "id": "https://www.langchain.com/blog/introducing-rubrics-for-deepagents",
+          "author": "Shrikar Seshadri, Sydney Runkle",
+          "description": "Deep Agents / Open Source / Agent Architecture — By Shrikar Seshadri, Sydney Runkle — June 2, 2026",
+          "link": "https://www.langchain.com/blog/introducing-rubrics-for-deepagents",
+          "publishedOn": "2026-06-02T00:00:00.000Z",
+          "wordCount": 5226,
+          "title": "Introducing Rubrics: Build Agents that Evaluate and Correct Their Work",
+          "imageUrl": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a1f12f366c8242870d2fdcf_92.png"
+        },
+        {
+          "id": "https://www.langchain.com/blog/how-rippling-went-ai-native-across-every-product-in-6-months-with-deep-agents-and-langsmith",
+          "author": "Sofia Sulikowski",
+          "description": "Case Studies — By Sofia Sulikowski — June 1, 2026",
+          "link": "https://www.langchain.com/blog/how-rippling-went-ai-native-across-every-product-in-6-months-with-deep-agents-and-langsmith",
+          "publishedOn": "2026-06-01T00:00:00.000Z",
+          "wordCount": 5604,
+          "title": "How Rippling Went AI-Native Across Every Product in 6 Months with Deep Agents and LangSmith",
+          "imageUrl": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a10dc86325daf4bdd2af44b_rippling-ai-native.png"
+        },
+        {
+          "id": "https://www.langchain.com/blog/interpreter-skills",
+          "author": "Hunter Lovell",
+          "description": "Agent Architecture / Deep Agents / Open Source — By Hunter Lovell — May 29, 2026",
+          "link": "https://www.langchain.com/blog/interpreter-skills",
+          "publishedOn": "2026-05-29T00:00:00.000Z",
+          "wordCount": 7081,
+          "title": "Building workflows for agents with Skills and Interpreters",
+          "imageUrl": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a19bffa31e7a5acb423d99f_purple-74%20characters%20max.png"
+        },
+        {
+          "id": "https://www.langchain.com/blog/may-2026-langchain-newsletter",
+          "author": "The LangChain Team",
+          "description": "Newsletter — By The LangChain Team — May 27, 2026",
+          "link": "https://www.langchain.com/blog/may-2026-langchain-newsletter",
+          "publishedOn": "2026-05-27T00:00:00.000Z",
+          "wordCount": 4894,
+          "title": "May 2026: LangChain Newsletter",
+          "imageUrl": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a175b25566fbd119b6cd345_May-newsletter.jpg"
+        },
+        {
+          "id": "https://www.langchain.com/blog/lyft-built-a-self-serve-ai-agent-platform-for-customer-support-with-langgraph-and-langsmith",
+          "author": "Akshay Sharma",
+          "description": "Case Studies / LangGraph / LangSmith / Tutorials & How-Tos — By Akshay Sharma — May 27, 2026",
+          "link": "https://www.langchain.com/blog/lyft-built-a-self-serve-ai-agent-platform-for-customer-support-with-langgraph-and-langsmith",
+          "publishedOn": "2026-05-27T00:00:00.000Z",
+          "wordCount": 6372,
+          "title": "How Lyft Built a Self-Serve AI Agent Platform for Customer Support with LangGraph and LangSmith",
+          "imageUrl": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a0f309a0e77b5e3544965e5_Lyft-customer-support-blog.png"
+        },
+        {
+          "id": "https://www.langchain.com/blog/mission-control-operating-self-hosted-langsmith-on-kubernetes",
+          "author": "Gethin Dibben",
+          "description": "By Gethin Dibben — May 26, 2026",
+          "link": "https://www.langchain.com/blog/mission-control-operating-self-hosted-langsmith-on-kubernetes",
+          "publishedOn": "2026-05-26T00:00:00.000Z",
+          "wordCount": 5394,
+          "title": "Mission Control: Operating Self-Hosted LangSmith on Kubernetes",
+          "imageUrl": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a15d44fbcc56ddb5fa6ef30_mission-control.png"
+        },
+        {
+          "id": "https://www.langchain.com/blog/token-streams-to-agent-streams",
+          "author": "Christian Bromann, Nick Hollon",
+          "description": "LangChain / Open Source / LangGraph — By Christian Bromann, Nick Hollon — May 21, 2026",
+          "link": "https://www.langchain.com/blog/token-streams-to-agent-streams",
+          "publishedOn": "2026-05-21T00:00:00.000Z",
+          "wordCount": 6262,
+          "title": "From Token Streams to Agent Streams",
+          "imageUrl": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a0f012b2ff304b9a169e892_blue-57%20characters%20max.png"
+        },
+        {
+          "id": "https://www.langchain.com/blog/how-auth-proxy-secures-network-access-for-langsmith-agent-sandboxes",
+          "author": "Mukil Loganathan",
+          "description": "LangSmith — By Mukil Loganathan — May 21, 2026",
+          "link": "https://www.langchain.com/blog/how-auth-proxy-secures-network-access-for-langsmith-agent-sandboxes",
+          "publishedOn": "2026-05-21T00:00:00.000Z",
+          "wordCount": 6018,
+          "title": "How Auth Proxy secures network access for LangSmith agent sandboxes",
+          "imageUrl": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a0e9744f0232c559869a96b_auth-proxy-sandboxes.png"
+        },
+        {
+          "id": "https://www.langchain.com/blog/financial-ai-that-investigates-macro-trends-eu-economic-analysis-with-you-com-and-langchain",
+          "author": "Srimanth Tangedipalli, Karan Singh, Saurabh Sharma, Akhil Pothana",
+          "description": "Partner / Deep Agents / LangSmith — By Srimanth Tangedipalli, Karan Singh, Saurabh Sharma, Akhil Pothana — May 20, 2026",
+          "link": "https://www.langchain.com/blog/financial-ai-that-investigates-macro-trends-eu-economic-analysis-with-you-com-and-langchain",
+          "publishedOn": "2026-05-20T00:00:00.000Z",
+          "wordCount": 8310,
+          "title": "EU macroeconomic analysis with Deep Agents, LangSmith, and the You.com Finance Research API",
+          "imageUrl": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a19109c2af7527cb5ec809e_logo%20and%20title%20-%2020%20characters%20max%20(8).png"
+        },
+        {
+          "id": "https://www.langchain.com/blog/give-your-agents-an-interpreter",
+          "author": "Hunter Lovell",
+          "description": "Deep Agents / Agent Architecture / Open Source — By Hunter Lovell — May 20, 2026",
+          "link": "https://www.langchain.com/blog/give-your-agents-an-interpreter",
+          "publishedOn": "2026-05-20T00:00:00.000Z",
+          "wordCount": 6703,
+          "title": "Give Your Agents an Interpreter",
+          "imageUrl": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a0e02b3e38f745763e01969_7.png"
+        },
+        {
+          "id": "https://www.langchain.com/blog/how-we-built-langsmith-engine-our-agent-for-improving-agents",
+          "author": "Palash Shah",
+          "description": "By Palash Shah — May 19, 2026",
+          "link": "https://www.langchain.com/blog/how-we-built-langsmith-engine-our-agent-for-improving-agents",
+          "publishedOn": "2026-05-19T00:00:00.000Z",
+          "wordCount": 7494,
+          "title": "How We Built LangSmith Engine, Our Agent for Improving Agents",
+          "imageUrl": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a0c7cab710767bbc0f61dc9_Screenshot%202026-05-19%20at%208.05.40%E2%80%AFAM.png"
+        },
+        {
+          "id": "https://www.langchain.com/blog/interrupt-2026-overview",
+          "author": "Jacob Talbot",
+          "description": "Company Announcements / LangSmith — By Jacob Talbot — May 14, 2026",
+          "link": "https://www.langchain.com/blog/interrupt-2026-overview",
+          "publishedOn": "2026-05-14T00:00:00.000Z",
+          "wordCount": 6438,
+          "title": "Everything we shipped at Interrupt",
+          "imageUrl": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a054b1676ad9f9cdad8d5a5_everything-we-shipped.png"
+        },
+        {
+          "id": "https://www.langchain.com/blog/introducing-langchain-labs",
+          "author": "Harrison Chase",
+          "description": "Company Announcements — By Harrison Chase — May 14, 2026",
+          "link": "https://www.langchain.com/blog/introducing-langchain-labs",
+          "publishedOn": "2026-05-14T00:00:00.000Z",
+          "wordCount": 4902,
+          "title": "Introducing LangChain Labs",
+          "imageUrl": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a05f8044c3c7b33c3838202_introducing-langchain-labs.png"
+        },
+        {
+          "id": "https://www.langchain.com/blog/introducing-langsmith-engine",
+          "author": "Ben Tannyhill",
+          "description": "LangSmith — By Ben Tannyhill — May 13, 2026",
+          "link": "https://www.langchain.com/blog/introducing-langsmith-engine",
+          "publishedOn": "2026-05-13T00:00:00.000Z",
+          "wordCount": 5340,
+          "title": "Introducing LangSmith Engine",
+          "imageUrl": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a021d4bf45444a6bf083a5f_Engine%20Announcement.png"
+        },
+        {
+          "id": "https://www.langchain.com/blog/introducing-smithdb",
+          "author": "Ankush Gola",
+          "description": "LangSmith — By Ankush Gola — May 13, 2026",
+          "link": "https://www.langchain.com/blog/introducing-smithdb",
+          "publishedOn": "2026-05-13T00:00:00.000Z",
+          "wordCount": 6371,
+          "title": "We built SmithDB, the data layer for agent observability",
+          "imageUrl": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a021b6ded735b62237ce296_SmithDB%20Announcement.png"
+        },
+        {
+          "id": "https://www.langchain.com/blog/introducing-context-hub",
+          "author": "Harrison Chase",
+          "description": "LangSmith — By Harrison Chase — May 13, 2026",
+          "link": "https://www.langchain.com/blog/introducing-context-hub",
+          "publishedOn": "2026-05-13T00:00:00.000Z",
+          "wordCount": 6147,
+          "title": "Introducing LangSmith Context Hub",
+          "imageUrl": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a0221959e59906540be84d2_Langsmith%20Context%20Hub.png"
+        },
+        {
+          "id": "https://www.langchain.com/blog/langsmith-sandboxes-generally-available",
+          "author": "Mukhil Loganathan",
+          "description": "LangSmith — By Mukhil Loganathan — May 13, 2026",
+          "link": "https://www.langchain.com/blog/langsmith-sandboxes-generally-available",
+          "publishedOn": "2026-05-13T00:00:00.000Z",
+          "wordCount": 5396,
+          "title": "LangSmith Sandboxes are Generally Available",
+          "imageUrl": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a021dfeef5f4c1962b1afbe_Langsmith%20Sandboxes.png"
+        },
+        {
+          "id": "https://www.langchain.com/blog/introducing-managed-deep-agents",
+          "author": "Victor Moreira",
+          "description": "Deep Agents — By Victor Moreira — May 13, 2026",
+          "link": "https://www.langchain.com/blog/introducing-managed-deep-agents",
+          "publishedOn": "2026-05-13T00:00:00.000Z",
+          "wordCount": 5334,
+          "title": "Introducing Managed Deep Agents",
+          "imageUrl": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a047c49423a3f18ba8623cb_manageddeepagents_.png"
+        },
+        {
+          "id": "https://www.langchain.com/blog/deep-agents-0-6",
+          "author": "Sydney Runkle",
+          "description": "Deep Agents — By Sydney Runkle — May 13, 2026",
+          "link": "https://www.langchain.com/blog/deep-agents-0-6",
+          "publishedOn": "2026-05-13T00:00:00.000Z",
+          "wordCount": 6369,
+          "title": "New in Deep Agents v0.6",
+          "imageUrl": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a047cf0dfb6150e5807787d_New%20in%20Deep%20Agents.png"
+        },
+        {
+          "id": "https://www.langchain.com/blog/introducing-llm-gateway",
+          "author": "Martha Janicki",
+          "description": "LangSmith — By Martha Janicki — May 13, 2026",
+          "link": "https://www.langchain.com/blog/introducing-llm-gateway",
+          "publishedOn": "2026-05-13T00:00:00.000Z",
+          "wordCount": 5448,
+          "title": "LangSmith LLM Gateway: runtime governance built into the agent lifecycle",
+          "imageUrl": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a02234457305d2807cafbe9_LangSmith%20LLM%20Gateway.png"
+        },
+        {
+          "id": "https://www.langchain.com/blog/delta-channels-evolving-agent-runtime",
+          "author": "Sydney Runkle",
+          "description": "Deep Agents / LangGraph — By Sydney Runkle — May 12, 2026",
+          "link": "https://www.langchain.com/blog/delta-channels-evolving-agent-runtime",
+          "publishedOn": "2026-05-12T00:00:00.000Z",
+          "wordCount": 5690,
+          "title": "Delta Channels: Evolving our Runtime for Long-Running Agents",
+          "imageUrl": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a02945979ee92b3ee28b009_05.12%20delta%20channels.png"
+        },
+        {
+          "id": "https://www.langchain.com/blog/the-agent-development-lifecycle",
+          "author": "Harrison Chase",
+          "description": "By Harrison Chase — May 9, 2026",
+          "link": "https://www.langchain.com/blog/the-agent-development-lifecycle",
+          "publishedOn": "2026-05-09T00:00:00.000Z",
+          "wordCount": 6851,
+          "title": "The Agent Development Lifecycle",
+          "imageUrl": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a0572387d90e67612454cde_pic1.avif"
+        },
+        {
+          "id": "https://www.langchain.com/blog/building-a-company-due-diligence-agent-with-deep-agents-langsmith-and-parallel",
+          "author": "Matt Harris, Nick Martitsch, Srimanth Tangedipalli, Karan Singh",
+          "description": "Partner / Deep Agents — By Matt Harris, Nick Martitsch, Srimanth Tangedipalli, Karan Singh — May 8, 2026",
+          "link": "https://www.langchain.com/blog/building-a-company-due-diligence-agent-with-deep-agents-langsmith-and-parallel",
+          "publishedOn": "2026-05-08T00:00:00.000Z",
+          "wordCount": 6652,
+          "title": "Building a company due diligence agent with Deep Agents, LangSmith and Parallel",
+          "imageUrl": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/69fc07193192cebc73980fd3_logo%20and%20title%20-%2020%20characters%20max%20(6).png"
+        }
+      ]
+    },
+    {
+      "title": "DeepLearning.AI — The Batch",
+      "feedUrl": "http://127.0.0.1:43123/deeplearning.xml",
+      "siteUrl": "https://www.deeplearning.ai/the-batch/",
+      "articles": [
+        {
+          "id": "https://www.deeplearning.ai/the-batch/issue-355",
+          "author": null,
+          "description": "DeepLearning.AI The Batch — May 29, 2026",
+          "link": "https://www.deeplearning.ai/the-batch/issue-355",
+          "publishedOn": "2026-05-29T00:00:00.000Z",
+          "wordCount": 8309,
+          "title": "Gemini Flash Gets Pricey, AI Act Delays, Agents Drive Online Traffic",
+          "imageUrl": "https://charonhub.deeplearning.ai/content/images/2026/05/2026.05.29-LETTER-1.webp"
+        },
+        {
+          "id": "https://www.deeplearning.ai/the-batch/issue-354",
+          "author": null,
+          "description": "DeepLearning.AI The Batch — May 22, 2026",
+          "link": "https://www.deeplearning.ai/the-batch/issue-354",
+          "publishedOn": "2026-05-22T00:00:00.000Z",
+          "wordCount": 7992,
+          "title": "Hermes vs. OpenClaw, Cybersecurity Alarms Ring, More-Interactive Conversations, Can Agents Do Human Work?",
+          "imageUrl": "https://charonhub.deeplearning.ai/content/images/2026/05/Screenshot-2026-05-21-at-12.06.37---PM.png"
+        },
+        {
+          "id": "https://www.deeplearning.ai/the-batch/issue-353",
+          "author": null,
+          "description": "DeepLearning.AI The Batch — May 15, 2026",
+          "link": "https://www.deeplearning.ai/the-batch/issue-353",
+          "publishedOn": "2026-05-15T00:00:00.000Z",
+          "wordCount": 7952,
+          "title": "China Thwarts Meta’s Agentic Ambition, U.S. Evaluates Upcoming Models, AI Diagnoses Mammograms",
+          "imageUrl": "https://charonhub.deeplearning.ai/content/images/2026/05/unnamed--2-.png"
+        }
+      ]
+    },
+    {
+      "title": "Hugging Face - Blog",
+      "feedUrl": "http://127.0.0.1:43123/huggingface.xml",
+      "siteUrl": "https://huggingface.co/blog",
+      "articles": [
+        {
+          "id": "https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots",
+          "author": null,
+          "description": "The Hugging Face blog",
+          "link": "https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots",
+          "publishedOn": "2026-06-03T12:55:11.000Z",
+          "wordCount": 3244,
+          "title": "Direct Preference Optimization Beyond Chatbots",
+          "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots.png"
+        },
+        {
+          "id": "https://huggingface.co/blog/adding-mcp-tools-to-reachy-mini",
+          "author": null,
+          "description": "The Hugging Face blog",
+          "link": "https://huggingface.co/blog/adding-mcp-tools-to-reachy-mini",
+          "publishedOn": "2026-06-03T00:00:00.000Z",
+          "wordCount": 2402,
+          "title": "Adding MCP Tools to Reachy Mini",
+          "imageUrl": "https://huggingface.co/blog/assets/adding-mcp-tools-to-reachy-mini/reachy_mini_remote_spaces_thumbnail.png"
+        },
+        {
+          "id": "https://huggingface.co/blog/Hcompany/holo31",
+          "author": null,
+          "description": "The Hugging Face blog",
+          "link": "https://huggingface.co/blog/Hcompany/holo31",
+          "publishedOn": "2026-06-02T14:13:23.000Z",
+          "wordCount": 1315,
+          "title": "Holo3.1: Fast & Local Computer Use Agents",
+          "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/Hcompany/holo31.png"
+        },
+        {
+          "id": "https://huggingface.co/blog/JetBrains/mellum2-launch",
+          "author": null,
+          "description": "The Hugging Face blog",
+          "link": "https://huggingface.co/blog/JetBrains/mellum2-launch",
+          "publishedOn": "2026-06-01T15:45:17.000Z",
+          "wordCount": 919,
+          "title": "Introducing Mellum2: A 12B Mixture-of-Experts Model by JetBrains",
+          "imageUrl": "https://cdn-uploads.huggingface.co/production/uploads/60ef2a438432bc401cd0abbe/tFjSaWUOM_pVsgKjHrAHt.png"
+        },
+        {
+          "id": "https://huggingface.co/blog/ibm-research/agent-logic-and-scalable-ai-adoption",
+          "author": null,
+          "description": "The Hugging Face blog",
+          "link": "https://huggingface.co/blog/ibm-research/agent-logic-and-scalable-ai-adoption",
+          "publishedOn": "2026-06-01T13:51:18.000Z",
+          "wordCount": 2422,
+          "title": "Beyond LLMs: Why Scalable Enterprise AI Adoption Depends on Agent Logic",
+          "imageUrl": "https://cdn-uploads.huggingface.co/production/uploads/65b12ed52be9660f0b7e5f72/mu_IH3lDD1qGRQZptFmPP.png"
+        },
+        {
+          "id": "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai",
+          "author": null,
+          "description": "The Hugging Face blog",
+          "link": "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai",
+          "publishedOn": "2026-06-01T04:44:55.000Z",
+          "wordCount": 2328,
+          "title": "Welcome NVIDIA Cosmos 3: The First Open Omni-model for Physical AI Reasoning and Action",
+          "imageUrl": "https://cdn-uploads.huggingface.co/production/uploads/6799309995f2227228bc38f3/js_kXqJrfpYZd1hZvwPug.png"
+        },
+        {
+          "id": "https://huggingface.co/blog/torch-profiler",
+          "author": null,
+          "description": "The Hugging Face blog",
+          "link": "https://huggingface.co/blog/torch-profiler",
+          "publishedOn": "2026-05-29T00:00:00.000Z",
+          "wordCount": 5497,
+          "title": "Profiling in PyTorch (Part 1): A Beginner's Guide to torch.profiler",
+          "imageUrl": "https://huggingface.co/blog/assets/torch-profiler/thumbnail.png"
+        },
+        {
+          "id": "https://huggingface.co/blog/ibm-research/itbench-aa",
+          "author": null,
+          "description": "The Hugging Face blog",
+          "link": "https://huggingface.co/blog/ibm-research/itbench-aa",
+          "publishedOn": "2026-05-27T17:20:29.000Z",
+          "wordCount": 1206,
+          "title": "ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks — by Artificial Analysis and IBM",
+          "imageUrl": "https://cdn-uploads.huggingface.co/production/uploads/64e8143f6de557454220921e/QzGxABeEDggNYzvgSLQqU.png"
+        },
+        {
+          "id": "https://huggingface.co/blog/local-reachy-mini-conversation",
+          "author": null,
+          "description": "The Hugging Face blog",
+          "link": "https://huggingface.co/blog/local-reachy-mini-conversation",
+          "publishedOn": "2026-05-27T00:00:00.000Z",
+          "wordCount": 2110,
+          "title": "Reachy Mini goes fully local",
+          "imageUrl": "https://huggingface.co/blog/assets/local-reachy-mini-conversation/thumbnail.png"
+        },
+        {
+          "id": "https://huggingface.co/blog/delta-weight-sync",
+          "author": null,
+          "description": "The Hugging Face blog",
+          "link": "https://huggingface.co/blog/delta-weight-sync",
+          "publishedOn": "2026-05-27T00:00:00.000Z",
+          "wordCount": 4382,
+          "title": "Shipping a Trillion Parameters With a Hub Bucket: Delta Weight Sync in TRL",
+          "imageUrl": "https://huggingface.co/blog/assets/delta-weight-sync/thumbnail.png"
+        },
+        {
+          "id": "https://huggingface.co/blog/agent-glossary",
+          "author": null,
+          "description": "The Hugging Face blog",
+          "link": "https://huggingface.co/blog/agent-glossary",
+          "publishedOn": "2026-05-25T00:00:00.000Z",
+          "wordCount": 2326,
+          "title": "Harness, Scaffold, and the AI Agent Terms Worth Getting Right",
+          "imageUrl": "https://huggingface.co/blog/assets/agent-glossary/thumbnail.png"
+        },
+        {
+          "id": "https://huggingface.co/blog/nvidia/nemotron-labs-diffusion",
+          "author": null,
+          "description": "The Hugging Face blog",
+          "link": "https://huggingface.co/blog/nvidia/nemotron-labs-diffusion",
+          "publishedOn": "2026-05-23T00:02:03.000Z",
+          "wordCount": 1615,
+          "title": "Towards Speed-of-Light Text Generation with Nemotron-Labs Diffusion Language Models",
+          "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/nvidia/nemotron-labs-diffusion.png"
+        },
+        {
+          "id": "https://huggingface.co/blog/Dharma-AI/specialization-beats-scale",
+          "author": null,
+          "description": "The Hugging Face blog",
+          "link": "https://huggingface.co/blog/Dharma-AI/specialization-beats-scale",
+          "publishedOn": "2026-05-22T15:25:59.000Z",
+          "wordCount": 3104,
+          "title": "Specialization Beats Scale: A Strategic Variable Most AI Procurement Decisions Overlook",
+          "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/Dharma-AI/specialization-beats-scale.png"
+        },
+        {
+          "id": "https://huggingface.co/blog/allenai/olmoearth-v1-1",
+          "author": null,
+          "description": "The Hugging Face blog",
+          "link": "https://huggingface.co/blog/allenai/olmoearth-v1-1",
+          "publishedOn": "2026-05-19T18:38:09.000Z",
+          "wordCount": 1175,
+          "title": "OlmoEarth v1.1: A more efficient family of models",
+          "imageUrl": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/19ZFgyFbi-kj2Yf0WUPGk.png"
+        },
+        {
+          "id": "https://huggingface.co/blog/ettin-reranker",
+          "author": null,
+          "description": "The Hugging Face blog",
+          "link": "https://huggingface.co/blog/ettin-reranker",
+          "publishedOn": "2026-05-19T00:00:00.000Z",
+          "wordCount": 6148,
+          "title": "Introducing the Ettin Reranker Family",
+          "imageUrl": "https://huggingface.co/blog/assets/train-sentence-transformers/st-hf-thumbnail.png"
+        },
+        {
+          "id": "https://huggingface.co/blog/nvidia/cosmos-fine-tuning-for-robot-video-generation",
+          "author": null,
+          "description": "The Hugging Face blog",
+          "link": "https://huggingface.co/blog/nvidia/cosmos-fine-tuning-for-robot-video-generation",
+          "publishedOn": "2026-05-18T16:00:21.000Z",
+          "wordCount": 2958,
+          "title": "Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation",
+          "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/nvidia/cosmos-fine-tuning-for-robot-video-generation.png"
+        },
+        {
+          "id": "https://huggingface.co/blog/PaddlePaddle/paddleocr-transformers",
+          "author": null,
+          "description": "The Hugging Face blog",
+          "link": "https://huggingface.co/blog/PaddlePaddle/paddleocr-transformers",
+          "publishedOn": "2026-05-18T15:12:46.000Z",
+          "wordCount": 1217,
+          "title": "PaddleOCR 3.5: Running OCR and Document Parsing Tasks with a Transformers Backend",
+          "imageUrl": "https://cdn-uploads.huggingface.co/production/uploads/652b2e9166313ebb6197e706/Bl-qDWU9OfuXZ06hNxZE7.jpeg"
+        },
+        {
+          "id": "https://huggingface.co/blog/ibm-research/open-agent-leaderboard",
+          "author": null,
+          "description": "The Hugging Face blog",
+          "link": "https://huggingface.co/blog/ibm-research/open-agent-leaderboard",
+          "publishedOn": "2026-05-18T14:12:58.000Z",
+          "wordCount": 1978,
+          "title": "The Open Agent Leaderboard",
+          "imageUrl": "https://cdn-uploads.huggingface.co/production/uploads/5fc0292de45c5468456e022b/CpwVutMu5EiniBliQ9RXs.png"
+        },
+        {
+          "id": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2",
+          "author": null,
+          "description": "The Hugging Face blog",
+          "link": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2",
+          "publishedOn": "2026-05-14T18:55:01.000Z",
+          "wordCount": 3810,
+          "title": "Granite Embedding Multilingual R2: Open Apache 2.0 Multilingual Embeddings with 32K Context — Best Sub-100M Retrieval Quality",
+          "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/ibm-granite/granite-embedding-multilingual-r2.png"
+        },
+        {
+          "id": "https://huggingface.co/blog/continuous_async",
+          "author": null,
+          "description": "The Hugging Face blog",
+          "link": "https://huggingface.co/blog/continuous_async",
+          "publishedOn": "2026-05-14T00:00:00.000Z",
+          "wordCount": 4406,
+          "title": "Unlocking asynchronicity in continuous batching",
+          "imageUrl": "https://huggingface.co/blog/assets/continuous_async/thumbnail.png"
+        },
+        {
+          "id": "https://huggingface.co/blog/amazon/foundation-model-building-blocks",
+          "author": null,
+          "description": "The Hugging Face blog",
+          "link": "https://huggingface.co/blog/amazon/foundation-model-building-blocks",
+          "publishedOn": "2026-05-11T23:18:26.000Z",
+          "wordCount": 4609,
+          "title": "Building Blocks for Foundation Model Training and Inference on AWS",
+          "imageUrl": "https://cdn-uploads.huggingface.co/production/uploads/64d6b270c2eedf9af82baa23/YybsyZaGr5f0fLe0qDuLn.png"
+        },
+        {
+          "id": "https://huggingface.co/blog/allenai/emo",
+          "author": null,
+          "description": "The Hugging Face blog",
+          "link": "https://huggingface.co/blog/allenai/emo",
+          "publishedOn": "2026-05-08T16:03:50.000Z",
+          "wordCount": 2109,
+          "title": "EMO: Pretraining mixture of experts for emergent modularity",
+          "imageUrl": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/zw0eFl6MyYg-hmcPSBfYw.png"
+        },
+        {
+          "id": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+          "author": null,
+          "description": "The Hugging Face blog",
+          "link": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+          "publishedOn": "2026-05-06T19:06:55.000Z",
+          "wordCount": 1848,
+          "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+          "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/ServiceNow-AI/correctness-before-corrections.png"
+        },
+        {
+          "id": "https://huggingface.co/blog/open-asr-leaderboard-private-data",
+          "author": null,
+          "description": "The Hugging Face blog",
+          "link": "https://huggingface.co/blog/open-asr-leaderboard-private-data",
+          "publishedOn": "2026-05-06T00:00:00.000Z",
+          "wordCount": 2149,
+          "title": "Adding Benchmaxxer Repellant to the Open ASR Leaderboard",
+          "imageUrl": "https://huggingface.co/blog/assets/open-asr-leaderboard-private-data/thumbnail.png"
+        }
+      ]
+    },
+    {
+      "title": "SwirlAI Newsletter",
+      "feedUrl": "https://www.newsletter.swirlai.com/feed",
+      "siteUrl": "https://www.newsletter.swirlai.com",
+      "articles": [
+        {
+          "id": "https://www.newsletter.swirlai.com/p/agentic-ai-flywheels",
+          "author": "Aurimas Griciūnas",
+          "description": "The production loop after your agent ships, and the eval set that grows with it.",
+          "link": "https://www.newsletter.swirlai.com/p/agentic-ai-flywheels",
+          "publishedOn": "2026-05-27T10:33:57.000Z",
+          "wordCount": null,
+          "title": "Agentic AI Flywheels",
+          "itunes": {},
+          "enclosure": {
+            "url": "https://substack-post-media.s3.amazonaws.com/public/images/d7ce8817-27d2-42f3-a413-fc9c70c0c497_6876x4679.png",
+            "length": "0",
+            "type": "image/jpeg"
+          },
+          "imageUrl": "https://substack-post-media.s3.amazonaws.com/public/images/d7ce8817-27d2-42f3-a413-fc9c70c0c497_6876x4679.png"
+        }
+      ]
+    },
+    {
+      "title": "Latent.Space",
+      "feedUrl": "https://www.latent.space/feed",
+      "siteUrl": "https://www.latent.space",
+      "articles": [
+        {
+          "id": "https://www.latent.space/p/ainews-reve-2-and-ideogram-4-layouts",
+          "author": null,
+          "description": "a quiet day.",
+          "link": "https://www.latent.space/p/ainews-reve-2-and-ideogram-4-layouts",
+          "publishedOn": "2026-06-04T03:24:07.000Z",
+          "wordCount": null,
+          "title": "[AINews] Reve 2 and Ideogram 4: Layouts in Imagegen",
+          "itunes": {},
+          "enclosure": {
+            "url": "https://substackcdn.com/image/upload/w_1028,c_limit,q_auto:best/khye4hsl8xurczaxecv5",
+            "length": "0",
+            "type": "image/jpeg"
+          },
+          "imageUrl": "https://substackcdn.com/image/upload/w_1028,c_limit,q_auto:best/khye4hsl8xurczaxecv5"
+        },
+        {
+          "id": "https://www.latent.space/p/axiom",
+          "author": "RJ Honicky",
+          "description": "Verified Generation and Compounding Intelligence",
+          "link": "https://www.latent.space/p/axiom",
+          "publishedOn": "2026-06-03T19:27:49.000Z",
+          "wordCount": null,
+          "title": "🔬Scaling Past Informal AI - Carina Hong, Axiom Math",
+          "itunes": {},
+          "enclosure": {
+            "url": "https://api.substack.com/feed/podcast/199994886/848d731fc50b706ec6de69cfba2f3d58.mp3",
+            "length": "0",
+            "type": "audio/mpeg"
+          },
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.latent.space/p/satya-2026",
+          "author": null,
+          "description": "The legendary Microsoft CEO makes his first Latent Space appearance!",
+          "link": "https://www.latent.space/p/satya-2026",
+          "publishedOn": "2026-06-03T17:13:57.000Z",
+          "wordCount": null,
+          "title": "⚡️Satya Nadella: No Priors x Latent Space Crossover Special at Microsoft Build",
+          "itunes": {},
+          "enclosure": {
+            "url": "https://api.substack.com/feed/podcast/200432443/be4d039cefcb78767e3408d0f5ac3d29.mp3",
+            "length": "0",
+            "type": "audio/mpeg"
+          },
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.latent.space/p/ainews-microsoft-build-mai-thinking",
+          "author": null,
+          "description": "Microsoft Build recap, and new MAI model technical details",
+          "link": "https://www.latent.space/p/ainews-microsoft-build-mai-thinking",
+          "publishedOn": "2026-06-03T05:49:02.000Z",
+          "wordCount": null,
+          "title": "[AINews] Microsoft Build: MAI-Thinking-1 and MAI Family models",
+          "itunes": {},
+          "enclosure": {
+            "url": "https://substackcdn.com/image/fetch/$s_!PL7Y!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1e8ca90a-629c-44d5-af2f-0b0cd2a60aa2_1510x886.png",
+            "length": "0",
+            "type": "image/jpeg"
+          },
+          "imageUrl": "https://substackcdn.com/image/fetch/$s_!PL7Y!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1e8ca90a-629c-44d5-af2f-0b0cd2a60aa2_1510x886.png"
+        },
+        {
+          "id": "https://www.latent.space/p/github",
+          "author": null,
+          "description": "GitHub pioneered the modern AI coding era with Copilot, and the resulting explosion in agentic coding has led to notable strains on the most popular developer platform in the world. Here's the plan.",
+          "link": "https://www.latent.space/p/github",
+          "publishedOn": "2026-06-02T16:48:21.000Z",
+          "wordCount": null,
+          "title": "GitHub's plan for Agents — Kyle Daigle, GitHub",
+          "itunes": {},
+          "enclosure": {
+            "url": "https://api.substack.com/feed/podcast/200249307/0941c9607e83985da60443da5f6986fd.mp3",
+            "length": "0",
+            "type": "audio/mpeg"
+          },
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.latent.space/p/ainews-nvidia-cosmos-3-nemotron-3",
+          "author": null,
+          "description": "Jensen scores a huge win.",
+          "link": "https://www.latent.space/p/ainews-nvidia-cosmos-3-nemotron-3",
+          "publishedOn": "2026-06-02T03:28:10.000Z",
+          "wordCount": null,
+          "title": "[AINews] NVIDIA Cosmos 3, Nemotron 3 Ultra, and RTX Spark",
+          "itunes": {},
+          "enclosure": {
+            "url": "https://substackcdn.com/image/fetch/$s_!5bzA!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff6685277-4569-4135-92cb-e7a645246125_4096x2732.jpeg",
+            "length": "0",
+            "type": "image/jpeg"
+          },
+          "imageUrl": "https://substackcdn.com/image/fetch/$s_!5bzA!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff6685277-4569-4135-92cb-e7a645246125_4096x2732.jpeg"
+        },
+        {
+          "id": "https://www.latent.space/p/video-agents",
+          "author": null,
+          "description": "Inside xAI: Building Grok Imagine in 3 Months, Videogen vs World Models, and why Grok Imagine is so underrated. For the first time, we do a deep dive with the guy who led it!",
+          "link": "https://www.latent.space/p/video-agents",
+          "publishedOn": "2026-06-01T15:41:48.000Z",
+          "wordCount": null,
+          "title": "Why Video Agent models are next — Ethan He, xAI Grok Imagine",
+          "itunes": {},
+          "enclosure": {
+            "url": "https://api.substack.com/feed/podcast/200078058/28f9c640c1fe13dbb645d043b323afb6.mp3",
+            "length": "0",
+            "type": "audio/mpeg"
+          },
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.latent.space/p/ainews-founders-and-forward-deployed",
+          "author": null,
+          "description": "a quiet day lets us highlight the new AIE WF focuses",
+          "link": "https://www.latent.space/p/ainews-founders-and-forward-deployed",
+          "publishedOn": "2026-05-30T01:57:15.000Z",
+          "wordCount": null,
+          "title": "[AINews] Founders and Forward Deployed Engineers",
+          "itunes": {},
+          "enclosure": {
+            "url": "https://substackcdn.com/image/fetch/$s_!SpLP!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb92541e3-151a-4f10-8226-b86cb12eaca0_2332x1344.png",
+            "length": "0",
+            "type": "image/jpeg"
+          },
+          "imageUrl": "https://substackcdn.com/image/fetch/$s_!SpLP!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb92541e3-151a-4f10-8226-b86cb12eaca0_2332x1344.png"
+        },
+        {
+          "id": "https://www.latent.space/p/ainews-anthropic-raises-965b-series",
+          "author": null,
+          "description": "Total Anthropic victory!",
+          "link": "https://www.latent.space/p/ainews-anthropic-raises-965b-series",
+          "publishedOn": "2026-05-29T02:07:24.000Z",
+          "wordCount": null,
+          "title": "[AINews] Anthropic raises $965B Series H, releases Opus 4.8 and Dynamic Workflows/ultracode",
+          "itunes": {},
+          "enclosure": {
+            "url": "https://substackcdn.com/image/fetch/$s_!9YXV!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffeb0a3a2-e744-4174-a24b-be1fd75961bc_1888x1630.png",
+            "length": "0",
+            "type": "image/jpeg"
+          },
+          "imageUrl": "https://substackcdn.com/image/fetch/$s_!9YXV!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffeb0a3a2-e744-4174-a24b-be1fd75961bc_1888x1630.png"
+        },
+        {
+          "id": "https://www.latent.space/p/cognition",
+          "author": null,
+          "description": "80% Devin Commits, Spec-to-PR Workflows, Full VMs, Agent Memory, and PMs Shipping Code",
+          "link": "https://www.latent.space/p/cognition",
+          "publishedOn": "2026-05-28T18:41:24.000Z",
+          "wordCount": null,
+          "title": "The Age of Async Agents — Cognition's Walden Yan & OpenInspect's Cole Murray",
+          "itunes": {},
+          "enclosure": {
+            "url": "https://api.substack.com/feed/podcast/199607874/189969d5629a5099ebb2c7a0709ff18d.mp3",
+            "length": "0",
+            "type": "audio/mpeg"
+          },
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.latent.space/p/ainews-cognition-raises-1b-in-26b",
+          "author": null,
+          "description": "coding is an uncapped TAM market",
+          "link": "https://www.latent.space/p/ainews-cognition-raises-1b-in-26b",
+          "publishedOn": "2026-05-28T07:26:09.000Z",
+          "wordCount": null,
+          "title": "[AINews] Cognition raises $1B in $26B Series D",
+          "itunes": {},
+          "enclosure": {
+            "url": "https://substackcdn.com/image/fetch/$s_!i6tW!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa1563dd3-9a40-45b1-9060-7ec196bf8e77_1316x1616.png",
+            "length": "0",
+            "type": "image/jpeg"
+          },
+          "imageUrl": "https://substackcdn.com/image/fetch/$s_!i6tW!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa1563dd3-9a40-45b1-9060-7ec196bf8e77_1316x1616.png"
+        },
+        {
+          "id": "https://www.latent.space/p/esmfold2",
+          "author": "RJ Honicky",
+          "description": "Datasets vs. inductive bias, world models, and programmable biology",
+          "link": "https://www.latent.space/p/esmfold2",
+          "publishedOn": "2026-05-27T17:46:16.000Z",
+          "wordCount": null,
+          "title": "🔬ESMFold2: The Bitter Lesson is Coming for Proteins - Alex Rives, BioHub",
+          "itunes": {},
+          "enclosure": {
+            "url": "https://api.substack.com/feed/podcast/199487836/62822e9ea535435c81b16e4eb7bcdaa2.mp3",
+            "length": "0",
+            "type": "audio/mpeg"
+          },
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.latent.space/p/ainews-new-ai-infra-decacorns-fireworks",
+          "author": null,
+          "description": "it's funding news, but it's good news.",
+          "link": "https://www.latent.space/p/ainews-new-ai-infra-decacorns-fireworks",
+          "publishedOn": "2026-05-27T03:33:53.000Z",
+          "wordCount": null,
+          "title": "[AINews] New AI Infra decacorns: Fireworks, Baseten (with OpenRouter on the way)",
+          "itunes": {},
+          "enclosure": {
+            "url": "https://substackcdn.com/image/fetch/$s_!FXB0!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fpbs.substack.com%2Fmedia%2FHJQGFgQbgAArjoi.png",
+            "length": "0",
+            "type": "image/jpeg"
+          },
+          "imageUrl": "https://substackcdn.com/image/fetch/$s_!FXB0!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fpbs.substack.com%2Fmedia%2FHJQGFgQbgAArjoi.png"
+        },
+        {
+          "id": "https://www.latent.space/p/ainews-all-model-labs-are-now-agent",
+          "author": null,
+          "description": "a quiet day lets us tie together a few quotes as all model labs become agent labs",
+          "link": "https://www.latent.space/p/ainews-all-model-labs-are-now-agent",
+          "publishedOn": "2026-05-23T04:21:17.000Z",
+          "wordCount": null,
+          "title": "[AINews] All Model Labs are now Agent Labs",
+          "itunes": {},
+          "enclosure": {
+            "url": "https://substackcdn.com/image/fetch/$s_!TLyU!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F348d0573-16b0-46d0-a852-ccaae2b6ff4f_1122x534.png",
+            "length": "0",
+            "type": "image/jpeg"
+          },
+          "imageUrl": "https://substackcdn.com/image/fetch/$s_!TLyU!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F348d0573-16b0-46d0-a852-ccaae2b6ff4f_1122x534.png"
+        },
+        {
+          "id": "https://www.latent.space/p/ainews-new-ai-infra-unicorns-exa",
+          "author": "Latent.Space",
+          "description": "a quiet day lets us feature fundraises!",
+          "link": "https://www.latent.space/p/ainews-new-ai-infra-unicorns-exa",
+          "publishedOn": "2026-05-22T05:50:58.000Z",
+          "wordCount": null,
+          "title": "[AINews] New AI Infra unicorns: Exa, Modal, TurboPuffer",
+          "itunes": {},
+          "enclosure": {
+            "url": "https://substack-post-media.s3.amazonaws.com/public/images/ab2507aa-9755-4e9d-9cbf-4c7f755a8527_1086x280.png",
+            "length": "0",
+            "type": "image/jpeg"
+          },
+          "imageUrl": "https://substack-post-media.s3.amazonaws.com/public/images/ab2507aa-9755-4e9d-9cbf-4c7f755a8527_1086x280.png"
+        },
+        {
+          "id": "https://www.latent.space/p/daytona",
+          "author": null,
+          "description": "We chat with Daytona's CEO about their insane 74% MoM Growth, 850K Daily Runs, Bare Metal Sandboxes, RL Evals, and the New Agent Cloud",
+          "link": "https://www.latent.space/p/daytona",
+          "publishedOn": "2026-05-21T20:37:40.000Z",
+          "wordCount": null,
+          "title": "Giving Agents Computers — Ivan Burazin, Daytona",
+          "itunes": {},
+          "enclosure": {
+            "url": "https://api.substack.com/feed/podcast/198688585/ea70987db705e03383b894747d39cc2d.mp3",
+            "length": "0",
+            "type": "audio/mpeg"
+          },
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.latent.space/p/ainews-openai-gpt-next-disproves",
+          "author": null,
+          "description": "a quiet day but a nice result in AI x mathematics",
+          "link": "https://www.latent.space/p/ainews-openai-gpt-next-disproves",
+          "publishedOn": "2026-05-21T07:28:36.000Z",
+          "wordCount": null,
+          "title": "[AINews] OpenAI GPT-next disproves 80 year old Erdős planar unit distance problem for under $1000",
+          "itunes": {},
+          "enclosure": {
+            "url": "https://substackcdn.com/image/fetch/$s_!BIRC!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0ff7bdc0-79ef-49ce-a5c0-f7db89d60637_1098x1582.png",
+            "length": "0",
+            "type": "image/jpeg"
+          },
+          "imageUrl": "https://substackcdn.com/image/fetch/$s_!BIRC!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0ff7bdc0-79ef-49ce-a5c0-f7db89d60637_1098x1582.png"
+        },
+        {
+          "id": "https://www.latent.space/p/railway",
+          "author": null,
+          "description": "3M Users, 100K Signups/Week, Own-Metal Data Centers, $200K+ Coding Agent Spend, and the Death of PRs",
+          "link": "https://www.latent.space/p/railway",
+          "publishedOn": "2026-05-20T22:42:06.000Z",
+          "wordCount": null,
+          "title": "Railway: The Agent-Native Cloud — Jake Cooper",
+          "itunes": {},
+          "enclosure": {
+            "url": "https://api.substack.com/feed/podcast/198575235/aa94f0be0bd4cd0225d9bc685ddd3a6c.mp3",
+            "length": "0",
+            "type": "audio/mpeg"
+          },
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.latent.space/p/ainews-google-io-2026-gemini-35-flash",
+          "author": null,
+          "description": "Google has been busy!",
+          "link": "https://www.latent.space/p/ainews-google-io-2026-gemini-35-flash",
+          "publishedOn": "2026-05-20T03:34:17.000Z",
+          "wordCount": null,
+          "title": "[AINews] Google I/O 2026: Gemini 3.5 Flash, Omni (NanoBanana for Video), Spark (background agents), and Antigravity 2.0",
+          "itunes": {},
+          "enclosure": {
+            "url": "https://substackcdn.com/image/youtube/w_728,c_limit/OMhKgQmeMhI",
+            "length": "0",
+            "type": "image/jpeg"
+          },
+          "imageUrl": "https://substackcdn.com/image/youtube/w_728,c_limit/OMhKgQmeMhI"
+        },
+        {
+          "id": "https://www.latent.space/p/ainews-how-to-land-a-job-at-a-frontier",
+          "author": null,
+          "description": "a quiet day before google i/o lets us amplify a notable blogpost",
+          "link": "https://www.latent.space/p/ainews-how-to-land-a-job-at-a-frontier",
+          "publishedOn": "2026-05-19T07:31:40.000Z",
+          "wordCount": null,
+          "title": "[AINews] How to land a job at a frontier lab (on Pretraining)",
+          "itunes": {},
+          "enclosure": {
+            "url": "https://substackcdn.com/image/fetch/$s_!W6LK!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2e69d902-1d29-4e8c-834c-41e83b07223f_1194x604.png",
+            "length": "0",
+            "type": "image/jpeg"
+          },
+          "imageUrl": "https://substackcdn.com/image/fetch/$s_!W6LK!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2e69d902-1d29-4e8c-834c-41e83b07223f_1194x604.png"
+        },
+        {
+          "id": "https://www.latent.space/p/the-fourth-law",
+          "author": "Latent.Space",
+          "description": "Ukrainian drone founder Yaroslav Azhnyuk went from pet cameras to AI-guided weapons. He and guest host Noah Smith make the case that the West is asleep at the wheel.",
+          "link": "https://www.latent.space/p/the-fourth-law",
+          "publishedOn": "2026-05-18T13:45:32.000Z",
+          "wordCount": null,
+          "title": "The Autonomous Drone Tech Stack & Economics of Drones — Yaroslav Azhnyuk, The Fourth Law & Guest Host Noah Smith, Noahpinion",
+          "itunes": {},
+          "enclosure": {
+            "url": "https://api.substack.com/feed/podcast/198200418/407733f8a9519e9e9876b9e4a2fc4f36.mp3",
+            "length": "0",
+            "type": "audio/mpeg"
+          },
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.latent.space/p/ainews-cerebras-60b-ipo-slowly-then",
+          "author": null,
+          "description": "Congrats Big Chip!",
+          "link": "https://www.latent.space/p/ainews-cerebras-60b-ipo-slowly-then",
+          "publishedOn": "2026-05-16T04:36:50.000Z",
+          "wordCount": null,
+          "title": "[AINews] Cerebras' $60B IPO: Slowly, then All at Once",
+          "itunes": {},
+          "enclosure": {
+            "url": "https://substackcdn.com/image/fetch/$s_!vBnf!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5fea6bb8-3298-434e-afef-3eea148ba10c_2048x1263.png",
+            "length": "0",
+            "type": "image/jpeg"
+          },
+          "imageUrl": "https://substackcdn.com/image/fetch/$s_!vBnf!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5fea6bb8-3298-434e-afef-3eea148ba10c_2048x1263.png"
+        },
+        {
+          "id": "https://www.latent.space/p/ainews-everything-is-conductor",
+          "author": null,
+          "description": "an ultra quiet day lets us highlight a smaller trend.",
+          "link": "https://www.latent.space/p/ainews-everything-is-conductor",
+          "publishedOn": "2026-05-15T00:30:21.000Z",
+          "wordCount": null,
+          "title": "[AINews] Everything is Conductor",
+          "itunes": {},
+          "enclosure": {
+            "url": "https://substackcdn.com/image/fetch/$s_!-UVS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc44b00aa-b057-4698-a9c6-f8e73c7aaaf7_2289x1342.jpeg",
+            "length": "0",
+            "type": "image/jpeg"
+          },
+          "imageUrl": "https://substackcdn.com/image/fetch/$s_!-UVS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc44b00aa-b057-4698-a9c6-f8e73c7aaaf7_2289x1342.jpeg"
+        },
+        {
+          "id": "https://www.latent.space/p/abridge",
+          "author": null,
+          "description": "How Abridge is quietly turning the patient and clinician conversation into the operating system of healthcare",
+          "link": "https://www.latent.space/p/abridge",
+          "publishedOn": "2026-05-14T22:05:31.000Z",
+          "wordCount": null,
+          "title": "AI-Native Healthcare: 100M Doctor Visits, 10–20 Hours Saved, Prior Auth in Minutes — Janie Lee & Chai Asawa, Abridge",
+          "itunes": {},
+          "enclosure": {
+            "url": "https://api.substack.com/feed/podcast/197417280/b93c7f9e3f6aa190dccb6430c6676422.mp3",
+            "length": "0",
+            "type": "audio/mpeg"
+          },
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.latent.space/p/ainews-codex-rises-claude-meters",
+          "author": null,
+          "description": "a quiet day lets us report on a long trend of the major coding agents",
+          "link": "https://www.latent.space/p/ainews-codex-rises-claude-meters",
+          "publishedOn": "2026-05-14T03:53:26.000Z",
+          "wordCount": null,
+          "title": "[AINews] Codex Rises, Claude Meters Programmatic Usage",
+          "itunes": {},
+          "enclosure": {
+            "url": "https://substackcdn.com/image/fetch/$s_!uqHa!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1f3bb92f-f1bd-4329-9b9c-64c681eec378_1290x874.png",
+            "length": "0",
+            "type": "image/jpeg"
+          },
+          "imageUrl": "https://substackcdn.com/image/fetch/$s_!uqHa!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1f3bb92f-f1bd-4329-9b9c-64c681eec378_1290x874.png"
+        },
+        {
+          "id": "https://www.latent.space/p/ainews-the-end-of-finetuning",
+          "author": null,
+          "description": "a quiet day lets us reflect on whither finetuning",
+          "link": "https://www.latent.space/p/ainews-the-end-of-finetuning",
+          "publishedOn": "2026-05-13T02:47:22.000Z",
+          "wordCount": null,
+          "title": "[AINews] The End of Finetuning",
+          "itunes": {},
+          "enclosure": {
+            "url": "https://substackcdn.com/image/fetch/$s_!ioj8!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd6915f95-7d03-4a7d-81b1-df255b9debcb_1192x1422.png",
+            "length": "0",
+            "type": "image/jpeg"
+          },
+          "imageUrl": "https://substackcdn.com/image/fetch/$s_!ioj8!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd6915f95-7d03-4a7d-81b1-df255b9debcb_1192x1422.png"
+        },
+        {
+          "id": "https://www.latent.space/p/ainews-thinking-machines-native-interaction",
+          "author": null,
+          "description": "well done, Team Thinky.",
+          "link": "https://www.latent.space/p/ainews-thinking-machines-native-interaction",
+          "publishedOn": "2026-05-12T04:33:46.000Z",
+          "wordCount": null,
+          "title": "[AINews] Thinking Machines' Native Interaction Models - TML-Interaction-Small 276B-A12B - advances SOTA Realtime Voice and kills standard VAD",
+          "itunes": {},
+          "enclosure": {
+            "url": "https://substackcdn.com/image/youtube/w_728,c_limit/2ky5MXBvZP8",
+            "length": "0",
+            "type": "image/jpeg"
+          },
+          "imageUrl": "https://substackcdn.com/image/youtube/w_728,c_limit/2ky5MXBvZP8"
+        },
+        {
+          "id": "https://www.latent.space/p/ainews-anthropic-growing-10xyear",
+          "author": null,
+          "description": "A quiet day lets us reflect on an interesting dichotomy in the economy.",
+          "link": "https://www.latent.space/p/ainews-anthropic-growing-10xyear",
+          "publishedOn": "2026-05-09T01:08:28.000Z",
+          "wordCount": null,
+          "title": "[AINews] Anthropic growing 10x/year while everyone else is laying off >10% of their workforce",
+          "itunes": {},
+          "enclosure": {
+            "url": "https://substackcdn.com/image/fetch/$s_!tOlW!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F021c44bf-dba1-44ad-b3a5-d4de3e6a7644_1728x954.jpeg",
+            "length": "0",
+            "type": "image/jpeg"
+          },
+          "imageUrl": "https://substackcdn.com/image/fetch/$s_!tOlW!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F021c44bf-dba1-44ad-b3a5-d4de3e6a7644_1728x954.jpeg"
+        },
+        {
+          "id": "https://www.latent.space/p/ainews-gpt-realtime-2-translate-and",
+          "author": null,
+          "description": "OpenAI continues deploying GPT-5 everywhere",
+          "link": "https://www.latent.space/p/ainews-gpt-realtime-2-translate-and",
+          "publishedOn": "2026-05-08T07:11:24.000Z",
+          "wordCount": null,
+          "title": "[AINews] GPT-Realtime-2, -Translate, and -Whisper: new SOTA realtime voice APIs",
+          "itunes": {},
+          "enclosure": {
+            "url": "https://substackcdn.com/image/fetch/$s_!A0Wm!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9c9ffc6c-3f36-4f23-a2c3-34d5e64955aa_1014x918.png",
+            "length": "0",
+            "type": "image/jpeg"
+          },
+          "imageUrl": "https://substackcdn.com/image/fetch/$s_!A0Wm!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9c9ffc6c-3f36-4f23-a2c3-34d5e64955aa_1014x918.png"
+        },
+        {
+          "id": "https://www.latent.space/p/ainews-anthropic-spacexais-300mw5byr",
+          "author": null,
+          "description": "And the kingmaker picks a side.",
+          "link": "https://www.latent.space/p/ainews-anthropic-spacexais-300mw5byr",
+          "publishedOn": "2026-05-07T05:57:14.000Z",
+          "wordCount": null,
+          "title": "[AINews] Anthropic-SpaceXai's 300MW/$5B/yr deal for Colossus I, ARR growth is 8000% annualized",
+          "itunes": {},
+          "enclosure": {
+            "url": "https://substackcdn.com/image/fetch/$s_!Kb-H!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd1acd7ed-b0f8-4448-ac16-0dc71920093e_1354x872.png",
+            "length": "0",
+            "type": "image/jpeg"
+          },
+          "imageUrl": "https://substackcdn.com/image/fetch/$s_!Kb-H!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd1acd7ed-b0f8-4448-ac16-0dc71920093e_1354x872.png"
+        },
+        {
+          "id": "https://www.latent.space/p/ainews-silicon-valley-gets-serious",
+          "author": null,
+          "description": "A series of announcements line up to a big theme: Services are the next big opportunity.",
+          "link": "https://www.latent.space/p/ainews-silicon-valley-gets-serious",
+          "publishedOn": "2026-05-06T05:40:41.000Z",
+          "wordCount": null,
+          "title": "[AINews] Silicon Valley gets Serious about Services",
+          "itunes": {},
+          "enclosure": {
+            "url": "https://substackcdn.com/image/fetch/$s_!MR33!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa0374389-0ce7-4d8c-828c-335d3846130a_889x500.jpeg",
+            "length": "0",
+            "type": "image/jpeg"
+          },
+          "imageUrl": "https://substackcdn.com/image/fetch/$s_!MR33!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa0374389-0ce7-4d8c-828c-335d3846130a_889x500.jpeg"
+        },
+        {
+          "id": "https://www.latent.space/p/lupsasca",
+          "author": null,
+          "description": "The full story of how GPT‑5.x derived new results in theoretical physics and quantum gravity.",
+          "link": "https://www.latent.space/p/lupsasca",
+          "publishedOn": "2026-05-05T20:34:11.000Z",
+          "wordCount": null,
+          "title": "🔬Doing Vibe Physics — Alex Lupsasca, OpenAI",
+          "itunes": {},
+          "enclosure": {
+            "url": "https://api.substack.com/feed/podcast/196292432/5a1552f1791348300399bbce5a75a0a7.mp3",
+            "length": "0",
+            "type": "audio/mpeg"
+          },
+          "imageUrl": null
+        }
+      ]
+    },
+    {
+      "title": "The Berkeley Artificial Intelligence Research Blog",
+      "feedUrl": "https://bair.berkeley.edu/blog/feed.xml",
+      "siteUrl": "http://bair.berkeley.edu/blog/",
+      "articles": [
+        {
+          "id": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
+          "author": null,
+          "description": ".apr-fig { text-align: center; margin: 1.35em 0; line-height: 1.4; }\n.apr-fig--wide img { display: inline-block; width: 100%; max-width: 100%; height: auto; vertical-align: middle; }\n.apr-fig--wide-0-8 { max-width: 80%; margin-left: auto; margin-right: auto; }\n.apr-fig--tall img { display: inline-block; max-height: 300px; width: auto; max-width: 100%; height: auto; object-fit: contain; vertical-align: middle; }\n.apr-fig--tall-1-2x img { display: inline-block; max-height: 360px; width: auto; max-width: 100%; height: auto; object-fit: contain; vertical-align: middle; }\n.apr-fig--tall-1-5x img { display: inline-block; max-height: 450px; width: auto; max-width: 100%; height: auto; object-fit: contain; vertical-align: middle; }\n.apr-fig--tall-2x img { display: inline-block; max-height: 600px; w…",
+          "link": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
+          "publishedOn": "2026-05-08T09:00:00.000Z",
+          "wordCount": 3875,
+          "title": "Adaptive Parallel Reasoning: The Next Paradigm in Efficient Inference Scaling",
+          "imageUrl": "https://bair.berkeley.edu/static/blog/adaptive-parallel-reasoning/cover.png"
+        }
+      ]
+    }
+  ],
+  "cliVersion": "1.15.1"
+}

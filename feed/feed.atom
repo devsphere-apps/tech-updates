@@ -1,0 +1,895 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://devsphere-apps.github.io/tech-updates/feed/index.html</id>
+    <title>Agentic AI Engineer — Daily Feed</title>
+    <updated>2026-06-04T04:22:00.999Z</updated>
+    <generator>osmosfeed 1.15.1</generator>
+    <link rel="alternate" href="https://devsphere-apps.github.io/tech-updates/feed/index.html"/>
+    <link rel="self" href="https://devsphere-apps.github.io/tech-updates/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[[AINews] Reve 2 and Ideogram 4: Layouts in Imagegen]]></title>
+        <id>https://www.latent.space/p/ainews-reve-2-and-ideogram-4-layouts</id>
+        <link href="https://www.latent.space/p/ainews-reve-2-and-ideogram-4-layouts"/>
+        <updated>2026-06-04T03:24:07.000Z</updated>
+        <summary type="html"><![CDATA[a quiet day.]]></summary>
+        <author>
+            <name>Latent.Space</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Why Model Neutrality Matters More Than Cloud Neutrality]]></title>
+        <id>https://www.langchain.com/blog/model-neutrality</id>
+        <link href="https://www.langchain.com/blog/model-neutrality"/>
+        <updated>2026-06-04T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Agent Architecture — By Neil Dahlke — June 4, 2026]]></summary>
+        <author>
+            <name>Neil Dahlke</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[🔬Scaling Past Informal AI - Carina Hong, Axiom Math]]></title>
+        <id>https://www.latent.space/p/axiom</id>
+        <link href="https://www.latent.space/p/axiom"/>
+        <updated>2026-06-03T19:27:49.000Z</updated>
+        <summary type="html"><![CDATA[Verified Generation and Compounding Intelligence]]></summary>
+        <author>
+            <name>RJ Honicky</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[⚡️Satya Nadella: No Priors x Latent Space Crossover Special at Microsoft Build]]></title>
+        <id>https://www.latent.space/p/satya-2026</id>
+        <link href="https://www.latent.space/p/satya-2026"/>
+        <updated>2026-06-03T17:13:57.000Z</updated>
+        <summary type="html"><![CDATA[The legendary Microsoft CEO makes his first Latent Space appearance!]]></summary>
+        <author>
+            <name>Latent.Space</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Direct Preference Optimization Beyond Chatbots]]></title>
+        <id>https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots</id>
+        <link href="https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots"/>
+        <updated>2026-06-03T12:55:11.000Z</updated>
+        <summary type="html"><![CDATA[The Hugging Face blog]]></summary>
+        <author>
+            <name>Hugging Face - Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[AINews] Microsoft Build: MAI-Thinking-1 and MAI Family models]]></title>
+        <id>https://www.latent.space/p/ainews-microsoft-build-mai-thinking</id>
+        <link href="https://www.latent.space/p/ainews-microsoft-build-mai-thinking"/>
+        <updated>2026-06-03T05:49:02.000Z</updated>
+        <summary type="html"><![CDATA[Microsoft Build recap, and new MAI model technical details]]></summary>
+        <author>
+            <name>Latent.Space</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to Build a Custom Agent Harness]]></title>
+        <id>https://www.langchain.com/blog/how-to-build-a-custom-agent-harness</id>
+        <link href="https://www.langchain.com/blog/how-to-build-a-custom-agent-harness"/>
+        <updated>2026-06-03T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Open Source / LangChain / Agent Architecture / Deep Agents — By Sydney Runkle — June 3, 2026]]></summary>
+        <author>
+            <name>Sydney Runkle</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How Harmonic Rebuilt Scout on Deep Agents and 4x'd Retention with LangSmith]]></title>
+        <id>https://www.langchain.com/blog/how-harmonic-rebuilt-scout-on-deep-agents-and-4xd-retention-with-langsmith</id>
+        <link href="https://www.langchain.com/blog/how-harmonic-rebuilt-scout-on-deep-agents-and-4xd-retention-with-langsmith"/>
+        <updated>2026-06-03T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Case Studies — By Sofia Sulikowski — June 3, 2026]]></summary>
+        <author>
+            <name>Sofia Sulikowski</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Adding MCP Tools to Reachy Mini]]></title>
+        <id>https://huggingface.co/blog/adding-mcp-tools-to-reachy-mini</id>
+        <link href="https://huggingface.co/blog/adding-mcp-tools-to-reachy-mini"/>
+        <updated>2026-06-03T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The Hugging Face blog]]></summary>
+        <author>
+            <name>Hugging Face - Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GitHub's plan for Agents — Kyle Daigle, GitHub]]></title>
+        <id>https://www.latent.space/p/github</id>
+        <link href="https://www.latent.space/p/github"/>
+        <updated>2026-06-02T16:48:21.000Z</updated>
+        <summary type="html"><![CDATA[GitHub pioneered the modern AI coding era with Copilot, and the resulting explosion in agentic coding has led to notable strains on the most popular developer platform in the world. Here's the plan.]]></summary>
+        <author>
+            <name>Latent.Space</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Holo3.1: Fast & Local Computer Use Agents]]></title>
+        <id>https://huggingface.co/blog/Hcompany/holo31</id>
+        <link href="https://huggingface.co/blog/Hcompany/holo31"/>
+        <updated>2026-06-02T14:13:23.000Z</updated>
+        <summary type="html"><![CDATA[The Hugging Face blog]]></summary>
+        <author>
+            <name>Hugging Face - Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[AINews] NVIDIA Cosmos 3, Nemotron 3 Ultra, and RTX Spark]]></title>
+        <id>https://www.latent.space/p/ainews-nvidia-cosmos-3-nemotron-3</id>
+        <link href="https://www.latent.space/p/ainews-nvidia-cosmos-3-nemotron-3"/>
+        <updated>2026-06-02T03:28:10.000Z</updated>
+        <summary type="html"><![CDATA[Jensen scores a huge win.]]></summary>
+        <author>
+            <name>Latent.Space</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Designing Efficient Verifiers for Legal Agents]]></title>
+        <id>https://www.langchain.com/blog/designing-efficient-verifiers-for-legal-agents</id>
+        <link href="https://www.langchain.com/blog/designing-efficient-verifiers-for-legal-agents"/>
+        <updated>2026-06-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[LangChain Labs — By LangChain Labs, Harvey — June 2, 2026]]></summary>
+        <author>
+            <name>LangChain Labs, Harvey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introducing Rubrics: Build Agents that Evaluate and Correct Their Work]]></title>
+        <id>https://www.langchain.com/blog/introducing-rubrics-for-deepagents</id>
+        <link href="https://www.langchain.com/blog/introducing-rubrics-for-deepagents"/>
+        <updated>2026-06-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Deep Agents / Open Source / Agent Architecture — By Shrikar Seshadri, Sydney Runkle — June 2, 2026]]></summary>
+        <author>
+            <name>Shrikar Seshadri, Sydney Runkle</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introducing Mellum2: A 12B Mixture-of-Experts Model by JetBrains]]></title>
+        <id>https://huggingface.co/blog/JetBrains/mellum2-launch</id>
+        <link href="https://huggingface.co/blog/JetBrains/mellum2-launch"/>
+        <updated>2026-06-01T15:45:17.000Z</updated>
+        <summary type="html"><![CDATA[The Hugging Face blog]]></summary>
+        <author>
+            <name>Hugging Face - Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Why Video Agent models are next — Ethan He, xAI Grok Imagine]]></title>
+        <id>https://www.latent.space/p/video-agents</id>
+        <link href="https://www.latent.space/p/video-agents"/>
+        <updated>2026-06-01T15:41:48.000Z</updated>
+        <summary type="html"><![CDATA[Inside xAI: Building Grok Imagine in 3 Months, Videogen vs World Models, and why Grok Imagine is so underrated. For the first time, we do a deep dive with the guy who led it!]]></summary>
+        <author>
+            <name>Latent.Space</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Beyond LLMs: Why Scalable Enterprise AI Adoption Depends on Agent Logic]]></title>
+        <id>https://huggingface.co/blog/ibm-research/agent-logic-and-scalable-ai-adoption</id>
+        <link href="https://huggingface.co/blog/ibm-research/agent-logic-and-scalable-ai-adoption"/>
+        <updated>2026-06-01T13:51:18.000Z</updated>
+        <summary type="html"><![CDATA[The Hugging Face blog]]></summary>
+        <author>
+            <name>Hugging Face - Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Welcome NVIDIA Cosmos 3: The First Open Omni-model for Physical AI Reasoning and Action]]></title>
+        <id>https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai</id>
+        <link href="https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai"/>
+        <updated>2026-06-01T04:44:55.000Z</updated>
+        <summary type="html"><![CDATA[The Hugging Face blog]]></summary>
+        <author>
+            <name>Hugging Face - Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How Rippling Went AI-Native Across Every Product in 6 Months with Deep Agents and LangSmith]]></title>
+        <id>https://www.langchain.com/blog/how-rippling-went-ai-native-across-every-product-in-6-months-with-deep-agents-and-langsmith</id>
+        <link href="https://www.langchain.com/blog/how-rippling-went-ai-native-across-every-product-in-6-months-with-deep-agents-and-langsmith"/>
+        <updated>2026-06-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Case Studies — By Sofia Sulikowski — June 1, 2026]]></summary>
+        <author>
+            <name>Sofia Sulikowski</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[AINews] Founders and Forward Deployed Engineers]]></title>
+        <id>https://www.latent.space/p/ainews-founders-and-forward-deployed</id>
+        <link href="https://www.latent.space/p/ainews-founders-and-forward-deployed"/>
+        <updated>2026-05-30T01:57:15.000Z</updated>
+        <summary type="html"><![CDATA[a quiet day lets us highlight the new AIE WF focuses]]></summary>
+        <author>
+            <name>Latent.Space</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[AINews] Anthropic raises $965B Series H, releases Opus 4.8 and Dynamic Workflows/ultracode]]></title>
+        <id>https://www.latent.space/p/ainews-anthropic-raises-965b-series</id>
+        <link href="https://www.latent.space/p/ainews-anthropic-raises-965b-series"/>
+        <updated>2026-05-29T02:07:24.000Z</updated>
+        <summary type="html"><![CDATA[Total Anthropic victory!]]></summary>
+        <author>
+            <name>Latent.Space</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Building workflows for agents with Skills and Interpreters]]></title>
+        <id>https://www.langchain.com/blog/interpreter-skills</id>
+        <link href="https://www.langchain.com/blog/interpreter-skills"/>
+        <updated>2026-05-29T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Agent Architecture / Deep Agents / Open Source — By Hunter Lovell — May 29, 2026]]></summary>
+        <author>
+            <name>Hunter Lovell</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Gemini Flash Gets Pricey, AI Act Delays, Agents Drive Online Traffic]]></title>
+        <id>https://www.deeplearning.ai/the-batch/issue-355</id>
+        <link href="https://www.deeplearning.ai/the-batch/issue-355"/>
+        <updated>2026-05-29T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[DeepLearning.AI The Batch — May 29, 2026]]></summary>
+        <author>
+            <name>DeepLearning.AI — The Batch</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Profiling in PyTorch (Part 1): A Beginner's Guide to torch.profiler]]></title>
+        <id>https://huggingface.co/blog/torch-profiler</id>
+        <link href="https://huggingface.co/blog/torch-profiler"/>
+        <updated>2026-05-29T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The Hugging Face blog]]></summary>
+        <author>
+            <name>Hugging Face - Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The Age of Async Agents — Cognition's Walden Yan & OpenInspect's Cole Murray]]></title>
+        <id>https://www.latent.space/p/cognition</id>
+        <link href="https://www.latent.space/p/cognition"/>
+        <updated>2026-05-28T18:41:24.000Z</updated>
+        <summary type="html"><![CDATA[80% Devin Commits, Spec-to-PR Workflows, Full VMs, Agent Memory, and PMs Shipping Code]]></summary>
+        <author>
+            <name>Latent.Space</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[AINews] Cognition raises $1B in $26B Series D]]></title>
+        <id>https://www.latent.space/p/ainews-cognition-raises-1b-in-26b</id>
+        <link href="https://www.latent.space/p/ainews-cognition-raises-1b-in-26b"/>
+        <updated>2026-05-28T07:26:09.000Z</updated>
+        <summary type="html"><![CDATA[coding is an uncapped TAM market]]></summary>
+        <author>
+            <name>Latent.Space</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[🔬ESMFold2: The Bitter Lesson is Coming for Proteins - Alex Rives, BioHub]]></title>
+        <id>https://www.latent.space/p/esmfold2</id>
+        <link href="https://www.latent.space/p/esmfold2"/>
+        <updated>2026-05-27T17:46:16.000Z</updated>
+        <summary type="html"><![CDATA[Datasets vs. inductive bias, world models, and programmable biology]]></summary>
+        <author>
+            <name>RJ Honicky</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks — by Artificial Analysis and IBM]]></title>
+        <id>https://huggingface.co/blog/ibm-research/itbench-aa</id>
+        <link href="https://huggingface.co/blog/ibm-research/itbench-aa"/>
+        <updated>2026-05-27T17:20:29.000Z</updated>
+        <summary type="html"><![CDATA[The Hugging Face blog]]></summary>
+        <author>
+            <name>Hugging Face - Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Agentic AI Flywheels]]></title>
+        <id>https://www.newsletter.swirlai.com/p/agentic-ai-flywheels</id>
+        <link href="https://www.newsletter.swirlai.com/p/agentic-ai-flywheels"/>
+        <updated>2026-05-27T10:33:57.000Z</updated>
+        <summary type="html"><![CDATA[The production loop after your agent ships, and the eval set that grows with it.]]></summary>
+        <author>
+            <name>Aurimas Griciūnas</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[AINews] New AI Infra decacorns: Fireworks, Baseten (with OpenRouter on the way)]]></title>
+        <id>https://www.latent.space/p/ainews-new-ai-infra-decacorns-fireworks</id>
+        <link href="https://www.latent.space/p/ainews-new-ai-infra-decacorns-fireworks"/>
+        <updated>2026-05-27T03:33:53.000Z</updated>
+        <summary type="html"><![CDATA[it's funding news, but it's good news.]]></summary>
+        <author>
+            <name>Latent.Space</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[May 2026: LangChain Newsletter]]></title>
+        <id>https://www.langchain.com/blog/may-2026-langchain-newsletter</id>
+        <link href="https://www.langchain.com/blog/may-2026-langchain-newsletter"/>
+        <updated>2026-05-27T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Newsletter — By The LangChain Team — May 27, 2026]]></summary>
+        <author>
+            <name>The LangChain Team</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How Lyft Built a Self-Serve AI Agent Platform for Customer Support with LangGraph and LangSmith]]></title>
+        <id>https://www.langchain.com/blog/lyft-built-a-self-serve-ai-agent-platform-for-customer-support-with-langgraph-and-langsmith</id>
+        <link href="https://www.langchain.com/blog/lyft-built-a-self-serve-ai-agent-platform-for-customer-support-with-langgraph-and-langsmith"/>
+        <updated>2026-05-27T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Case Studies / LangGraph / LangSmith / Tutorials & How-Tos — By Akshay Sharma — May 27, 2026]]></summary>
+        <author>
+            <name>Akshay Sharma</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Reachy Mini goes fully local]]></title>
+        <id>https://huggingface.co/blog/local-reachy-mini-conversation</id>
+        <link href="https://huggingface.co/blog/local-reachy-mini-conversation"/>
+        <updated>2026-05-27T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The Hugging Face blog]]></summary>
+        <author>
+            <name>Hugging Face - Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Shipping a Trillion Parameters With a Hub Bucket: Delta Weight Sync in TRL]]></title>
+        <id>https://huggingface.co/blog/delta-weight-sync</id>
+        <link href="https://huggingface.co/blog/delta-weight-sync"/>
+        <updated>2026-05-27T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The Hugging Face blog]]></summary>
+        <author>
+            <name>Hugging Face - Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Mission Control: Operating Self-Hosted LangSmith on Kubernetes]]></title>
+        <id>https://www.langchain.com/blog/mission-control-operating-self-hosted-langsmith-on-kubernetes</id>
+        <link href="https://www.langchain.com/blog/mission-control-operating-self-hosted-langsmith-on-kubernetes"/>
+        <updated>2026-05-26T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[By Gethin Dibben — May 26, 2026]]></summary>
+        <author>
+            <name>Gethin Dibben</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Harness, Scaffold, and the AI Agent Terms Worth Getting Right]]></title>
+        <id>https://huggingface.co/blog/agent-glossary</id>
+        <link href="https://huggingface.co/blog/agent-glossary"/>
+        <updated>2026-05-25T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The Hugging Face blog]]></summary>
+        <author>
+            <name>Hugging Face - Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[AINews] All Model Labs are now Agent Labs]]></title>
+        <id>https://www.latent.space/p/ainews-all-model-labs-are-now-agent</id>
+        <link href="https://www.latent.space/p/ainews-all-model-labs-are-now-agent"/>
+        <updated>2026-05-23T04:21:17.000Z</updated>
+        <summary type="html"><![CDATA[a quiet day lets us tie together a few quotes as all model labs become agent labs]]></summary>
+        <author>
+            <name>Latent.Space</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Towards Speed-of-Light Text Generation with Nemotron-Labs Diffusion Language Models]]></title>
+        <id>https://huggingface.co/blog/nvidia/nemotron-labs-diffusion</id>
+        <link href="https://huggingface.co/blog/nvidia/nemotron-labs-diffusion"/>
+        <updated>2026-05-23T00:02:03.000Z</updated>
+        <summary type="html"><![CDATA[The Hugging Face blog]]></summary>
+        <author>
+            <name>Hugging Face - Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Specialization Beats Scale: A Strategic Variable Most AI Procurement Decisions Overlook]]></title>
+        <id>https://huggingface.co/blog/Dharma-AI/specialization-beats-scale</id>
+        <link href="https://huggingface.co/blog/Dharma-AI/specialization-beats-scale"/>
+        <updated>2026-05-22T15:25:59.000Z</updated>
+        <summary type="html"><![CDATA[The Hugging Face blog]]></summary>
+        <author>
+            <name>Hugging Face - Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[AINews] New AI Infra unicorns: Exa, Modal, TurboPuffer]]></title>
+        <id>https://www.latent.space/p/ainews-new-ai-infra-unicorns-exa</id>
+        <link href="https://www.latent.space/p/ainews-new-ai-infra-unicorns-exa"/>
+        <updated>2026-05-22T05:50:58.000Z</updated>
+        <summary type="html"><![CDATA[a quiet day lets us feature fundraises!]]></summary>
+        <author>
+            <name>Latent.Space</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hermes vs. OpenClaw, Cybersecurity Alarms Ring, More-Interactive Conversations, Can Agents Do Human Work?]]></title>
+        <id>https://www.deeplearning.ai/the-batch/issue-354</id>
+        <link href="https://www.deeplearning.ai/the-batch/issue-354"/>
+        <updated>2026-05-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[DeepLearning.AI The Batch — May 22, 2026]]></summary>
+        <author>
+            <name>DeepLearning.AI — The Batch</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Giving Agents Computers — Ivan Burazin, Daytona]]></title>
+        <id>https://www.latent.space/p/daytona</id>
+        <link href="https://www.latent.space/p/daytona"/>
+        <updated>2026-05-21T20:37:40.000Z</updated>
+        <summary type="html"><![CDATA[We chat with Daytona's CEO about their insane 74% MoM Growth, 850K Daily Runs, Bare Metal Sandboxes, RL Evals, and the New Agent Cloud]]></summary>
+        <author>
+            <name>Latent.Space</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[AINews] OpenAI GPT-next disproves 80 year old Erdős planar unit distance problem for under $1000]]></title>
+        <id>https://www.latent.space/p/ainews-openai-gpt-next-disproves</id>
+        <link href="https://www.latent.space/p/ainews-openai-gpt-next-disproves"/>
+        <updated>2026-05-21T07:28:36.000Z</updated>
+        <summary type="html"><![CDATA[a quiet day but a nice result in AI x mathematics]]></summary>
+        <author>
+            <name>Latent.Space</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[From Token Streams to Agent Streams]]></title>
+        <id>https://www.langchain.com/blog/token-streams-to-agent-streams</id>
+        <link href="https://www.langchain.com/blog/token-streams-to-agent-streams"/>
+        <updated>2026-05-21T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[LangChain / Open Source / LangGraph — By Christian Bromann, Nick Hollon — May 21, 2026]]></summary>
+        <author>
+            <name>Christian Bromann, Nick Hollon</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How Auth Proxy secures network access for LangSmith agent sandboxes]]></title>
+        <id>https://www.langchain.com/blog/how-auth-proxy-secures-network-access-for-langsmith-agent-sandboxes</id>
+        <link href="https://www.langchain.com/blog/how-auth-proxy-secures-network-access-for-langsmith-agent-sandboxes"/>
+        <updated>2026-05-21T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[LangSmith — By Mukil Loganathan — May 21, 2026]]></summary>
+        <author>
+            <name>Mukil Loganathan</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Railway: The Agent-Native Cloud — Jake Cooper]]></title>
+        <id>https://www.latent.space/p/railway</id>
+        <link href="https://www.latent.space/p/railway"/>
+        <updated>2026-05-20T22:42:06.000Z</updated>
+        <summary type="html"><![CDATA[3M Users, 100K Signups/Week, Own-Metal Data Centers, $200K+ Coding Agent Spend, and the Death of PRs]]></summary>
+        <author>
+            <name>Latent.Space</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[AINews] Google I/O 2026: Gemini 3.5 Flash, Omni (NanoBanana for Video), Spark (background agents), and Antigravity 2.0]]></title>
+        <id>https://www.latent.space/p/ainews-google-io-2026-gemini-35-flash</id>
+        <link href="https://www.latent.space/p/ainews-google-io-2026-gemini-35-flash"/>
+        <updated>2026-05-20T03:34:17.000Z</updated>
+        <summary type="html"><![CDATA[Google has been busy!]]></summary>
+        <author>
+            <name>Latent.Space</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[EU macroeconomic analysis with Deep Agents, LangSmith, and the You.com Finance Research API]]></title>
+        <id>https://www.langchain.com/blog/financial-ai-that-investigates-macro-trends-eu-economic-analysis-with-you-com-and-langchain</id>
+        <link href="https://www.langchain.com/blog/financial-ai-that-investigates-macro-trends-eu-economic-analysis-with-you-com-and-langchain"/>
+        <updated>2026-05-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Partner / Deep Agents / LangSmith — By Srimanth Tangedipalli, Karan Singh, Saurabh Sharma, Akhil Pothana — May 20, 2026]]></summary>
+        <author>
+            <name>Srimanth Tangedipalli, Karan Singh, Saurabh Sharma, Akhil Pothana</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Give Your Agents an Interpreter]]></title>
+        <id>https://www.langchain.com/blog/give-your-agents-an-interpreter</id>
+        <link href="https://www.langchain.com/blog/give-your-agents-an-interpreter"/>
+        <updated>2026-05-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Deep Agents / Agent Architecture / Open Source — By Hunter Lovell — May 20, 2026]]></summary>
+        <author>
+            <name>Hunter Lovell</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[OlmoEarth v1.1: A more efficient family of models]]></title>
+        <id>https://huggingface.co/blog/allenai/olmoearth-v1-1</id>
+        <link href="https://huggingface.co/blog/allenai/olmoearth-v1-1"/>
+        <updated>2026-05-19T18:38:09.000Z</updated>
+        <summary type="html"><![CDATA[The Hugging Face blog]]></summary>
+        <author>
+            <name>Hugging Face - Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[AINews] How to land a job at a frontier lab (on Pretraining)]]></title>
+        <id>https://www.latent.space/p/ainews-how-to-land-a-job-at-a-frontier</id>
+        <link href="https://www.latent.space/p/ainews-how-to-land-a-job-at-a-frontier"/>
+        <updated>2026-05-19T07:31:40.000Z</updated>
+        <summary type="html"><![CDATA[a quiet day before google i/o lets us amplify a notable blogpost]]></summary>
+        <author>
+            <name>Latent.Space</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How We Built LangSmith Engine, Our Agent for Improving Agents]]></title>
+        <id>https://www.langchain.com/blog/how-we-built-langsmith-engine-our-agent-for-improving-agents</id>
+        <link href="https://www.langchain.com/blog/how-we-built-langsmith-engine-our-agent-for-improving-agents"/>
+        <updated>2026-05-19T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[By Palash Shah — May 19, 2026]]></summary>
+        <author>
+            <name>Palash Shah</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introducing the Ettin Reranker Family]]></title>
+        <id>https://huggingface.co/blog/ettin-reranker</id>
+        <link href="https://huggingface.co/blog/ettin-reranker"/>
+        <updated>2026-05-19T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The Hugging Face blog]]></summary>
+        <author>
+            <name>Hugging Face - Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation]]></title>
+        <id>https://huggingface.co/blog/nvidia/cosmos-fine-tuning-for-robot-video-generation</id>
+        <link href="https://huggingface.co/blog/nvidia/cosmos-fine-tuning-for-robot-video-generation"/>
+        <updated>2026-05-18T16:00:21.000Z</updated>
+        <summary type="html"><![CDATA[The Hugging Face blog]]></summary>
+        <author>
+            <name>Hugging Face - Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[PaddleOCR 3.5: Running OCR and Document Parsing Tasks with a Transformers Backend]]></title>
+        <id>https://huggingface.co/blog/PaddlePaddle/paddleocr-transformers</id>
+        <link href="https://huggingface.co/blog/PaddlePaddle/paddleocr-transformers"/>
+        <updated>2026-05-18T15:12:46.000Z</updated>
+        <summary type="html"><![CDATA[The Hugging Face blog]]></summary>
+        <author>
+            <name>Hugging Face - Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The Open Agent Leaderboard]]></title>
+        <id>https://huggingface.co/blog/ibm-research/open-agent-leaderboard</id>
+        <link href="https://huggingface.co/blog/ibm-research/open-agent-leaderboard"/>
+        <updated>2026-05-18T14:12:58.000Z</updated>
+        <summary type="html"><![CDATA[The Hugging Face blog]]></summary>
+        <author>
+            <name>Hugging Face - Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The Autonomous Drone Tech Stack & Economics of Drones — Yaroslav Azhnyuk, The Fourth Law & Guest Host Noah Smith, Noahpinion]]></title>
+        <id>https://www.latent.space/p/the-fourth-law</id>
+        <link href="https://www.latent.space/p/the-fourth-law"/>
+        <updated>2026-05-18T13:45:32.000Z</updated>
+        <summary type="html"><![CDATA[Ukrainian drone founder Yaroslav Azhnyuk went from pet cameras to AI-guided weapons. He and guest host Noah Smith make the case that the West is asleep at the wheel.]]></summary>
+        <author>
+            <name>Latent.Space</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[AINews] Cerebras' $60B IPO: Slowly, then All at Once]]></title>
+        <id>https://www.latent.space/p/ainews-cerebras-60b-ipo-slowly-then</id>
+        <link href="https://www.latent.space/p/ainews-cerebras-60b-ipo-slowly-then"/>
+        <updated>2026-05-16T04:36:50.000Z</updated>
+        <summary type="html"><![CDATA[Congrats Big Chip!]]></summary>
+        <author>
+            <name>Latent.Space</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[AINews] Everything is Conductor]]></title>
+        <id>https://www.latent.space/p/ainews-everything-is-conductor</id>
+        <link href="https://www.latent.space/p/ainews-everything-is-conductor"/>
+        <updated>2026-05-15T00:30:21.000Z</updated>
+        <summary type="html"><![CDATA[an ultra quiet day lets us highlight a smaller trend.]]></summary>
+        <author>
+            <name>Latent.Space</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[China Thwarts Meta’s Agentic Ambition, U.S. Evaluates Upcoming Models, AI Diagnoses Mammograms]]></title>
+        <id>https://www.deeplearning.ai/the-batch/issue-353</id>
+        <link href="https://www.deeplearning.ai/the-batch/issue-353"/>
+        <updated>2026-05-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[DeepLearning.AI The Batch — May 15, 2026]]></summary>
+        <author>
+            <name>DeepLearning.AI — The Batch</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[AI-Native Healthcare: 100M Doctor Visits, 10–20 Hours Saved, Prior Auth in Minutes — Janie Lee & Chai Asawa, Abridge]]></title>
+        <id>https://www.latent.space/p/abridge</id>
+        <link href="https://www.latent.space/p/abridge"/>
+        <updated>2026-05-14T22:05:31.000Z</updated>
+        <summary type="html"><![CDATA[How Abridge is quietly turning the patient and clinician conversation into the operating system of healthcare]]></summary>
+        <author>
+            <name>Latent.Space</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Granite Embedding Multilingual R2: Open Apache 2.0 Multilingual Embeddings with 32K Context — Best Sub-100M Retrieval Quality]]></title>
+        <id>https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2</id>
+        <link href="https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2"/>
+        <updated>2026-05-14T18:55:01.000Z</updated>
+        <summary type="html"><![CDATA[The Hugging Face blog]]></summary>
+        <author>
+            <name>Hugging Face - Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[AINews] Codex Rises, Claude Meters Programmatic Usage]]></title>
+        <id>https://www.latent.space/p/ainews-codex-rises-claude-meters</id>
+        <link href="https://www.latent.space/p/ainews-codex-rises-claude-meters"/>
+        <updated>2026-05-14T03:53:26.000Z</updated>
+        <summary type="html"><![CDATA[a quiet day lets us report on a long trend of the major coding agents]]></summary>
+        <author>
+            <name>Latent.Space</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Everything we shipped at Interrupt]]></title>
+        <id>https://www.langchain.com/blog/interrupt-2026-overview</id>
+        <link href="https://www.langchain.com/blog/interrupt-2026-overview"/>
+        <updated>2026-05-14T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Company Announcements / LangSmith — By Jacob Talbot — May 14, 2026]]></summary>
+        <author>
+            <name>Jacob Talbot</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introducing LangChain Labs]]></title>
+        <id>https://www.langchain.com/blog/introducing-langchain-labs</id>
+        <link href="https://www.langchain.com/blog/introducing-langchain-labs"/>
+        <updated>2026-05-14T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Company Announcements — By Harrison Chase — May 14, 2026]]></summary>
+        <author>
+            <name>Harrison Chase</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Unlocking asynchronicity in continuous batching]]></title>
+        <id>https://huggingface.co/blog/continuous_async</id>
+        <link href="https://huggingface.co/blog/continuous_async"/>
+        <updated>2026-05-14T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The Hugging Face blog]]></summary>
+        <author>
+            <name>Hugging Face - Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[AINews] The End of Finetuning]]></title>
+        <id>https://www.latent.space/p/ainews-the-end-of-finetuning</id>
+        <link href="https://www.latent.space/p/ainews-the-end-of-finetuning"/>
+        <updated>2026-05-13T02:47:22.000Z</updated>
+        <summary type="html"><![CDATA[a quiet day lets us reflect on whither finetuning]]></summary>
+        <author>
+            <name>Latent.Space</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introducing LangSmith Engine]]></title>
+        <id>https://www.langchain.com/blog/introducing-langsmith-engine</id>
+        <link href="https://www.langchain.com/blog/introducing-langsmith-engine"/>
+        <updated>2026-05-13T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[LangSmith — By Ben Tannyhill — May 13, 2026]]></summary>
+        <author>
+            <name>Ben Tannyhill</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[We built SmithDB, the data layer for agent observability]]></title>
+        <id>https://www.langchain.com/blog/introducing-smithdb</id>
+        <link href="https://www.langchain.com/blog/introducing-smithdb"/>
+        <updated>2026-05-13T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[LangSmith — By Ankush Gola — May 13, 2026]]></summary>
+        <author>
+            <name>Ankush Gola</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introducing LangSmith Context Hub]]></title>
+        <id>https://www.langchain.com/blog/introducing-context-hub</id>
+        <link href="https://www.langchain.com/blog/introducing-context-hub"/>
+        <updated>2026-05-13T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[LangSmith — By Harrison Chase — May 13, 2026]]></summary>
+        <author>
+            <name>Harrison Chase</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[LangSmith Sandboxes are Generally Available]]></title>
+        <id>https://www.langchain.com/blog/langsmith-sandboxes-generally-available</id>
+        <link href="https://www.langchain.com/blog/langsmith-sandboxes-generally-available"/>
+        <updated>2026-05-13T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[LangSmith — By Mukhil Loganathan — May 13, 2026]]></summary>
+        <author>
+            <name>Mukhil Loganathan</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introducing Managed Deep Agents]]></title>
+        <id>https://www.langchain.com/blog/introducing-managed-deep-agents</id>
+        <link href="https://www.langchain.com/blog/introducing-managed-deep-agents"/>
+        <updated>2026-05-13T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Deep Agents — By Victor Moreira — May 13, 2026]]></summary>
+        <author>
+            <name>Victor Moreira</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[New in Deep Agents v0.6]]></title>
+        <id>https://www.langchain.com/blog/deep-agents-0-6</id>
+        <link href="https://www.langchain.com/blog/deep-agents-0-6"/>
+        <updated>2026-05-13T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Deep Agents — By Sydney Runkle — May 13, 2026]]></summary>
+        <author>
+            <name>Sydney Runkle</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[LangSmith LLM Gateway: runtime governance built into the agent lifecycle]]></title>
+        <id>https://www.langchain.com/blog/introducing-llm-gateway</id>
+        <link href="https://www.langchain.com/blog/introducing-llm-gateway"/>
+        <updated>2026-05-13T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[LangSmith — By Martha Janicki — May 13, 2026]]></summary>
+        <author>
+            <name>Martha Janicki</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[AINews] Thinking Machines' Native Interaction Models - TML-Interaction-Small 276B-A12B - advances SOTA Realtime Voice and kills standard VAD]]></title>
+        <id>https://www.latent.space/p/ainews-thinking-machines-native-interaction</id>
+        <link href="https://www.latent.space/p/ainews-thinking-machines-native-interaction"/>
+        <updated>2026-05-12T04:33:46.000Z</updated>
+        <summary type="html"><![CDATA[well done, Team Thinky.]]></summary>
+        <author>
+            <name>Latent.Space</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Delta Channels: Evolving our Runtime for Long-Running Agents]]></title>
+        <id>https://www.langchain.com/blog/delta-channels-evolving-agent-runtime</id>
+        <link href="https://www.langchain.com/blog/delta-channels-evolving-agent-runtime"/>
+        <updated>2026-05-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Deep Agents / LangGraph — By Sydney Runkle — May 12, 2026]]></summary>
+        <author>
+            <name>Sydney Runkle</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Building Blocks for Foundation Model Training and Inference on AWS]]></title>
+        <id>https://huggingface.co/blog/amazon/foundation-model-building-blocks</id>
+        <link href="https://huggingface.co/blog/amazon/foundation-model-building-blocks"/>
+        <updated>2026-05-11T23:18:26.000Z</updated>
+        <summary type="html"><![CDATA[The Hugging Face blog]]></summary>
+        <author>
+            <name>Hugging Face - Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[AINews] Anthropic growing 10x/year while everyone else is laying off >10% of their workforce]]></title>
+        <id>https://www.latent.space/p/ainews-anthropic-growing-10xyear</id>
+        <link href="https://www.latent.space/p/ainews-anthropic-growing-10xyear"/>
+        <updated>2026-05-09T01:08:28.000Z</updated>
+        <summary type="html"><![CDATA[A quiet day lets us reflect on an interesting dichotomy in the economy.]]></summary>
+        <author>
+            <name>Latent.Space</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The Agent Development Lifecycle]]></title>
+        <id>https://www.langchain.com/blog/the-agent-development-lifecycle</id>
+        <link href="https://www.langchain.com/blog/the-agent-development-lifecycle"/>
+        <updated>2026-05-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[By Harrison Chase — May 9, 2026]]></summary>
+        <author>
+            <name>Harrison Chase</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[EMO: Pretraining mixture of experts for emergent modularity]]></title>
+        <id>https://huggingface.co/blog/allenai/emo</id>
+        <link href="https://huggingface.co/blog/allenai/emo"/>
+        <updated>2026-05-08T16:03:50.000Z</updated>
+        <summary type="html"><![CDATA[The Hugging Face blog]]></summary>
+        <author>
+            <name>Hugging Face - Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Adaptive Parallel Reasoning: The Next Paradigm in Efficient Inference Scaling]]></title>
+        <id>http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/</id>
+        <link href="http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/"/>
+        <updated>2026-05-08T09:00:00.000Z</updated>
+        <summary type="html"><![CDATA[.apr-fig { text-align: center; margin: 1.35em 0; line-height: 1.4; }
+.apr-fig--wide img { display: inline-block; width: 100%; max-width: 100%; height: auto; vertical-align: middle; }
+.apr-fig--wide-0-8 { max-width: 80%; margin-left: auto; margin-right: auto; }
+.apr-fig--tall img { display: inline-block; max-height: 300px; width: auto; max-width: 100%; height: auto; object-fit: contain; vertical-align: middle; }
+.apr-fig--tall-1-2x img { display: inline-block; max-height: 360px; width: auto; max-width: 100%; height: auto; object-fit: contain; vertical-align: middle; }
+.apr-fig--tall-1-5x img { display: inline-block; max-height: 450px; width: auto; max-width: 100%; height: auto; object-fit: contain; vertical-align: middle; }
+.apr-fig--tall-2x img { display: inline-block; max-height: 600px; w…]]></summary>
+        <author>
+            <name>The Berkeley Artificial Intelligence Research Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[AINews] GPT-Realtime-2, -Translate, and -Whisper: new SOTA realtime voice APIs]]></title>
+        <id>https://www.latent.space/p/ainews-gpt-realtime-2-translate-and</id>
+        <link href="https://www.latent.space/p/ainews-gpt-realtime-2-translate-and"/>
+        <updated>2026-05-08T07:11:24.000Z</updated>
+        <summary type="html"><![CDATA[OpenAI continues deploying GPT-5 everywhere]]></summary>
+        <author>
+            <name>Latent.Space</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Building a company due diligence agent with Deep Agents, LangSmith and Parallel]]></title>
+        <id>https://www.langchain.com/blog/building-a-company-due-diligence-agent-with-deep-agents-langsmith-and-parallel</id>
+        <link href="https://www.langchain.com/blog/building-a-company-due-diligence-agent-with-deep-agents-langsmith-and-parallel"/>
+        <updated>2026-05-08T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Partner / Deep Agents — By Matt Harris, Nick Martitsch, Srimanth Tangedipalli, Karan Singh — May 8, 2026]]></summary>
+        <author>
+            <name>Matt Harris, Nick Martitsch, Srimanth Tangedipalli, Karan Singh</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[AINews] Anthropic-SpaceXai's 300MW/$5B/yr deal for Colossus I, ARR growth is 8000% annualized]]></title>
+        <id>https://www.latent.space/p/ainews-anthropic-spacexais-300mw5byr</id>
+        <link href="https://www.latent.space/p/ainews-anthropic-spacexais-300mw5byr"/>
+        <updated>2026-05-07T05:57:14.000Z</updated>
+        <summary type="html"><![CDATA[And the kingmaker picks a side.]]></summary>
+        <author>
+            <name>Latent.Space</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[vLLM V0 to V1: Correctness Before Corrections in RL]]></title>
+        <id>https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections</id>
+        <link href="https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections"/>
+        <updated>2026-05-06T19:06:55.000Z</updated>
+        <summary type="html"><![CDATA[The Hugging Face blog]]></summary>
+        <author>
+            <name>Hugging Face - Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[AINews] Silicon Valley gets Serious about Services]]></title>
+        <id>https://www.latent.space/p/ainews-silicon-valley-gets-serious</id>
+        <link href="https://www.latent.space/p/ainews-silicon-valley-gets-serious"/>
+        <updated>2026-05-06T05:40:41.000Z</updated>
+        <summary type="html"><![CDATA[A series of announcements line up to a big theme: Services are the next big opportunity.]]></summary>
+        <author>
+            <name>Latent.Space</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Adding Benchmaxxer Repellant to the Open ASR Leaderboard]]></title>
+        <id>https://huggingface.co/blog/open-asr-leaderboard-private-data</id>
+        <link href="https://huggingface.co/blog/open-asr-leaderboard-private-data"/>
+        <updated>2026-05-06T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The Hugging Face blog]]></summary>
+        <author>
+            <name>Hugging Face - Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[🔬Doing Vibe Physics — Alex Lupsasca, OpenAI]]></title>
+        <id>https://www.latent.space/p/lupsasca</id>
+        <link href="https://www.latent.space/p/lupsasca"/>
+        <updated>2026-05-05T20:34:11.000Z</updated>
+        <summary type="html"><![CDATA[The full story of how GPT‑5.x derived new results in theoretical physics and quantum gravity.]]></summary>
+        <author>
+            <name>Latent.Space</name>
+        </author>
+    </entry>
+</feed>

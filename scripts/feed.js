@@ -1,0 +1,249 @@
+(function () {
+  var SOURCE_MAP = {
+    "LangChain Blog": {
+      category: "langchain",
+      tagClass: "tag-ai",
+      label: "LangChain",
+    },
+    "Hugging Face - Blog": {
+      category: "models",
+      tagClass: "tag-ai",
+      label: "HuggingFace",
+    },
+    "DeepLearning.AI — The Batch": {
+      category: "courses",
+      tagClass: "tag-ai",
+      label: "DeepLearning.AI",
+    },
+    "SwirlAI Newsletter": {
+      category: "agents",
+      tagClass: "tag-ai",
+      label: "Agentic AI",
+    },
+    "Swirl AI": {
+      category: "agents",
+      tagClass: "tag-ai",
+      label: "Agentic AI",
+    },
+    "Latent.Space": {
+      category: "agents",
+      tagClass: "tag-ai",
+      label: "Latent Space",
+    },
+    "Latent Space": {
+      category: "agents",
+      tagClass: "tag-ai",
+      label: "Latent Space",
+    },
+    "AI Tidbits": {
+      category: "rag",
+      tagClass: "tag-ai",
+      label: "AI Engineering",
+    },
+    "The Berkeley Artificial Intelligence Research Blog": {
+      category: "rag",
+      tagClass: "tag-ai",
+      label: "Berkeley AI",
+    },
+    "BAIR Blog": {
+      category: "rag",
+      tagClass: "tag-ai",
+      label: "Berkeley AI",
+    },
+    Remotive: {
+      category: "jobs",
+      tagClass: "tag-ai",
+      label: "Remote Jobs",
+    },
+  };
+
+  var HF_RAG_PATTERN =
+    /\b(rag|retrieval|embedding|embeddings|vector|semantic search|rerank|reranking|knowledge base|chunking|indexing)\b/i;
+
+  function resolveCategory(card, raw, meta) {
+    if (raw === "Hugging Face - Blog") {
+      var titleEl = card.querySelector(".card-title");
+      var previewEl = card.querySelector(".card-preview");
+      var text = [
+        titleEl ? titleEl.textContent : "",
+        previewEl ? previewEl.textContent : "",
+      ].join(" ");
+      if (HF_RAG_PATTERN.test(text)) {
+        return "rag";
+      }
+    }
+    return meta ? meta.category : "other";
+  }
+
+  function applyCategoryTags() {
+    document.querySelectorAll(".feed-card[data-source-title]").forEach(function (card) {
+      var raw = card.getAttribute("data-source-title");
+      var meta = SOURCE_MAP[raw];
+      var category = resolveCategory(card, raw, meta);
+      card.setAttribute("data-category", category);
+
+      var tagEl = card.querySelector(".js-source-tag");
+      if (!tagEl) return;
+      if (meta) {
+        var label = meta.label;
+        if (raw === "Hugging Face - Blog" && category === "rag") {
+          label = "RAG";
+        }
+        tagEl.textContent = label;
+        tagEl.className = "tag js-source-tag " + meta.tagClass;
+      } else {
+        tagEl.textContent = raw || "News";
+        tagEl.className = "tag js-source-tag tag-gh";
+      }
+    });
+  }
+
+  function markFeaturedCards() {
+    var content = document.getElementById("feed-content");
+    if (!content) return;
+    var el = content.firstElementChild;
+    while (el) {
+      if (el.classList && el.classList.contains("date-divider")) {
+        var n = el.nextElementSibling;
+        while (n && !(n.classList && n.classList.contains("date-divider"))) {
+          if (n.classList && n.classList.contains("feed-card")) {
+            n.classList.add("featured");
+            break;
+          }
+          n = n.nextElementSibling;
+        }
+      }
+      el = el.nextElementSibling;
+    }
+  }
+
+  function updateDividerVisibility() {
+    document.querySelectorAll("#feed-content .date-divider").forEach(function (divider) {
+      var next = divider.nextElementSibling;
+      var hasVisible = false;
+      while (
+        next &&
+        !(next.classList && next.classList.contains("date-divider"))
+      ) {
+        if (
+          next.classList &&
+          next.classList.contains("feed-card") &&
+          next.style.display !== "none"
+        ) {
+          hasVisible = true;
+          break;
+        }
+        next = next.nextElementSibling;
+      }
+      divider.style.display = hasVisible ? "" : "none";
+    });
+  }
+
+  function initFilter() {
+    var tabs = document.querySelectorAll(".filter-tab");
+    var cards = document.querySelectorAll("#feed-content .feed-card");
+    if (!tabs.length || !cards.length) return;
+
+    var header = document.getElementById("feed-header");
+    var tabList = Array.prototype.slice.call(tabs);
+
+    function applyFilter(activeTab) {
+      var filter = activeTab.getAttribute("data-filter");
+      tabs.forEach(function (t) {
+        t.classList.remove("active");
+        t.setAttribute("aria-selected", "false");
+      });
+      activeTab.classList.add("active");
+      activeTab.setAttribute("aria-selected", "true");
+
+      cards.forEach(function (card) {
+        var cat = card.getAttribute("data-category") || "";
+        var show = filter === "all" || cat === filter;
+        card.style.display = show ? "" : "none";
+      });
+
+      updateDividerVisibility();
+    }
+
+    tabs.forEach(function (tab) {
+      tab.addEventListener("click", function () {
+        applyFilter(tab);
+      });
+    });
+
+    if (header) {
+      header.addEventListener("keydown", function (e) {
+        var focused = document.activeElement;
+        var idx = tabList.indexOf(focused);
+        if (idx < 0) return;
+        if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
+          e.preventDefault();
+          var next =
+            e.key === "ArrowRight"
+              ? (idx + 1) % tabList.length
+              : (idx - 1 + tabList.length) % tabList.length;
+          tabList[next].focus();
+        } else if (e.key === "Home") {
+          e.preventDefault();
+          tabList[0].focus();
+        } else if (e.key === "End") {
+          e.preventDefault();
+          tabList[tabList.length - 1].focus();
+        }
+      });
+    }
+
+    updateDividerVisibility();
+  }
+
+  function initNavScroll() {
+    var nav = document.getElementById("main-nav");
+    if (!nav) return;
+    window.addEventListener(
+      "scroll",
+      function () {
+        nav.classList.toggle("scrolled", window.scrollY > 8);
+      },
+      { passive: true },
+    );
+  }
+
+  function initFeedHeaderScrollHint() {
+    var header = document.getElementById("feed-header");
+    if (!header) return;
+    function update() {
+      var overflow = header.scrollWidth > header.clientWidth + 1;
+      var atEnd =
+        header.scrollLeft + header.clientWidth >= header.scrollWidth - 2;
+      header.classList.toggle("feed-header--overflow", overflow);
+      header.classList.toggle("feed-header--at-end", !overflow || atEnd);
+    }
+    header.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update, { passive: true });
+    if (typeof ResizeObserver !== "undefined") {
+      var ro = new ResizeObserver(update);
+      ro.observe(header);
+    }
+    update();
+  }
+
+  function hideSkeleton() {
+    var skeleton = document.getElementById("skeleton-loader");
+    if (skeleton) skeleton.style.display = "none";
+  }
+
+  function boot() {
+    hideSkeleton();
+    applyCategoryTags();
+    markFeaturedCards();
+    initFilter();
+    initFeedHeaderScrollHint();
+    initNavScroll();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", boot);
+  } else {
+    boot();
+  }
+})();

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://devsphere-apps.github.io/tech-updates/sitemap.xml
